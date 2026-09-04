@@ -1,0 +1,71 @@
+name: ChandraMatch Runner Health
+
+on:
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: [self-hosted, windows, x64]
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show runner information
+        shell: powershell
+        run: |
+          Write-Host "Computer: $env:COMPUTERNAME"
+          Write-Host "Workspace: $env:GITHUB_WORKSPACE"
+          Write-Host "PowerShell: $($PSVersionTable.PSVersion)"
+
+      - name: Check local ChandraMatch workspace
+        shell: powershell
+        run: |
+          $root = 'E:\SIH26166'
+          if (-not (Test-Path $root)) {
+            throw "Expected local workspace not found: $root"
+          }
+          if (-not (Test-Path "$root\.venv\Scripts\python.exe")) {
+            throw "Expected Python venv not found: $root\.venv\Scripts\python.exe"
+          }
+          if (-not (Test-Path "$root\data\processed\pair_007\canonical")) {
+            throw "Pair007 canonical data not found in local workspace."
+          }
+          Write-Host "Local ChandraMatch workspace OK."
+
+      - name: Check Python environment
+        shell: powershell
+        run: |
+          & 'E:\SIH26166\.venv\Scripts\python.exe' --version
+          & 'E:\SIH26166\.venv\Scripts\python.exe' -c "import numpy, cv2, rasterio, torch, kornia; print('numpy', numpy.__version__); print('opencv', cv2.__version__); print('rasterio', rasterio.__version__); print('torch', torch.__version__); print('cuda_available', torch.cuda.is_available()); print('cuda_device', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE'); print('kornia', kornia.__version__)"
+
+      - name: Check NVIDIA GPU
+        shell: powershell
+        run: |
+          nvidia-smi
+
+      - name: Check WSL and ISIS
+        shell: powershell
+        run: |
+          wsl.exe bash -lc "source ~/miniforge3/etc/profile.d/conda.sh && conda activate isis10.0.0 && echo ISISROOT=$ISISROOT && echo ISISDATA=$ISISDATA && command -v cam2map && command -v lronac2isis"
+
+      - name: Confirm frozen replay inputs
+        shell: powershell
+        run: |
+          $required = @(
+            'E:\SIH26166\data\processed\pair_004\canonical',
+            'E:\SIH26166\data\processed\pair_006\canonical',
+            'E:\SIH26166\data\processed\pair_007\canonical'
+          )
+          foreach ($p in $required) {
+            if (-not (Test-Path $p)) {
+              throw "Required replay input missing: $p"
+            }
+            Write-Host "FOUND $p"
+          }
+
+      - name: Health check complete
+        shell: powershell
+        run: |
+          Write-Host "CHANDRAMATCH_RUNNER_HEALTH=PASS"
