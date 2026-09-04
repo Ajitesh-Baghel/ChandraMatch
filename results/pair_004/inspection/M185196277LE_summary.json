@@ -1,0 +1,33 @@
+{
+  "product_path": "E:\\SIH26166\\data\\raw\\lro_nac\\2012_02_29\\M185196277LE.IMG",
+  "file_size_bytes": 64824264,
+  "image_pointer": "3",
+  "metadata": {
+    "PDS_VERSION_ID": "PDS3",
+    "DATA_SET_ID": "LRO-L-LROC-2-EDR-V1.0",
+    "PRODUCT_ID": "M185196277LE",
+    "PRODUCT_VERSION_ID": "v1.8",
+    "MISSION_NAME": "LUNAR RECONNAISSANCE ORBITER",
+    "MISSION_PHASE_NAME": "SCIENCE MISSION",
+    "INSTRUMENT_HOST_NAME": "LUNAR RECONNAISSANCE ORBITER",
+    "INSTRUMENT_NAME": "LUNAR RECONNAISSANCE ORBITER CAMERA",
+    "INSTRUMENT_ID": "LROC",
+    "TARGET_NAME": "MOON",
+    "START_TIME": "2012-02-29T23:10:09.781",
+    "STOP_TIME": "2012-02-29T23:10:24.826",
+    "SPACECRAFT_CLOCK_START_COUNT": "1/352249809:49728",
+    "SPACECRAFT_CLOCK_STOP_COUNT": "1/352249824:52684",
+    "SAMPLE_TYPE": "LSB_INTEGER",
+    "RATIONALE_DESC": "TARGET OF OPPORTUNITY",
+    "ORBIT_NUMBER": 12376,
+    "LINES": 25600,
+    "LINE_SAMPLES": 2532,
+    "SAMPLE_BITS": 8,
+    "RECORD_BYTES": 2532,
+    "FILE_RECORDS": 25602
+  },
+  "estimated_uncompressed_image_bytes": 64819200,
+  "estimated_uncompressed_image_mib": 61.81640625,
+  "geometry_fields_found": {},
+  "first_64_bytes_ascii": "PDS_VERSION_ID                     = PDS3\r\n\r\n/*FILE CHARACTERIST"
+}

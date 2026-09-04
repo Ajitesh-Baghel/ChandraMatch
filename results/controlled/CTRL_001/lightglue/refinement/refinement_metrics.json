@@ -1,0 +1,30 @@
+{
+    "benchmark_id": "CTRL_001",
+    "matcher": "LightGlue",
+    "original_inlier_count": 1579,
+    "uniform_selected_count": 320,
+    "refined_count": 313,
+    "refined_ransac_inliers": 313,
+    "raw_selected_gt_rmse_px": 0.6178497672080994,
+    "raw_same_subset_gt_rmse_px": 0.6187371015548706,
+    "geometric_prediction_gt_rmse_px": 0.40120866894721985,
+    "refined_correspondence_gt_rmse_px": 0.21216225624084473,
+    "refined_registration_gt_rmse_px": 0.10423543304204941,
+    "refined_registration_median_px": 0.08117561042308807,
+    "spatial_coverage": 1.0,
+    "patch_size": 64,
+    "max_local_shift": 3.0,
+    "min_phase_response": 0.05,
+    "refined_transformation": [
+        [
+            0.9961614632962325,
+            -0.08709380143551446,
+            40.69949584292767
+        ],
+        [
+            0.08726746998242724,
+            0.9961717850835057,
+            -59.98634599578546
+        ]
+    ]
+}

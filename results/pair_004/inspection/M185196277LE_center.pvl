@@ -1,0 +1,65 @@
+Group = GroundPoint
+  Filename                   = data/processed/pair_004/lro_nac_isis/M18519627-
+                               7LE_raw.cub
+  Sample                     = 1266.0
+  Line                       = 12800.0
+  PixelValue                 = 85.5
+  RightAscension             = 231.52994183865 <DEGREE>
+  Declination                = 60.695428150492 <DEGREE>
+  PlanetocentricLatitude     = -70.715607231393 <DEGREE>
+  PlanetographicLatitude     = -70.715607231393 <DEGREE>
+  PositiveEast360Longitude   = 100.31359705123 <DEGREE>
+  PositiveEast180Longitude   = 100.31359705123 <DEGREE>
+  PositiveWest360Longitude   = 259.68640294877 <DEGREE>
+  PositiveWest180Longitude   = -100.31359705123 <DEGREE>
+  BodyFixedCoordinate        = (-102.66602127366, 564.1735338869,
+                                -1638.9152702624) <km>
+  LocalRadius                = 1736339.6417067 <meters>
+  SampleResolution           = 0.90089138842406 <meters/pixel>
+  LineResolution             = 0.45044569421203 <meters/pixel>
+  ObliqueDetectorResolution  = 0.45286630877444 <meters>
+  ObliquePixelResolution     = 0.67929946316166 <meters/pix>
+  ObliqueLineResolution      = 0.45286630877444 <meters>
+  ObliqueSampleResolution    = 0.90573261754888 <meters>
+
+  # Spacecraft Information
+  SpacecraftPosition         = (-106.61116382017, 578.43982537541,
+                                -1681.4325571123) <km>
+  SpacecraftAzimuth          = 0.14909796610546 <DEGREE>
+  SlantDistance              = 45.020116654946 <km>
+  TargetCenterDistance       = 1781.3405109492 <km>
+  SubSpacecraftLatitude      = -70.719637106144 <DEGREE>
+  SubSpacecraftLongitude     = 100.44288412195 <DEGREE>
+  SpacecraftAltitude         = 45.097307284604 <km>
+  OffNadirAngle              = 1.6541627829071 <DEGREE>
+  SubSpacecraftGroundAzimuth = 95.453208669515 <DEGREE>
+
+  # Sun Information
+  SunPosition                = (8846187.7108313, 147905045.55044,
+                                4023527.3574672) <km>
+  SubSolarAzimuth            = 111.19301928866 <DEGREE>
+  SolarDistance              = 0.99081263952406 <AU>
+  SubSolarLatitude           = 1.5554802057665 <DEGREE>
+  SubSolarLongitude          = 86.577221951553 <DEGREE>
+  SubSolarGroundAzimuth      = 345.61545363165 <DEGREE>
+
+  # Illumination and Other
+  Phase                      = 73.421499749402 <DEGREE>
+  Incidence                  = 72.838822327551 <DEGREE>
+  Emission                   = 1.6970462497705 <DEGREE>
+  NorthAzimuth               = 95.799117008195 <DEGREE>
+
+  # Time
+  EphemerisTime              = 383829083.48883 <seconds>
+  UTC                        = 2012-02-29T23:10:17.3034462
+  LocalSolarTime             = 12.915758339979 <hour>
+  SolarLongitude             = 84.08151663352 <DEGREE>
+
+  # Look Direction Unit Vectors in Body Fixed, J2000, and Camera Coordinate Systems.
+  LookDirectionBodyFixed     = (0.087630660238998, -0.31688703958407,
+                                0.94440641226631)
+  LookDirectionJ2000         = (-0.30449083947331, -0.38320832996956,
+                                0.87203021995731)
+  LookDirectionCamera        = (1.11022302462516e-16, -1.65089577966071e-04,
+                                0.99999998637272)
+End_Group

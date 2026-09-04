@@ -1,0 +1,47 @@
+{
+  "pair_id": "pair_006",
+  "method": "prior_guided_tiled_lightglue",
+  "representation": "gradient_magnitude",
+  "tile_size_px": 768,
+  "tile_stride_px": 512,
+  "search_margin_px": 128,
+  "prior_gate_px": 80.0,
+  "tiles_run": 14,
+  "raw_matches": 3117,
+  "mask_filtered_matches": 3067,
+  "prior_filtered_matches": 2867,
+  "distinct_candidates": 2770,
+  "ransac_inliers": 1253,
+  "ransac_inlier_ratio": 0.4523465703971119,
+  "ransac_reprojection_rmse_px": 1.833714101489498,
+  "median_residual_px": 1.659734061251793,
+  "mean_residual_px": 1.6785862325713345,
+  "coverage_cells": 10,
+  "valid_coverage_cells": 15,
+  "coverage_ratio": 0.6666666666666666,
+  "affine": [
+    [
+      1.0015629173936933,
+      0.007014912653532554,
+      688.594194019315
+    ],
+    [
+      3.325008929358186e-05,
+      1.0106304356098066,
+      -17.582924915161247
+    ]
+  ],
+  "affine_parameters": {
+    "scale_x": 1.001562917945615,
+    "scale_y": 1.0106547810110058,
+    "rotation_deg": 0.0019021169326166607,
+    "translation_x_px": 688.594194019315,
+    "translation_y_px": -17.582924915161247,
+    "translation_magnitude_px": 688.818643247758,
+    "determinant": 1.012209734249745,
+    "axis_dot": 0.0069741556629294875
+  },
+  "transform_sane": false,
+  "runtime_s": 1.846249499998521,
+  "note": "RANSAC reprojection RMSE is internal self-consistency only and is not independent real-pair ground-truth accuracy."
+}

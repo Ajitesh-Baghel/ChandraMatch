@@ -1,0 +1,45 @@
+{
+  "pair_id": "pair_005",
+  "stage": "coarse_registration",
+  "source": "SELENE/Kaguya TC",
+  "reference": "Chandrayaan-2 TMC-2",
+  "canonical_resolution_m": 10.0,
+  "affine_source_to_reference": [
+    [
+      1.00186985,
+      -0.000798945593,
+      423.414579
+    ],
+    [
+      -0.000295021855,
+      1.0023456,
+      -2.80028799
+    ]
+  ],
+  "coarse_translation": {
+    "tx_px": 423.414579,
+    "ty_px": -2.80028799,
+    "approx_tx_m": 4234.1457900000005,
+    "approx_ty_m": -28.002879900000003
+  },
+  "sift_global_evidence": {
+    "candidates": 2332,
+    "ransac_inliers": 2226,
+    "inlier_ratio": 0.954545,
+    "ransac_self_rmse_px": 0.921611,
+    "coverage": 0.8888888888888888
+  },
+  "independent_lightglue_evidence": {
+    "tx_px": 422.902,
+    "sift_lightglue_tx_difference_px": 0.5125790000000165
+  },
+  "registered_validity": {
+    "registered_source_pixels": 8205432,
+    "common_pixels": 7673557
+  },
+  "gradient_ncc": {
+    "before": -0.0031394653487950563,
+    "after": 0.7552130818367004
+  },
+  "metric_note": "SIFT RANSAC residual and gradient NCC are not independent absolute ground-truth registration accuracy."
+}

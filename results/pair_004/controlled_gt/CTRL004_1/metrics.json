@@ -1,0 +1,68 @@
+{
+  "control_id": "CTRL004_1",
+  "synthetic_forward_transform": {
+    "id": "CTRL004_1",
+    "translation_x_px": 3.35,
+    "translation_y_px": -2.6,
+    "rotation_deg": 0.18,
+    "scale": 1.0015
+  },
+  "raw_matches": 3887,
+  "filtered_matches": 3514,
+  "ransac_inliers": 3124,
+  "ransac_inlier_ratio": 0.8890153671030165,
+  "ransac_reprojection_rmse_px": 0.8630259582483362,
+  "matched_point_ground_truth_rmse_px": 6.370049268149668,
+  "matched_point_ground_truth_median_px": 4.406591233423859,
+  "ground_truth_registration_rmse_px": 6.470544126256864,
+  "ground_truth_registration_rmse_m": 32.35272063128432,
+  "ground_truth_registration_median_px": 4.3555615388011395,
+  "ground_truth_registration_mean_px": 5.387244819084888,
+  "ground_truth_registration_max_px": 12.74446378313951,
+  "gt_evaluation_points": 539,
+  "ground_truth_affine": [
+    [
+      0.9984973192230235,
+      -0.003136882162635609,
+      3.278917287079971
+    ],
+    [
+      0.003136882162635609,
+      0.9984973192230235,
+      -3.9486506652867717
+    ]
+  ],
+  "estimated_affine": [
+    [
+      1.000036498905341,
+      -0.0006728431126285727,
+      0.36831288617567043
+    ],
+    [
+      -0.0001792635382425644,
+      1.000868933785678,
+      -0.45402741746838504
+    ]
+  ],
+  "ground_truth_affine_parameters": {
+    "scale_x": 0.9985022466300548,
+    "scale_y": 0.9985022466300548,
+    "rotation_deg": 0.18,
+    "translation_x_px": 3.278917287079971,
+    "translation_y_px": -3.9486506652867717,
+    "translation_magnitude_px": 5.13255693119731,
+    "determinant": 0.9970067365252668,
+    "axis_dot": 0.0
+  },
+  "estimated_affine_parameters": {
+    "scale_x": 1.0000365149724624,
+    "scale_y": 1.0008691599480595,
+    "rotation_deg": -0.010270669183685254,
+    "translation_x_px": 0.36831288617567043,
+    "translation_y_px": -0.45402741746838504,
+    "translation_magnitude_px": 0.5846326008153014,
+    "determinant": 1.000905343789914,
+    "axis_dot": -0.0008515157535658446
+  },
+  "important_note": "ground_truth_registration_rmse_px is evaluated against the explicitly known synthetic affine transformation and is therefore an independent controlled ground-truth metric. ransac_reprojection_rmse_px is only internal self-consistency."
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": "CTRL_001",
+        "rotation_deg": 5.0,
+        "scale": 1.0,
+        "translation_x": 50,
+        "translation_y": -30
+    },
+    {
+        "id": "CTRL_002",
+        "rotation_deg": 10.0,
+        "scale": 1.10,
+        "translation_x": 80,
+        "translation_y": -50
+    },
+    {
+        "id": "CTRL_003",
+        "rotation_deg": 15.0,
+        "scale": 1.25,
+        "translation_x": 100,
+        "translation_y": -70
+    }
+]

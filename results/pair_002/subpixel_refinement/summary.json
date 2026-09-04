@@ -1,0 +1,45 @@
+{
+    "pair_id": "pair_002",
+    "method": "prior_guided_loftr_with_gated_phase_subpixel_refinement",
+    "input_correspondences": 221,
+    "phase_refinement_accepted": 167,
+    "phase_refinement_accept_ratio": 0.755656108597285,
+    "final_ransac_inliers": 192,
+    "ransac_reprojection_rmse_px": 0.8431116504329127,
+    "ransac_median_residual_px": 0.6227998814184273,
+    "ransac_mean_residual_px": 0.7187201377912099,
+    "coverage": {
+        "valid_cells": 43,
+        "occupied_valid_cells": 12,
+        "valid_region_coverage": 0.27906976744186046
+    },
+    "uniform_correspondences": 62,
+    "uniform_coverage": {
+        "valid_cells": 43,
+        "occupied_valid_cells": 12,
+        "valid_region_coverage": 0.27906976744186046
+    },
+    "affine_transform": [
+        [
+            1.000084950991246,
+            0.0008179430116039344,
+            0.08214250616805184
+        ],
+        [
+            -0.0005371211033577473,
+            1.0005869232778368,
+            0.28954941239368165
+        ]
+    ],
+    "affine_diagnostics": {
+        "translation_magnitude_px": 0.30097550321761196,
+        "rotation_deg": -0.030772155225725236,
+        "scale_x": 1.0000850952285223,
+        "scale_y": 1.0005872575969463
+    },
+    "settings": {
+        "patch_radius": 24,
+        "max_local_correction_px": 3.0,
+        "min_phase_response": 0.04
+    }
+}

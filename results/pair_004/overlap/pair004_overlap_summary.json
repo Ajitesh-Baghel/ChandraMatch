@@ -1,0 +1,60 @@
+{
+  "tmc_path": "E:\\SIH26166\\data\\raw\\tmc2\\2023_10_25\\data\\derived\\20231025\\ch2_tmc_ndn_20231025T1956513800_d_oth_d18.tif",
+  "nac_path": "E:\\SIH26166\\data\\processed\\pair_004\\lro_nac_isis\\M185196277LE_map_5m.cub",
+  "tmc_shape": [
+    35304,
+    177268
+  ],
+  "nac_shape": [
+    1824,
+    5039
+  ],
+  "tmc_resolution_m": [
+    5.0,
+    5.0
+  ],
+  "nac_resolution_m": [
+    5.0,
+    5.0
+  ],
+  "nac_bounds": {
+    "left": 568220.0,
+    "bottom": -110280.0,
+    "right": 593415.0,
+    "top": -101160.0
+  },
+  "intersection_bounds": {
+    "left": 568220.0,
+    "bottom": -110280.0,
+    "right": 593415.0,
+    "top": -101160.0
+  },
+  "nac_bbox_overlap_fraction": 1.0,
+  "analysis_grid_shape": [
+    1825,
+    5040
+  ],
+  "analysis_grid_pixels": 9198000,
+  "tmc_valid_pixels": 9198000,
+  "nac_valid_pixels": 2340471,
+  "common_valid_pixels": 2340471,
+  "tmc_valid_ratio": 1.0,
+  "nac_valid_ratio": 0.25445433789954336,
+  "common_valid_ratio": 0.25445433789954336,
+  "common_fraction_of_nac_valid": 1.0,
+  "connected_components": 1,
+  "largest_component_pixels": 2340471,
+  "largest_component_fraction_of_common": 1.0,
+  "largest_component_local_pixel_bounds": {
+    "row_min": 5,
+    "row_max": 1821,
+    "col_min": 1,
+    "col_max": 5037
+  },
+  "largest_component_projected_bounds": {
+    "left": 568224.0234375,
+    "bottom": -110265.349609375,
+    "right": 593409.0234375,
+    "top": -101180.349609375
+  }
+}

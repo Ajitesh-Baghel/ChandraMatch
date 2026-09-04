@@ -1,0 +1,30 @@
+{
+    "benchmark_id": "CTRL_001",
+    "matcher": "LoFTR",
+    "original_inlier_count": 9310,
+    "uniform_selected_count": 320,
+    "refined_count": 316,
+    "refined_ransac_inliers": 316,
+    "raw_selected_gt_rmse_px": 0.09701884537935257,
+    "raw_same_subset_gt_rmse_px": 0.09676554799079895,
+    "geometric_prediction_gt_rmse_px": 0.031121086329221725,
+    "refined_correspondence_gt_rmse_px": 0.1299390196800232,
+    "refined_registration_gt_rmse_px": 0.028132103383541107,
+    "refined_registration_median_px": 0.023918461054563522,
+    "spatial_coverage": 1.0,
+    "patch_size": 64,
+    "max_local_shift": 3.0,
+    "min_phase_response": 0.05,
+    "refined_transformation": [
+        [
+            0.9961695605191754,
+            -0.08713215578135895,
+            40.731663605666384
+        ],
+        [
+            0.08716374479510636,
+            0.9962151979246023,
+            -59.83931988189583
+        ]
+    ]
+}

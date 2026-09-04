@@ -1,0 +1,72 @@
+{
+    "pair_id": "pair_002",
+    "method": "prior_guided_cellwise_loftr_baseline_gradient_fusion",
+    "coarse_prior_source": "E:\\SIH26166\\results\\pair_002\\benchmarks\\loftr_gradient\\metrics.json",
+    "coarse_prior_transform": [
+        [
+            1.0016483165005663,
+            2.1303985088790114e-05,
+            -1.3917376708781992
+        ],
+        [
+            0.00010837397047411115,
+            0.9997429483645527,
+            0.08219109442616783
+        ]
+    ],
+    "patch_size": 288,
+    "prior_gate_px": 5.0,
+    "valid_grid_cells": 43,
+    "processed_cells": 43,
+    "cells_with_local_matches": 28,
+    "candidate_matches": 244,
+    "ransac_inliers": 221,
+    "inlier_ratio": 0.9057377049180327,
+    "ransac_reprojection_rmse_px": 1.2176980594252305,
+    "ransac_median_residual_px": 0.9396888068440665,
+    "ransac_mean_residual_px": 1.062615730463751,
+    "coverage": {
+        "valid_cells": 43,
+        "occupied_valid_cells": 16,
+        "valid_region_coverage": 0.37209302325581395,
+        "full_grid_coverage": 0.25
+    },
+    "uniform_correspondences": 80,
+    "uniform_coverage": {
+        "valid_cells": 43,
+        "occupied_valid_cells": 16,
+        "valid_region_coverage": 0.37209302325581395,
+        "full_grid_coverage": 0.25
+    },
+    "affine_transform": [
+        [
+            1.002242116636843,
+            0.0005611796564405681,
+            -1.4558476409053314
+        ],
+        [
+            0.0011204030686196322,
+            1.0003639905054895,
+            -0.78003286809901
+        ]
+    ],
+    "affine_diagnostics": {
+        "translation_x_px": -1.4558476409053314,
+        "translation_y_px": -0.78003286809901,
+        "translation_magnitude_px": 1.6516487607370964,
+        "rotation_deg": 0.06405073123424875,
+        "scale_x": 1.0022427428840457,
+        "scale_y": 1.0003641479094871,
+        "determinant": 1.0026062945040914,
+        "identity_deviation": 0.0025941861429491526
+    },
+    "geometric_sanity": {
+        "accepted": true,
+        "translation_ok": true,
+        "rotation_ok": true,
+        "scale_x_ok": true,
+        "scale_y_ok": true,
+        "determinant_ok": true
+    },
+    "runtime_sec": 3.0580321999987063
+}

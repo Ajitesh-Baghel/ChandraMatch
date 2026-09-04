@@ -1,0 +1,206 @@
+[
+  {
+    "control_id": "CTRL004_1",
+    "synthetic_forward_transform": {
+      "id": "CTRL004_1",
+      "translation_x_px": 3.35,
+      "translation_y_px": -2.6,
+      "rotation_deg": 0.18,
+      "scale": 1.0015
+    },
+    "raw_matches": 3887,
+    "filtered_matches": 3514,
+    "ransac_inliers": 3124,
+    "ransac_inlier_ratio": 0.8890153671030165,
+    "ransac_reprojection_rmse_px": 0.8630259582483362,
+    "matched_point_ground_truth_rmse_px": 6.370049268149668,
+    "matched_point_ground_truth_median_px": 4.406591233423859,
+    "ground_truth_registration_rmse_px": 6.470544126256864,
+    "ground_truth_registration_rmse_m": 32.35272063128432,
+    "ground_truth_registration_median_px": 4.3555615388011395,
+    "ground_truth_registration_mean_px": 5.387244819084888,
+    "ground_truth_registration_max_px": 12.74446378313951,
+    "gt_evaluation_points": 539,
+    "ground_truth_affine": [
+      [
+        0.9984973192230235,
+        -0.003136882162635609,
+        3.278917287079971
+      ],
+      [
+        0.003136882162635609,
+        0.9984973192230235,
+        -3.9486506652867717
+      ]
+    ],
+    "estimated_affine": [
+      [
+        1.000036498905341,
+        -0.0006728431126285727,
+        0.36831288617567043
+      ],
+      [
+        -0.0001792635382425644,
+        1.000868933785678,
+        -0.45402741746838504
+      ]
+    ],
+    "ground_truth_affine_parameters": {
+      "scale_x": 0.9985022466300548,
+      "scale_y": 0.9985022466300548,
+      "rotation_deg": 0.18,
+      "translation_x_px": 3.278917287079971,
+      "translation_y_px": -3.9486506652867717,
+      "translation_magnitude_px": 5.13255693119731,
+      "determinant": 0.9970067365252668,
+      "axis_dot": 0.0
+    },
+    "estimated_affine_parameters": {
+      "scale_x": 1.0000365149724624,
+      "scale_y": 1.0008691599480595,
+      "rotation_deg": -0.010270669183685254,
+      "translation_x_px": 0.36831288617567043,
+      "translation_y_px": -0.45402741746838504,
+      "translation_magnitude_px": 0.5846326008153014,
+      "determinant": 1.000905343789914,
+      "axis_dot": -0.0008515157535658446
+    },
+    "important_note": "ground_truth_registration_rmse_px is evaluated against the explicitly known synthetic affine transformation and is therefore an independent controlled ground-truth metric. ransac_reprojection_rmse_px is only internal self-consistency."
+  },
+  {
+    "control_id": "CTRL004_2",
+    "synthetic_forward_transform": {
+      "id": "CTRL004_2",
+      "translation_x_px": -8.7,
+      "translation_y_px": 5.45,
+      "rotation_deg": -0.42,
+      "scale": 0.9975
+    },
+    "raw_matches": 3566,
+    "filtered_matches": 3277,
+    "ransac_inliers": 1599,
+    "ransac_inlier_ratio": 0.48794629234055537,
+    "ransac_reprojection_rmse_px": 0.624805966066231,
+    "matched_point_ground_truth_rmse_px": 8.308250328169866,
+    "matched_point_ground_truth_median_px": 6.961973364796858,
+    "ground_truth_registration_rmse_px": 15.26565643349922,
+    "ground_truth_registration_rmse_m": 76.3282821674961,
+    "ground_truth_registration_median_px": 10.62795649848777,
+    "ground_truth_registration_mean_px": 13.150241453907348,
+    "ground_truth_registration_max_px": 29.386841690252364,
+    "gt_evaluation_points": 536,
+    "ground_truth_affine": [
+      [
+        1.0024793311918623,
+        0.007348688931790055,
+        -4.234045664483926
+      ],
+      [
+        -0.007348688931790055,
+        1.0024793311918623,
+        10.725320059334086
+      ]
+    ],
+    "estimated_affine": [
+      [
+        1.000033752908381,
+        1.6159818896336062e-05,
+        -0.019063525858582914
+      ],
+      [
+        -9.858083612599698e-05,
+        1.0004020515017809,
+        -0.0777325971247637
+      ]
+    ],
+    "ground_truth_affine_parameters": {
+      "scale_x": 1.0025062656641601,
+      "scale_y": 1.0025062656641601,
+      "rotation_deg": -0.42000000000000004,
+      "translation_x_px": -4.234045664483926,
+      "translation_y_px": 10.725320059334086,
+      "translation_magnitude_px": 11.530812333226539,
+      "determinant": 1.0050188126958999,
+      "axis_dot": 0.0
+    },
+    "estimated_affine_parameters": {
+      "scale_x": 1.0000337577673075,
+      "scale_y": 1.0004020516322982,
+      "rotation_deg": -0.005648075193630163,
+      "translation_x_px": -0.019063525858582914,
+      "translation_y_px": -0.0777325971247637,
+      "translation_magnitude_px": 0.08003608357435839,
+      "determinant": 1.0004358195736176,
+      "axis_dot": -8.242418400914835e-05
+    },
+    "important_note": "ground_truth_registration_rmse_px is evaluated against the explicitly known synthetic affine transformation and is therefore an independent controlled ground-truth metric. ransac_reprojection_rmse_px is only internal self-consistency."
+  },
+  {
+    "control_id": "CTRL004_3",
+    "synthetic_forward_transform": {
+      "id": "CTRL004_3",
+      "translation_x_px": 14.25,
+      "translation_y_px": -10.8,
+      "rotation_deg": 0.75,
+      "scale": 1.0045
+    },
+    "raw_matches": 3604,
+    "filtered_matches": 3332,
+    "ransac_inliers": 1190,
+    "ransac_inlier_ratio": 0.35714285714285715,
+    "ransac_reprojection_rmse_px": 1.1140752778778218,
+    "matched_point_ground_truth_rmse_px": 8.845649230504456,
+    "matched_point_ground_truth_median_px": 7.634080797508917,
+    "ground_truth_registration_rmse_px": 26.997842424642066,
+    "ground_truth_registration_rmse_m": 134.98921212321034,
+    "ground_truth_registration_median_px": 17.731519818129524,
+    "ground_truth_registration_mean_px": 22.21954224033191,
+    "ground_truth_registration_max_px": 53.00446439593575,
+    "gt_evaluation_points": 542,
+    "ground_truth_affine": [
+      [
+        0.9954348706560551,
+        -0.013030956268137826,
+        9.001422744978317
+      ],
+      [
+        0.013030956268137826,
+        0.9954348706560551,
+        -18.101804962604433
+      ]
+    ],
+    "estimated_affine": [
+      [
+        1.0001094640837207,
+        -0.00036063241691869683,
+        -24.79510203659126
+      ],
+      [
+        -0.00022146483489736215,
+        1.0005903620636918,
+        24.94876821315925
+      ]
+    ],
+    "ground_truth_affine_parameters": {
+      "scale_x": 0.9955201592832258,
+      "scale_y": 0.9955201592832258,
+      "rotation_deg": 0.7500000000000001,
+      "translation_x_px": 9.001422744978317,
+      "translation_y_px": -18.101804962604433,
+      "translation_magnitude_px": 20.216353636053746,
+      "determinant": 0.9910603875392991,
+      "axis_dot": 0.0
+    },
+    "estimated_affine_parameters": {
+      "scale_x": 1.0001094886043729,
+      "scale_y": 1.0005904270531925,
+      "rotation_deg": -0.012687611305028663,
+      "translation_x_px": -24.79510203659126,
+      "translation_y_px": 24.94876821315925,
+      "translation_magnitude_px": 35.174395806593715,
+      "determinant": 1.0006998109034562,
+      "axis_dot": -0.0005818601818839166
+    },
+    "important_note": "ground_truth_registration_rmse_px is evaluated against the explicitly known synthetic affine transformation and is therefore an independent controlled ground-truth metric. ransac_reprojection_rmse_px is only internal self-consistency."
+  }
+]

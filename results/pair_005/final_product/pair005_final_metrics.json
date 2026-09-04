@@ -1,0 +1,79 @@
+{
+  "pair_id": "pair_005",
+  "source": "SELENE/Kaguya TC",
+  "reference": "Chandrayaan-2 TMC-2",
+  "canonical_resolution_m": 10.0,
+  "final_method": "coarse SIFT intensity affine + fine SIFT gradient affine",
+  "coarse_affine": [
+    [
+      1.00186985,
+      -0.000798945593,
+      423.414579
+    ],
+    [
+      -0.000295021855,
+      1.0023456,
+      -2.80028799
+    ]
+  ],
+  "fine_affine_reproduced": [
+    [
+      0.9999373255787753,
+      0.00027713497308204794,
+      -0.27564923576993255
+    ],
+    [
+      3.944148360702361e-05,
+      0.9999184092518447,
+      0.014421268944071515
+    ]
+  ],
+  "final_composed_affine": [
+    [
+      1.001806976626135,
+      -0.0005211104986724595,
+      423.1116164428164
+    ],
+    [
+      -0.0002554825506809822,
+      1.0022637863609862,
+      -2.768938144287171
+    ]
+  ],
+  "final_transform": {
+    "tx_px": 423.1116164428164,
+    "ty_px": -2.768938144287171,
+    "translation_px": 423.1206766246479,
+    "approx_translation_m": 4231.206766246479,
+    "rotation_deg": -0.014611668632235878,
+    "scale_x": 1.0018070092029359,
+    "scale_y": 1.0022639218323746
+  },
+  "fine_correspondence_metrics": {
+    "candidates": 2038,
+    "ransac_inliers": 1855,
+    "inlier_ratio": 0.9102060843964671,
+    "ransac_reprojection_rmse_px": 1.1376270931306895,
+    "median_residual_px": 0.843517475492652,
+    "uniform_match_points": 192
+  },
+  "controlled_motion_validation": {
+    "sift_gradient": {
+      "all_tests_pass": true,
+      "mean_response_rmse_px": 0.25353194789979316,
+      "worst_response_rmse_px": 0.2649830031162702
+    },
+    "loftr_intensity_corroboration": {
+      "all_tests_pass": true,
+      "mean_response_rmse_px": 0.40380381149269545,
+      "worst_response_rmse_px": 0.4923566908485119
+    },
+    "lightglue_gradient": {
+      "all_tests_pass": false
+    }
+  },
+  "interpretation": {
+    "ransac_note": "RANSAC residual is internal correspondence consistency and not independent absolute ground-truth registration accuracy.",
+    "perturbation_note": "Known-motion response validates that the cross-sensor matcher follows injected terrain motion. It does not provide independent absolute ground truth for the unperturbed real pair."
+  }
+}

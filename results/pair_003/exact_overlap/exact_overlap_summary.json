@@ -1,0 +1,38 @@
+{
+  "pair_id": "pair_003",
+  "source_sensor": "IIRS",
+  "reference_sensor": "TMC-2",
+  "iirs_product": "ch2_iir_ndi_20240115T2100076733",
+  "tmc_product": "ch2_tmc_ndn_20231025T1956513800_d_oth_d18",
+  "iirs_shape": [
+    14695,
+    250
+  ],
+  "total_iirs_pixels": 3673750,
+  "inside_tmc_pixels": 929031,
+  "inside_tmc_ratio": 0.2528835658387207,
+  "valid_tmc_overlap_pixels": 655355,
+  "exact_overlap_ratio": 0.1783885675399796,
+  "valid_tmc_given_inside_ratio": 0.7054177955310426,
+  "overlap_line_range": [
+    10985,
+    14694
+  ],
+  "overlap_sample_range": [
+    29,
+    249
+  ],
+  "connected_components": 88,
+  "largest_component": {
+    "area_iirs_pixels": 263056,
+    "line_min": 13402,
+    "line_max": 14694,
+    "sample_min": 29,
+    "sample_max": 249,
+    "latitude_min": -71.94548797607422,
+    "latitude_max": -68.45436096191406,
+    "longitude_180_min": 99.34485626220703,
+    "longitude_180_max": 100.9773178100586
+  },
+  "definition": "Exact overlap is measured by projecting each native IIRS pixel center into the TMC-2 native 5 m raster and testing whether the corresponding TMC pixel contains a finite value > 0."
+}

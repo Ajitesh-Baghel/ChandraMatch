@@ -1,0 +1,236 @@
+[
+  {
+    "method": "sift",
+    "representation": "intensity",
+    "raw_candidates": 21,
+    "filtered_candidates": 21,
+    "runtime_s": 0.635870199999772,
+    "inliers": 4,
+    "inlier_ratio": 0.19047619047619047,
+    "ransac_reprojection_rmse_px": 0.7825843715312222,
+    "median_residual_px": 0.5818053263112265,
+    "mean_residual_px": 0.5817939023970705,
+    "coverage_cells": 3,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.1,
+    "uniform_inliers": 3,
+    "affine": [
+      [
+        0.19880279202417825,
+        2.987571230989627,
+        47.67875533742677
+      ],
+      [
+        -0.10124212321830864,
+        1.2541719844339303,
+        86.71198284221337
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.22309755182511498,
+      "scale_y": 3.2401433960205863,
+      "rotation_deg": -26.987881568031316,
+      "translation_x_px": 47.67875533742677,
+      "translation_y_px": 86.71198284221337,
+      "translation_magnitude_px": 98.95570564123379,
+      "determinant": 0.5518009468752955,
+      "axis_dot": 0.6459857529384488
+    },
+    "sanity": false
+  },
+  {
+    "method": "lightglue",
+    "representation": "intensity",
+    "raw_candidates": 86,
+    "filtered_candidates": 73,
+    "runtime_s": 0.7409582000109367,
+    "inliers": 16,
+    "inlier_ratio": 0.2191780821917808,
+    "ransac_reprojection_rmse_px": 1.742265637004906,
+    "median_residual_px": 1.32658618407693,
+    "mean_residual_px": 1.5443396642596605,
+    "coverage_cells": 7,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.23333333333333334,
+    "uniform_inliers": 7,
+    "affine": [
+      [
+        0.9993923886991832,
+        0.0027229481139056776,
+        -0.9251634681987063
+      ],
+      [
+        2.9846828892616222e-05,
+        1.003515839151375,
+        -1.4465878404902164
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.9993923891448706,
+      "scale_y": 1.003519533379455,
+      "rotation_deg": 0.0017111370330861618,
+      "translation_x_px": -0.9251634681987063,
+      "translation_y_px": -1.4465878404902164,
+      "translation_magnitude_px": 1.7171324419344032,
+      "determinant": 1.0029060103155916,
+      "axis_dot": 0.0027432630823291705
+    },
+    "sanity": true
+  },
+  {
+    "method": "loftr",
+    "representation": "intensity",
+    "raw_candidates": 661,
+    "filtered_candidates": 576,
+    "runtime_s": 2.1337654999952065,
+    "inliers": 317,
+    "inlier_ratio": 0.5503472222222222,
+    "ransac_reprojection_rmse_px": 0.9397802438216541,
+    "median_residual_px": 0.19001996396801973,
+    "mean_residual_px": 0.595969373452023,
+    "coverage_cells": 9,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.3,
+    "uniform_inliers": 9,
+    "affine": [
+      [
+        0.9995941038540648,
+        0.0007726793959128412,
+        903.5816518510254
+      ],
+      [
+        -0.00048778767950317736,
+        1.002674675749196,
+        -1.3049899844525568
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.9995942228707763,
+      "scale_y": 1.0026749734695708,
+      "rotation_deg": -0.02795952177771033,
+      "translation_x_px": 903.5816518510254,
+      "translation_y_px": -1.3049899844525568,
+      "translation_magnitude_px": 903.5825942107823,
+      "determinant": 1.002268070866172,
+      "axis_dot": 0.0002826323733777102
+    },
+    "sanity": false
+  },
+  {
+    "method": "sift",
+    "representation": "gradient",
+    "raw_candidates": 65,
+    "filtered_candidates": 65,
+    "runtime_s": 0.7978239999938523,
+    "inliers": 16,
+    "inlier_ratio": 0.24615384615384617,
+    "ransac_reprojection_rmse_px": 0.43702453568918814,
+    "median_residual_px": 0.09910959516921057,
+    "mean_residual_px": 0.2331987329127387,
+    "coverage_cells": 2,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.06666666666666667,
+    "uniform_inliers": 2,
+    "affine": [
+      [
+        -0.07554841858492091,
+        0.41246925801912193,
+        2172.6030683188937
+      ],
+      [
+        -0.13077291894668522,
+        0.7156285846414657,
+        467.9415517212059
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.1510268846282632,
+      "scale_y": 0.8259873848714595,
+      "rotation_deg": -120.01532303432889,
+      "translation_x_px": 2172.6030683188937,
+      "translation_y_px": 467.9415517212059,
+      "translation_magnitude_px": 2222.425114215532,
+      "determinant": -0.00012479901689392735,
+      "axis_dot": -0.9999994995772045
+    },
+    "sanity": false
+  },
+  {
+    "method": "lightglue",
+    "representation": "gradient",
+    "raw_candidates": 80,
+    "filtered_candidates": 54,
+    "runtime_s": 0.2525632999895606,
+    "inliers": 14,
+    "inlier_ratio": 0.25925925925925924,
+    "ransac_reprojection_rmse_px": 1.758167589142276,
+    "median_residual_px": 1.5894485944861858,
+    "mean_residual_px": 1.4863013978301167,
+    "coverage_cells": 5,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.16666666666666666,
+    "uniform_inliers": 5,
+    "affine": [
+      [
+        0.8781352302394729,
+        -0.015942931831237767,
+        313.5717960269382
+      ],
+      [
+        -0.01861528132416235,
+        0.9904905797403666,
+        56.20696624515342
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.878332517493523,
+      "scale_y": 0.9906188801096933,
+      "rotation_deg": -1.2144112814875552,
+      "translation_x_px": 313.5717960269382,
+      "translation_y_px": 56.20696624515342,
+      "translation_magnitude_px": 318.56944975631853,
+      "determinant": 0.8694878911291654,
+      "axis_dot": -0.03728143922463383
+    },
+    "sanity": false
+  },
+  {
+    "method": "loftr",
+    "representation": "gradient",
+    "raw_candidates": 493,
+    "filtered_candidates": 384,
+    "runtime_s": 1.2121522999950685,
+    "inliers": 49,
+    "inlier_ratio": 0.12760416666666666,
+    "ransac_reprojection_rmse_px": 0.8168693751779235,
+    "median_residual_px": 0.23422955541141982,
+    "mean_residual_px": 0.47865434596362466,
+    "coverage_cells": 9,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.3,
+    "uniform_inliers": 9,
+    "affine": [
+      [
+        1.0001624563358815,
+        -0.0004509820235661473,
+        0.14356467518216104
+      ],
+      [
+        0.00018034743347585834,
+        0.9984177204545661,
+        0.6192634924605742
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 1.0001624725958382,
+      "scale_y": 0.9984178223081145,
+      "rotation_deg": 0.010331468259712494,
+      "translation_x_px": 0.14356467518216104,
+      "translation_y_px": 0.6192634924605742,
+      "translation_magnitude_px": 0.6356870999592701,
+      "determinant": 0.9985800010725608,
+      "axis_dot": -0.00027137856232104483
+    },
+    "sanity": true
+  }
+]

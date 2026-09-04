@@ -1,0 +1,359 @@
+{
+    "product_root": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28",
+    "total_files": 12,
+    "file_types": {
+        ".png": 1,
+        ".xml": 3,
+        ".zip": 1,
+        ".img": 1,
+        ".csv": 1,
+        ".lbr": 1,
+        ".oat": 1,
+        ".oath": 1,
+        ".spm": 1,
+        ".txt": 1
+    },
+    "files": [
+        {
+            "relative_path": "browse\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_b_brw_d18.png",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\browse\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_b_brw_d18.png",
+            "extension": ".png",
+            "size_bytes": 5913851,
+            "size": "5.64 MB"
+        },
+        {
+            "relative_path": "browse\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_b_brw_d18.xml",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\browse\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_b_brw_d18.xml",
+            "extension": ".xml",
+            "size_bytes": 4770,
+            "size": "4.66 KB"
+        },
+        {
+            "relative_path": "ch2_ohr_ncp_20211228T2209123959_d_img_d18.zip",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.zip",
+            "extension": ".zip",
+            "size_bytes": 303543249,
+            "size": "289.48 MB"
+        },
+        {
+            "relative_path": "data\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.img",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\data\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.img",
+            "extension": ".img",
+            "size_bytes": 957552000,
+            "size": "913.19 MB"
+        },
+        {
+            "relative_path": "data\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.xml",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\data\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.xml",
+            "extension": ".xml",
+            "size_bytes": 8899,
+            "size": "8.69 KB"
+        },
+        {
+            "relative_path": "geometry\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_g_grd_d18.csv",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\geometry\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_g_grd_d18.csv",
+            "extension": ".csv",
+            "size_bytes": 3355951,
+            "size": "3.20 MB"
+        },
+        {
+            "relative_path": "geometry\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_g_grd_d18.xml",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\geometry\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_g_grd_d18.xml",
+            "extension": ".xml",
+            "size_bytes": 6206,
+            "size": "6.06 KB"
+        },
+        {
+            "relative_path": "miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.lbr",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.lbr",
+            "extension": ".lbr",
+            "size_bytes": 133644,
+            "size": "130.51 KB"
+        },
+        {
+            "relative_path": "miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.oat",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.oat",
+            "extension": ".oat",
+            "size_bytes": 325304,
+            "size": "317.68 KB"
+        },
+        {
+            "relative_path": "miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.oath",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.oath",
+            "extension": ".oath",
+            "size_bytes": 201,
+            "size": "201.00 B"
+        },
+        {
+            "relative_path": "miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.spm",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\miscellaneous\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.spm",
+            "extension": ".spm",
+            "size_bytes": 128982,
+            "size": "125.96 KB"
+        },
+        {
+            "relative_path": "miscellaneous\\readme.txt",
+            "absolute_path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\miscellaneous\\readme.txt",
+            "extension": ".txt",
+            "size_bytes": 11119,
+            "size": "10.86 KB"
+        }
+    ],
+    "xml": [
+        {
+            "path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\browse\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_b_brw_d18.xml",
+            "fields": [
+                {
+                    "tag": "product_class",
+                    "value": "Product_Observational"
+                },
+                {
+                    "tag": "file_name",
+                    "value": "ch2_ohr_ncp_20211228T2209123959_b_brw_d18.png"
+                },
+                {
+                    "tag": "offset",
+                    "value": "0"
+                },
+                {
+                    "tag": "axis_index_order",
+                    "value": "Last Index Fastest"
+                },
+                {
+                    "tag": "data_type",
+                    "value": "UnsignedByte"
+                },
+                {
+                    "tag": "axis_name",
+                    "value": "Line"
+                },
+                {
+                    "tag": "elements",
+                    "value": "3324"
+                },
+                {
+                    "tag": "axis_name",
+                    "value": "Sample"
+                },
+                {
+                    "tag": "elements",
+                    "value": "500"
+                }
+            ]
+        },
+        {
+            "path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\data\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.xml",
+            "fields": [
+                {
+                    "tag": "product_class",
+                    "value": "Product_Observational"
+                },
+                {
+                    "tag": "imaging_orbit_number",
+                    "value": "10445"
+                },
+                {
+                    "tag": "dumping_orbit_number",
+                    "value": "10447"
+                },
+                {
+                    "tag": "line_exposure_duration",
+                    "value": "205.320"
+                },
+                {
+                    "tag": "bits_selection",
+                    "value": "msb"
+                },
+                {
+                    "tag": "detector_pixel_width",
+                    "value": "5.2"
+                },
+                {
+                    "tag": "orbit_limb_direction",
+                    "value": "Ascending"
+                },
+                {
+                    "tag": "spacecraft_yaw_direction",
+                    "value": "True"
+                },
+                {
+                    "tag": "spacecraft_altitude",
+                    "value": "111.97"
+                },
+                {
+                    "tag": "pixel_resolution",
+                    "value": "0.28"
+                },
+                {
+                    "tag": "sun_azimuth",
+                    "value": "152.400416"
+                },
+                {
+                    "tag": "sun_elevation",
+                    "value": "-0.043949"
+                },
+                {
+                    "tag": "solar_incidence",
+                    "value": "90.043949"
+                },
+                {
+                    "tag": "upper_left_latitude",
+                    "value": "-89.923132"
+                },
+                {
+                    "tag": "upper_left_longitude",
+                    "value": "55.564452"
+                },
+                {
+                    "tag": "upper_right_latitude",
+                    "value": "-89.850542"
+                },
+                {
+                    "tag": "upper_right_longitude",
+                    "value": "110.416030"
+                },
+                {
+                    "tag": "lower_left_latitude",
+                    "value": "-89.257559"
+                },
+                {
+                    "tag": "lower_left_longitude",
+                    "value": "233.745958"
+                },
+                {
+                    "tag": "lower_right_latitude",
+                    "value": "-89.252796"
+                },
+                {
+                    "tag": "lower_right_longitude",
+                    "value": "224.351932"
+                },
+                {
+                    "tag": "upper_left_latitude",
+                    "value": "-89.923132"
+                },
+                {
+                    "tag": "upper_left_longitude",
+                    "value": "55.564452"
+                },
+                {
+                    "tag": "upper_right_latitude",
+                    "value": "-89.850542"
+                },
+                {
+                    "tag": "upper_right_longitude",
+                    "value": "110.416030"
+                },
+                {
+                    "tag": "lower_left_latitude",
+                    "value": "-89.257559"
+                },
+                {
+                    "tag": "lower_left_longitude",
+                    "value": "233.745958"
+                },
+                {
+                    "tag": "lower_right_latitude",
+                    "value": "-89.252796"
+                },
+                {
+                    "tag": "lower_right_longitude",
+                    "value": "224.351932"
+                },
+                {
+                    "tag": "file_name",
+                    "value": "ch2_ohr_ncp_20211228T2209123959_d_img_d18.img"
+                },
+                {
+                    "tag": "offset",
+                    "value": "0"
+                },
+                {
+                    "tag": "axis_index_order",
+                    "value": "Last Index Fastest"
+                },
+                {
+                    "tag": "data_type",
+                    "value": "UnsignedByte"
+                },
+                {
+                    "tag": "axis_name",
+                    "value": "Line"
+                },
+                {
+                    "tag": "elements",
+                    "value": "79796"
+                },
+                {
+                    "tag": "axis_name",
+                    "value": "Sample"
+                },
+                {
+                    "tag": "elements",
+                    "value": "12000"
+                }
+            ]
+        },
+        {
+            "path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\geometry\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_g_grd_d18.xml",
+            "fields": [
+                {
+                    "tag": "product_class",
+                    "value": "Product_Observational"
+                },
+                {
+                    "tag": "file_name",
+                    "value": "ch2_ohr_ncp_20211228T2209123959_g_grd_d18.csv"
+                },
+                {
+                    "tag": "offset",
+                    "value": "0"
+                },
+                {
+                    "tag": "offset",
+                    "value": "30"
+                },
+                {
+                    "tag": "data_type",
+                    "value": "ASCII_Real"
+                },
+                {
+                    "tag": "data_type",
+                    "value": "ASCII_Real"
+                },
+                {
+                    "tag": "data_type",
+                    "value": "ASCII_Integer"
+                },
+                {
+                    "tag": "data_type",
+                    "value": "ASCII_Integer"
+                }
+            ]
+        }
+    ],
+    "browse_images": [
+        {
+            "path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\browse\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_b_brw_d18.png",
+            "readable_by_opencv": true,
+            "shape": [
+                7980,
+                1200
+            ],
+            "dtype": "uint8"
+        }
+    ],
+    "binary_candidates": [
+        {
+            "path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\data\\calibrated\\20211228\\ch2_ohr_ncp_20211228T2209123959_d_img_d18.img",
+            "size_bytes": 957552000,
+            "size": "913.19 MB"
+        }
+    ],
+    "readme": [
+        {
+            "path": "E:\\SIH26166\\data\\raw\\ohrc\\2021_12_28\\miscellaneous\\readme.txt",
+            "preview": "miscellaneous collection contents\n=======================================================================================       \n                                                                              \nThe directory Structure and contents for miscellaneous directory is                  \nsame as that of data directory.                  \n                                                                              \nThe miscellaneous directory contains follwings files which are describe              \nas follows                                                                    \n                                                                              \n-------------------------------------------------------------------------------------                                                                             \n1. Orbit and Attitude Header File                                             \n-------------------------------------------------------------------------------------      \nOrbit and Attitude Header File from URSC Level-0 Directory File   \nch2_<inst>_<mtc>_<YYYYMMDDTHHMMSSssss>_<p>_<prd>_<stn>.oath                  \nThe OATH File has 201 bytes ASCII Text File\nfile format is as follows\n\nSr. No. \t     Description\t                        Format\t       Bytes\n=======================================================================================\n1\t    Record type (\"ORBTATTD-HDR\")\t                 A12\t         12\n2\t    Project name (\"CHANDRAYAAN-2 MISSION\")\t         A21\t         21\n3\t    Block length in bytes for Header \t                 I6\t          6\n4\t    Station Identification (\"BLR$/JPL$...\")\t         A4\t          4\n5\t    Start UTC time for First OAT  block(Note-5)\t         7I4\t         28\n6\t    End  UTC time for Last OAT  block(Note-5)\t         7I4\t         28\n7\t    Number of OAT records\t                         I6\t          6\n8\t    Record length of OAT data (not including header)\t I6\t          6\n9\t    Source for attitude values - Note-1\t                 I1\t          1\n10\t    Mission Phase (Earth/Lunar - Centered) - Note-2\t I1\t          1\n11\t    Spare\t\t                                                 88\n=======================================================================================\n                                               Total\t                        201\n\nNote-1: \n1 - Attitude from SS1\n2 - Attitude from SS2\n3 - Attitude from ECI QS\n\nNote-2:\n1-Earth Centered (Earth Bound Phase)\n3-Moon Centered (Lunar Phase)\n\nNote-5:\n\nUTC in OAT file is mentioned with Millisecond \tresolution as \tfollowing:\n\nYYYYDDDDMMMMHHHHMMMMSSSSMMMM\n\nSpace filling is used if value is less than 4 digits. \n\nExp: 2013  10  22   1  22   4 402\n\nYear-2013\nMonth-10\nDate-22\nHour-1\nMinute-22\nSec-4\nMillisec-402  \n \n-------------------------------------------------------------------------------------                                                                             \n2. Orbit and Attitude Data File Format\n-------------------------------------------------------------------------------------\nOrbit and Attitude File is provided by URSC Level-0 Team.\nch2_<inst>_<mtc>_<YYYYMMDDTHHMMSSssss>_<p>_<prd>_<stn>.oat \nThis file is generated in ASCII format. OAT is provided \nat every 512 millisecond interval for payload duration.\nThe OAT File has 628 bytes ASCII Text File.\nfile format is as follows\n\nSr. No.\t       Description\t                                              Format  Bytes\n================================================================================================\n1\tRecord type (\"ORBTATTD\")\t                                       A8\t8\n2\tPhysical record number in this file\t                               I6\t6\n3\tBlock length in bytes\t                                               I4\t4\n4\tTime in UTC\t                                                       7I4\t28\n5\tLunar Position X (kms) - J2000 Earth Centre Frame \t               F20.6\t20\n6\tLunar Position Y (kms) - J2000 Earth Centre Frame\t               F20.6\t20\n7\tLunar Position Z (kms) - J2000 Earth Centre Frame\t               F20.6\t20\n8\tSatellite position X (kms) - Note-3\t                               F20.6\t20\n9\tSatellite position Y (kms) - Note-3\t                               F20.6\t20\n10\tSatellite position Z (kms) - Note-3\t                               F20.6\t20\n11\tSatellite velocity X-dot (kms/sec) - Note-3\t                       F12.6\t12\n12\tSatellite velocity Y-dot (kms/sec) - Note-3\t                       F12.6\t12\n13\tSatellite velocity Z-dot (kms/sec)  - Note-3\t                       F12.6\t12\n14\tS/C Attitude - Inertial to Body Q1, Q2, Q3 and Q4\t               4F14.10\t56\n15\tTransformation Quaternion for Earth Fixed IAU frame Q1,Q2,Q3,Q4\t       4F14.10\t56\n16\tTransformation Quaternion for Lunar Fixed IAU frame Q1,Q2,Q3,Q4\t       4F14.10\t56\n17\tLatitude of sub-satellite point (deg) \t                               F14.8\t14\n18\tLongitude of sub-satellite point (deg\t                               F14.8\t14\n19\tSolar Azimuth                \t                                       F14.8\t14\n20\tSolar Elevation          \t                                       F14.8\t14\n21\tLatitude  (deg)\t                               \t\t\t       F14.8\t14\n22\tLongitude (deg)\t                                                       F14.8\t14\n23\tSatellite altitude (kms) \t                                       F12.3\t12\n24\tAngle between +Roll and Velocity Vector\t                               F12.3\t12\n25\tEclipse Status - Note-4\t                                               I1\t1\n26\tEmission Angle\t                                                       F9.3\t9\n27\tSun Angle w.r.t -ve Yaw (Phase angle) \t                               F9.3\t9\n28\tAngle between +Yaw and Nadir\t                                       F9.3\t9\n29\tSlant Range (Km) \t                                               F10.3\t10\n30\tOrbit No \t                                                       I5\t5\n31\tSolar Zenith Angle\t                                               F9.3\t9\n32\tAngle between Payload FoV axis and velocity vector\t               F9.3\t9\n33\tX  (yaw) angle\t                                                       F16.8\t16\n34\tY  (roll) angle\t                                                       F16.8\t16\n35\tZ(pitch) angle \t                                                       F16.8\t16\n36\tSpare\t\t                                                                41\n===============================================================================================\n                                                    Total\t                       628\n\nNote-3: EME J2000 frame of reference, refer Sl. No. 10 of Header for center (Earth/Moon) \n\nNote-4: Eclipse Status \n\t\t0 - No Eclipse\n\t\t1 - Umbra\n\t\t2 - Penumbra\n\n------------------------------------------------------------------------------------------------\n3. Liberation angle Data File Format                                               \n------------------------------------------------------------------------------------------------      \nLiberation angle Data File with lbr extension from URSC Level-0 team. \nch2_<inst>_<mtc>_<YYYYMMDDTHHMMSSssss>_<p>_<prd>_<stn>.lbr\nThe LBR File has 258 bytes ASCII Text File. \nfile format is as follows\n\nSr. No.\tDescription\t                                                      Format\tBytes\n================================================================================================\n1\tRecord type (\"ORBTATTD\")\t                                        A8\t8\n2\tPhysical record number in this file\t                                I6\t6\n3\tBlock length in bytes\t                                                I4\t4\n4\tTime in UTC\t                                                        7I4\t28\n5\tSatellite position X (kms) - Note-3\t                                F20.6\t20\n6\tSatellite position Y (kms) - Note-3\t                                F20.6\t20\n7\tSatellite position Z (kms) - Note-3\t                                F20.6\t20\n8\tSatellite velocity X-dot (kms/sec) - Note-3\t                        F12.6\t12\n9\tSatellite velocity Y-dot (kms/sec) - Note-3\t                        F12.6\t12\n10\tSatellite velocity Z-dot (kms/sec)  - Note-3\t                        F12.6\t12\n11\tLiberation angle - Phi \t                                                F16.8\t16\n12\tLiberation angle - Psi\t                                                F16.8\t16\n13\tLiberation angle - Theta\t                                        F16.8\t16\n14\tLiberation angle - Phi Rate\t                                        F12.6\t12\n15\tLiberation angle - Psi Rate\t                                        F12.6\t12\n16\tLiberation angle - Theta Rate\t                                        F12.6\t12\n17\tSpare\t\t                                                                32\n===============================================================================================\n                                                          Total\t                       258\n\nNote-3: J2000 frame of reference with moon as center \n                                  \n\n4. Sun Angle File Format                                                    \n------------------------------------------------------------------------      \nLiberation angle Data File with lbr extension from URSC Level-0 team. \nch2_<inst>_<mtc>_<YYYYMMDDTHHMMSSssss>_<p>_<prd>_<stn>.spm\nThe LBR File has 249 bytes ASCII Text File.\nfile format is as follows\n\nSr. No.\tDescription\t                                                   Format     Bytes\n================================================================================================\n1\tRecord type (\"ORBTATTD\")\t                                     A8\t        8\n2\tPhysical record number in this file\t                             I6\t        6\n3\tBlock length in bytes\t                                             I4\t        4\n4\tTime in UTC\t                                                     7I4\t28\n5\tSatellite position X (kms) - Note-3\t                             F20.6\t20\n6\tSatellite position Y (kms) - Note-3\t                             F20.6\t20\n7\tSatellite position Z (kms) - Note-3\t                             F20.6\t20\n8\tSatellite velocity X-dot (kms/sec) - Note-3\t                     F12.6\t12\n9\tSatellite velocity Y-dot (kms/sec) - Note-3\t                     F12.6\t12\n10\tSatellite velocity Z-dot (kms/sec)  - Note-3\t                     F12.6\t12\n11\tPhase angle \t                                                     F9.3\t9\n12\tSun aspect\t                                                     F9.3\t9\n13\tSun Azimuth\t                                                     F9.3\t9\n14\tSun Elevation\t                                                     F9.3\t9\n15\tOrbit Limb Direction - Note 5\t                                     I1\t        1\n17\tSpare\t\t                                                                70\n=================================================================================================\n                                                              Total\t                249\n\nSolar Incidence Angles can be computed by following steps:\n\ni. Read and extracting the Sun Elevation from sun parameter file \nii. Solar Incidence Angle = 90 - Sun Elevation Angle\n"
+        }
+    ]
+}

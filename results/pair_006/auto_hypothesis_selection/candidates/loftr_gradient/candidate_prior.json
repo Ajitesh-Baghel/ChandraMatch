@@ -1,0 +1,21 @@
+[
+  {
+    "method": "lightglue",
+    "representation": "gradient",
+    "affine": [
+      [
+        1.0010833223277797,
+        0.010011136471209258,
+        688.5659070680368
+      ],
+      [
+        -0.0008071973470983689,
+        1.0032665886083283,
+        -9.992446965700456
+      ]
+    ],
+    "diagnostic_source_method": "loftr",
+    "diagnostic_source_representation": "gradient",
+    "candidate_id": "loftr_gradient"
+  }
+]

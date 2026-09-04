@@ -1,0 +1,45 @@
+{
+  "pair": "pair_005",
+  "source": "SELENE/Kaguya TC",
+  "reference": "Chandrayaan-2 TMC-2",
+  "kaguya_product": "DTMTCO_03_01597S711E1002PS_IMG",
+  "kaguya_observation_time": "2008-02-17T03:51:38.114635",
+  "tmc_observation_date": "2023-10-25",
+  "common_grid_resolution_m": 10.0,
+  "kaguya_shape": [
+    4286,
+    5063
+  ],
+  "kaguya_bounds": {
+    "left": 543626.84664,
+    "bottom": -124399.41464,
+    "right": 594256.84664,
+    "top": -81539.41464
+  },
+  "kaguya_valid_pixels": 16830205,
+  "kaguya_valid_ratio": 0.7755848405287037,
+  "tmc_spatial_coverage_pixels": 21700018,
+  "common_valid_pixels": 16830205,
+  "common_fraction_full_kaguya": 0.7755848405287037,
+  "common_fraction_kaguya_valid": 1.0,
+  "largest_component": {
+    "label": 1,
+    "x": 1,
+    "y": 0,
+    "width": 5062,
+    "height": 4285,
+    "area": 16830205,
+    "projected_bounds": {
+      "left": 543636.84664,
+      "bottom": -124389.41464,
+      "right": 594256.84664,
+      "top": -81539.41464
+    }
+  },
+  "number_of_components": 1,
+  "mask_policy": {
+    "kaguya": "GDAL/PDS nodata mask; TC DN=0 excluded",
+    "tmc": "spatial coverage only; TMC DN=0 retained as potential lunar shadow",
+    "dqa": "not used until flag semantics are decoded"
+  }
+}

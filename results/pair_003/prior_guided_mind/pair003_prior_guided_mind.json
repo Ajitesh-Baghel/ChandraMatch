@@ -1,0 +1,244 @@
+{
+  "pair_id": "pair_003",
+  "method": "global_lightglue_gradient_prior_plus_local_MIND",
+  "global_prior": {
+    "matrix": [
+      [
+        0.988431006842933,
+        0.016114103025112056,
+        -2.6694353411286915
+      ],
+      [
+        0.005349501750205013,
+        0.9887161107392464,
+        0.33187620903179366
+      ]
+    ],
+    "inliers": 20,
+    "coverage": 0.3170731707317073,
+    "rmse_px": 1.5963319540023804
+  },
+  "mind": {
+    "descriptor_channels": 8,
+    "neighbour_shift_px": 3,
+    "patch_size": 5
+  },
+  "matching": {
+    "grid_rows": 6,
+    "grid_cols": 12,
+    "anchors_per_cell": 4,
+    "selected_anchors": 118,
+    "template_radius": 14,
+    "search_radius": 8,
+    "minimum_distinctness_ratio": 1.015,
+    "forward_distinct_matches": 63,
+    "mutual_matches": 43,
+    "cell_summary": [
+      {
+        "row": 0,
+        "col": 0,
+        "anchors": 4
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "anchors": 4
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "anchors": 4
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "anchors": 4
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "anchors": 4
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "anchors": 4
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "anchors": 4
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "anchors": 4
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "anchors": 4
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "anchors": 2
+      },
+      {
+        "row": 2,
+        "col": 7,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 8,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 4,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 5,
+        "anchors": 2
+      },
+      {
+        "row": 3,
+        "col": 6,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 7,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 8,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 9,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 10,
+        "anchors": 4
+      },
+      {
+        "row": 3,
+        "col": 11,
+        "anchors": 4
+      },
+      {
+        "row": 4,
+        "col": 5,
+        "anchors": 1
+      },
+      {
+        "row": 4,
+        "col": 6,
+        "anchors": 2
+      },
+      {
+        "row": 4,
+        "col": 7,
+        "anchors": 4
+      },
+      {
+        "row": 4,
+        "col": 8,
+        "anchors": 4
+      },
+      {
+        "row": 4,
+        "col": 9,
+        "anchors": 4
+      },
+      {
+        "row": 4,
+        "col": 10,
+        "anchors": 4
+      },
+      {
+        "row": 4,
+        "col": 11,
+        "anchors": 4
+      },
+      {
+        "row": 5,
+        "col": 9,
+        "anchors": 2
+      },
+      {
+        "row": 5,
+        "col": 10,
+        "anchors": 4
+      },
+      {
+        "row": 5,
+        "col": 11,
+        "anchors": 4
+      }
+    ]
+  },
+  "result": {
+    "candidate_matches": 43,
+    "inliers": 9,
+    "inlier_ratio": 0.20930232558139536,
+    "ransac_reprojection_rmse_px": 1.2220909595489502,
+    "ransac_reprojection_median_px": 1.2760646343231201,
+    "ransac_reprojection_mean_px": 1.1800605058670044,
+    "affine_matrix": [
+      [
+        0.975670993455178,
+        0.045710465009297846,
+        -3.2448242176767392
+      ],
+      [
+        0.008169503517419237,
+        0.9789599780139999,
+        6.486535819982135
+      ]
+    ],
+    "transform": {
+      "tx_px": -3.2448242176767392,
+      "ty_px": 6.486535819982135,
+      "translation_px": 7.252863651519499,
+      "rotation_deg": 0.4797386995878745,
+      "scale_x": 0.9757051953625825,
+      "scale_y": 0.9800265737032529,
+      "determinant": 0.9547694224971023,
+      "normalized_axis_dot": 0.05500424141703596
+    },
+    "transform_sanity": true,
+    "spatial": {
+      "grid_rows": 6,
+      "grid_cols": 12,
+      "valid_cells": 39,
+      "occupied_valid_cells": 8,
+      "coverage": 0.20512820512820512
+    },
+    "uniform_inliers": 9
+  },
+  "metric_note": "RANSAC reprojection RMSE measures internal correspondence self-consistency. It is not independent ground-truth registration accuracy."
+}

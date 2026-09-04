@@ -1,0 +1,43 @@
+{
+    "matcher": "LightGlue",
+    "raw_candidate_matches": 1594,
+    "candidate_matches": 1594,
+    "inlier_matches": 1420,
+    "inlier_ratio": 0.890840652446675,
+    "ground_truth_correspondence_rmse_px": 1.3829418420791626,
+    "ground_truth_correspondence_mean_px": 1.221641182899475,
+    "ground_truth_correspondence_median_px": 1.1428205966949463,
+    "ground_truth_correspondence_max_px": 3.991828680038452,
+    "ground_truth_registration_rmse_px": 0.11075609177350998,
+    "ground_truth_registration_mean_px": 0.10447153449058533,
+    "ground_truth_registration_median_px": 0.10663288831710815,
+    "ground_truth_registration_max_px": 0.1876848042011261,
+    "ground_truth_evaluated_points": 1021,
+    "spatial_coverage": 1.0,
+    "occupied_grid_cells": 64,
+    "runtime_seconds": 0.4730392000019492,
+    "estimated_transformation": [
+        [
+            0.7727482911760937,
+            -0.20716356457226995,
+            353.1243705228643
+        ],
+        [
+            0.2069883261488516,
+            0.7728046972327095,
+            54.12942603341651
+        ]
+    ],
+    "ground_truth_transformation": [
+        [
+            0.7727406610312546,
+            -0.2070552360820166,
+            352.9701922231136
+        ],
+        [
+            0.2070552360820166,
+            0.7727406610312546,
+            54.07532401999643
+        ]
+    ]
+}

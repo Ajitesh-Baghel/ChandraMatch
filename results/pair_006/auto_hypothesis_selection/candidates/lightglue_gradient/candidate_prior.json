@@ -1,0 +1,21 @@
+[
+  {
+    "method": "lightglue",
+    "representation": "gradient",
+    "affine": [
+      [
+        1.0,
+        -3.2856731820772915e-17,
+        3.376590725626827e-15
+      ],
+      [
+        -7.885896741700906e-18,
+        0.9999999999999999,
+        7.009460079732435e-14
+      ]
+    ],
+    "diagnostic_source_method": "lightglue",
+    "diagnostic_source_representation": "gradient",
+    "candidate_id": "lightglue_gradient"
+  }
+]

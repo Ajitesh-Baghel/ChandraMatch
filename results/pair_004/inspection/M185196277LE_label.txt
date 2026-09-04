@@ -1,0 +1,90 @@
+PDS_VERSION_ID                     = PDS3
+
+/*FILE CHARACTERISTICS*/
+RECORD_TYPE                        = FIXED_LENGTH
+RECORD_BYTES                       = 2532      
+FILE_RECORDS                       = 25602     
+LABEL_RECORDS                      = 2         
+^IMAGE                             = 3         
+
+/*DATA IDENTIFICATION*/
+DATA_SET_ID                        = "LRO-L-LROC-2-EDR-V1.0"
+ORIGINAL_PRODUCT_ID                = nacl0008e4de
+PRODUCT_ID                         = M185196277LE
+MISSION_NAME                       = "LUNAR RECONNAISSANCE ORBITER"
+MISSION_PHASE_NAME                 = "SCIENCE MISSION"
+INSTRUMENT_HOST_NAME               = "LUNAR RECONNAISSANCE ORBITER"
+INSTRUMENT_HOST_ID                 = LRO
+INSTRUMENT_NAME                    = "LUNAR RECONNAISSANCE ORBITER CAMERA"
+INSTRUMENT_ID                      = LROC
+LRO:PREROLL_TIME                   = 2012-02-29T23:10:09.179
+START_TIME                         = 2012-02-29T23:10:09.781
+STOP_TIME                          = 2012-02-29T23:10:24.826
+LRO:SPACECRAFT_CLOCK_PREROLL_COUNT = "1/352249809:10289"
+SPACECRAFT_CLOCK_START_COUNT       = "1/352249809:49728"
+SPACECRAFT_CLOCK_STOP_COUNT        = "1/352249824:52684"
+ORBIT_NUMBER                       = 12376
+PRODUCER_ID                        = LRO_LROC_TEAM
+PRODUCT_CREATION_TIME              = 2013-10-06T03:15:25
+PRODUCER_INSTITUTION_NAME          = "ARIZONA STATE UNIVERSITY"
+PRODUCT_TYPE                       = EDR
+PRODUCT_VERSION_ID                 = "v1.8"
+UPLOAD_ID                          = "SC_2012060_0000_A_V01.txt"
+
+/*DATA DESCRIPTION*/
+TARGET_NAME                        = "MOON"
+RATIONALE_DESC                     = "TARGET OF OPPORTUNITY"
+FRAME_ID                           = LEFT
+DATA_QUALITY_ID                    = "0"
+DATA_QUALITY_DESC                  = "The DATA_QUALITY_ID is set to an 8-bit
+   value that encodes the following data quality information for the 
+   observation. For each bit  a value of 0 means FALSE and a value of 1 means 
+   TRUE. More information about the data quality ID can be found in the LROC
+   EDR/CDR SIS, section 3.3 'Label and Header Descriptions'.
+       Bit 1: Temperature of focal plane array is out of bounds.
+       Bit 2: Threshold for saturated pixels is reached.
+       Bit 3: Threshold for under-saturated pixels is reached.
+       Bit 4: Observation is missing telemetry packets.
+       Bit 5: SPICE information is bad or missing.
+       Bit 6: Observation or housekeeping information is bad or missing.
+       Bit 7: Spare.
+       Bit 8: Spare."
+
+/*ENVIRONMENT*/
+LRO:TEMPERATURE_SCS                = 9.61 <degC>
+LRO:TEMPERATURE_FPA                = 22.89 <degC>
+LRO:TEMPERATURE_FPGA               = -6.53 <degC>
+LRO:TEMPERATURE_TELESCOPE          = 9.36 <degC>
+LRO:TEMPERATURE_SCS_RAW            = 2502
+LRO:TEMPERATURE_FPA_RAW            = 1876
+LRO:TEMPERATURE_FPGA_RAW           = 3212
+LRO:TEMPERATURE_TELESCOPE_RAW      = 2514
+
+/*IMAGING PARAMETERS*/
+CROSSTRACK_SUMMING                 = 2
+BANDWIDTH                          = 300 <nm>
+CENTER_FILTER_WAVELENGTH           = 600 <nm>
+LINE_EXPOSURE_DURATION             = 0.585067 <ms>
+LRO:LINE_EXPOSURE_CODE             = 29
+LRO:DAC_RESET_LEVEL                = 200
+LRO:CHANNEL_A_OFFSET               = 28
+LRO:CHANNEL_B_OFFSET               = 28
+LRO:COMPAND_CODE                   = 3
+LRO:LINE_CODE                      = 25
+LRO:BTERM                          = (0,16,69,103,128)
+LRO:MTERM                          = (0.5,0.25,0.125,0.0625,0.03125)
+LRO:XTERM                          = (0,64,424,536,800)
+LRO:COMPRESSION_FLAG               = 1
+LRO:MODE                           = 15
+
+/*DATA OBJECT*/
+OBJECT                             = IMAGE
+    LINES                          = 25600
+    LINE_SAMPLES                   = 2532
+    SAMPLE_BITS                    = 8
+    SAMPLE_TYPE                    = LSB_INTEGER
+    UNIT                           = "RAW_INSTRUMENT_COUNT"
+    MD5_CHECKSUM                   = "4c332377251718ce7c54d4e73a724854"
+END_OBJECT                         = IMAGE
+END
+

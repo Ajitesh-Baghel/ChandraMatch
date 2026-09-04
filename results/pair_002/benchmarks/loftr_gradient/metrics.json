@@ -1,0 +1,48 @@
+{
+    "pair_id": "pair_002",
+    "matcher": "loftr",
+    "preprocessing": "gradient",
+    "status": "success",
+    "raw_candidate_matches": 339,
+    "mask_valid_candidate_matches": 238,
+    "inliers": 22,
+    "inlier_ratio": 0.09243697478991597,
+    "ransac_reprojection_rmse_px": 0.4757128697083476,
+    "ransac_mean_residual_px": 0.30731010957614463,
+    "ransac_median_residual_px": 0.15059039037513772,
+    "ransac_max_residual_px": 1.3204172754388461,
+    "grid_rows": 8,
+    "grid_cols": 8,
+    "occupied_grid_cells": 5,
+    "valid_grid_cells": 43,
+    "full_grid_coverage": 0.078125,
+    "valid_region_coverage": 0.11627906976744186,
+    "uniform_correspondences": 14,
+    "uniform_full_grid_coverage": 0.078125,
+    "uniform_valid_region_coverage": 0.11627906976744186,
+    "matcher_runtime_sec": 0.3787746000016341,
+    "ransac_runtime_sec": 0.004141500001423992,
+    "total_runtime_sec": 0.3829161000030581,
+    "affine_transform": [
+        [
+            1.0016483165005663,
+            2.1303985088790114e-05,
+            -1.3917376708781992
+        ],
+        [
+            0.00010837397047411115,
+            0.9997429483645527,
+            0.08219109442616783
+        ]
+    ],
+    "affine_diagnostics": {
+        "translation_x_px": -1.3917376708781992,
+        "translation_y_px": 0.08219109442616783,
+        "translation_magnitude_px": 1.3941625158296453,
+        "approx_rotation_deg": 0.00619915292695336,
+        "approx_scale_x": 1.0016483223633612,
+        "approx_scale_y": 0.9997429485915409,
+        "linear_determinant": 1.0013908388538693,
+        "linear_identity_deviation": 0.0016718916252503443
+    }
+}

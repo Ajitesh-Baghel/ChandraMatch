@@ -1,0 +1,20 @@
+{
+    "ohrc_product": "ch2_ohr_ncp_20211228T2209123959",
+    "tmc_product": "ch2_tmc_ndn_20231025T1956513800_d_oth_d18",
+    "ohrc_geometry_points": 96679,
+    "exact_overlap_points": 15899,
+    "exact_overlap_ratio": 0.16445143205866838,
+    "exact_overlap_percent": 16.445143205866838,
+    "connected_components": 336,
+    "largest_component_points": 7665,
+    "largest_component": {
+        "scan_min": 28400,
+        "scan_max": 46000,
+        "pixel_min": 0,
+        "pixel_max": 9700,
+        "latitude_min": -89.7852686,
+        "latitude_max": -89.6045697,
+        "longitude_360_min": 215.080511,
+        "longitude_360_max": 233.594921
+    }
+}

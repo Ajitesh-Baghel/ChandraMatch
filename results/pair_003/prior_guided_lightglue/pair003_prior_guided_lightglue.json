@@ -1,0 +1,403 @@
+{
+  "pair_id": "pair_003",
+  "method": "prior_guided_local_lightglue",
+  "device": "cuda",
+  "grid": {
+    "rows": 6,
+    "cols": 12,
+    "valid_cells": 41
+  },
+  "patch_size": 320,
+  "prior_tolerance_px": 6.0,
+  "prior": {
+    "matrix": [
+      [
+        0.988431006842933,
+        0.016114103025112056,
+        -2.6694353411286915
+      ],
+      [
+        0.005349501750205013,
+        0.9887161107392464,
+        0.33187620903179366
+      ]
+    ],
+    "global_inliers": 20,
+    "global_coverage": 0.3170731707317073
+  },
+  "local_matching": {
+    "before_dedup": 16,
+    "after_dedup": 15,
+    "baseline_retained": 11,
+    "gradient_retained": 4
+  },
+  "ransac": {
+    "threshold_px": 2.5,
+    "inliers": 7,
+    "inlier_ratio": 0.4666666666666667,
+    "reprojection_rmse_px": 1.4915745258331299,
+    "reprojection_median_px": 1.2076358795166016,
+    "reprojection_mean_px": 1.3669921159744263
+  },
+  "affine_matrix": [
+    [
+      0.9748762130509796,
+      0.09134552849039909,
+      -8.11852309346762
+    ],
+    [
+      -0.0004527406538515628,
+      1.0150008325099698,
+      -2.4412431638685237
+    ]
+  ],
+  "transform": {
+    "tx_px": -8.11852309346762,
+    "ty_px": -2.4412431638685237,
+    "translation_px": 8.477622626910321,
+    "rotation_deg": -0.02660863652999145,
+    "scale_x": 0.974876318179244,
+    "scale_y": 1.0191028876277026,
+    "determinant": 0.9895415236752061,
+    "normalized_axis_dot": 0.08917072548004681
+  },
+  "transform_sanity": true,
+  "spatial": {
+    "valid_cells": 41,
+    "occupied_valid_cells": 6,
+    "coverage": 0.14634146341463414
+  },
+  "uniform_inliers": 7,
+  "runtime_seconds": 8.401670200000808,
+  "cell_summary": [
+    {
+      "row": 0,
+      "col": 0,
+      "baseline_raw": 84,
+      "baseline_prior_consistent": 2,
+      "gradient_raw": 47,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "baseline_raw": 60,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 46,
+      "gradient_prior_consistent": 2
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "baseline_raw": 114,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 70,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "baseline_raw": 84,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 47,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "baseline_raw": 76,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 29,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "baseline_raw": 126,
+      "baseline_prior_consistent": 1,
+      "gradient_raw": 83,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "baseline_raw": 86,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 46,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "baseline_raw": 135,
+      "baseline_prior_consistent": 1,
+      "gradient_raw": 162,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 5,
+      "baseline_raw": 120,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 161,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 1,
+      "col": 6,
+      "baseline_raw": 83,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 41,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "baseline_raw": 23,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 26,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "baseline_raw": 37,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 8,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "baseline_raw": 56,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 24,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "baseline_raw": 88,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 65,
+      "gradient_prior_consistent": 1
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "baseline_raw": 103,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 156,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 5,
+      "baseline_raw": 140,
+      "baseline_prior_consistent": 3,
+      "gradient_raw": 183,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 6,
+      "baseline_raw": 63,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 87,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 7,
+      "baseline_raw": 32,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 32,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 8,
+      "baseline_raw": 4,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 11,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 2,
+      "col": 9,
+      "baseline_raw": 2,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 3,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "baseline_raw": 6,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 2,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "baseline_raw": 9,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 14,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "baseline_raw": 56,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 29,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "baseline_raw": 61,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 131,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 5,
+      "baseline_raw": 82,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 83,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 6,
+      "baseline_raw": 68,
+      "baseline_prior_consistent": 3,
+      "gradient_raw": 45,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 7,
+      "baseline_raw": 42,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 17,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 8,
+      "baseline_raw": 8,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 34,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 9,
+      "baseline_raw": 14,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 17,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 10,
+      "baseline_raw": 2,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 9,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 3,
+      "col": 11,
+      "baseline_raw": 34,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 43,
+      "gradient_prior_consistent": 1
+    },
+    {
+      "row": 4,
+      "col": 5,
+      "baseline_raw": 6,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 33,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 4,
+      "col": 6,
+      "baseline_raw": 15,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 36,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 4,
+      "col": 7,
+      "baseline_raw": 9,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 43,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 4,
+      "col": 8,
+      "baseline_raw": 4,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 58,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 4,
+      "col": 9,
+      "baseline_raw": 15,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 26,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 4,
+      "col": 10,
+      "baseline_raw": 1,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 11,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 4,
+      "col": 11,
+      "baseline_raw": 24,
+      "baseline_prior_consistent": 2,
+      "gradient_raw": 42,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 5,
+      "col": 9,
+      "baseline_raw": 2,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 16,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 5,
+      "col": 10,
+      "baseline_raw": 2,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 9,
+      "gradient_prior_consistent": 0
+    },
+    {
+      "row": 5,
+      "col": 11,
+      "baseline_raw": 24,
+      "baseline_prior_consistent": 0,
+      "gradient_raw": 42,
+      "gradient_prior_consistent": 0
+    }
+  ],
+  "metric_note": "RANSAC reprojection RMSE is correspondence self-consistency, not independent ground-truth registration accuracy."
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "method": "lightglue",
+    "representation": "gradient",
+    "affine": [
+      [
+        1.004556533587864,
+        -0.01056612281127552,
+        817.7832076135851
+      ],
+      [
+        -0.0008592034046690109,
+        1.0038477774845886,
+        -2.0441670561135554
+      ]
+    ],
+    "diagnostic_source_method": "sift",
+    "diagnostic_source_representation": "gradient",
+    "candidate_id": "sift_gradient"
+  }
+]

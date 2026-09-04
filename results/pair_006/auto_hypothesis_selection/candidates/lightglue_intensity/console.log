@@ -1,0 +1,77 @@
+==============================================================================
+PAIR 004 — PRIOR-GUIDED TILED LIGHTGLUE GRADIENT
+==============================================================================
+
+Canonical shape: 1886 x 6735
+Science-valid pixels   : 1,375,025
+Nonzero matcher pixels : 1,375,025
+Eroded matcher pixels  : 1,297,438
+
+Global LightGlue-gradient affine:
+[[ 1.01778459e+00  9.69692115e-02  6.18633571e+02]
+ [ 1.11577037e-02  9.45180584e-01 -1.20843421e+00]]
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+
+Candidate tiles: 52
+Tile 01/52 src=(0,0) valid=77,381 raw=128 kept=0
+Tile 02/52 src=(512,0) valid=312,056 raw=405 kept=405
+Tile 03/52 src=(1024,0) valid=412,072 raw=532 kept=529
+Tile 04/52 src=(1536,0) valid=370,792 raw=394 kept=349
+Tile 05/52 src=(2048,0) valid=288,248 raw=293 kept=284
+Tile 06/52 src=(2560,0) valid=213,340 raw=127 kept=118
+Tile 07/52 src=(3072,0) valid=125,058 raw=2 kept=0
+Tile 14/52 src=(0,512) valid=18,617 raw=119 kept=0
+Tile 15/52 src=(512,512) valid=176,065 raw=206 kept=206
+Tile 16/52 src=(1024,512) valid=235,559 raw=241 kept=241
+Tile 17/52 src=(1536,512) valid=202,534 raw=157 kept=156
+Tile 18/52 src=(2048,512) valid=168,852 raw=216 kept=216
+Tile 19/52 src=(2560,512) valid=138,214 raw=124 kept=122
+Tile 20/52 src=(3072,512) valid=102,796 raw=5 kept=0
+
+
+==============================================================================
+TILED MATCH COLLECTION
+==============================================================================
+Tiles actually run        : 14
+Raw LightGlue matches     : 2949
+After matcher-mask filter : 2879
+After generous prior gate : 2626
+Before deduplication      : 2626
+Distinct correspondences  : 2612
+
+
+==============================================================================
+FINAL TILED LIGHTGLUE RESULT
+==============================================================================
+Distinct candidates       : 2612
+RANSAC inliers            : 1250
+Inlier ratio              : 0.478560
+RANSAC self RMSE px       : 1.814468
+Median residual px        : 1.661867
+Mean residual px          : 1.661196
+Spatial coverage          : 10/15 (0.6667)
+Runtime s                 : 1.779
+Transform sane            : False
+
+Affine:
+[[ 1.00175573e+00  2.30485387e-03  6.91235028e+02]
+ [ 6.51541064e-04  1.00217581e+00 -1.33550209e+01]]
+
+Translation px: 691.364029
+Rotation deg: 0.037265
+Scale X: 1.00175594
+Scale Y: 1.00217846
+Determinant: 1.00393386
+Axis dot: 0.00295024
+
+
+==============================================================================
+OUTPUTS
+==============================================================================
+E:\SIH26166\results\pair_006\auto_hypothesis_selection\candidates\lightglue_intensity\pair006_tiled_lightglue_metrics.json
+E:\SIH26166\results\pair_006\auto_hypothesis_selection\candidates\lightglue_intensity\pair006_tiled_lightglue_inliers.csv
+E:\SIH26166\results\pair_006\auto_hypothesis_selection\candidates\lightglue_intensity\pair006_tiled_lightglue_matches.png
+
+PAIR 004 TILED LIGHTGLUE COMPLETE.

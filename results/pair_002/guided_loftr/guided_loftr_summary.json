@@ -1,0 +1,59 @@
+{
+    "pair_id": "pair_002",
+    "method": "guided_tiled_loftr_gradient",
+    "patch_size": 320,
+    "stride": 160,
+    "processed_tiles": 25,
+    "matched_tiles": 21,
+    "candidate_matches": 228,
+    "ransac_inliers": 73,
+    "inlier_ratio": 0.3201754385964912,
+    "ransac_reprojection_rmse_px": 1.393587023423008,
+    "ransac_mean_residual_px": 1.225489861828683,
+    "ransac_median_residual_px": 1.0835590645933695,
+    "coverage": {
+        "valid_grid_cells": 43,
+        "occupied_valid_cells": 8,
+        "occupied_total_cells": 8,
+        "valid_region_coverage": 0.18604651162790697,
+        "full_grid_coverage": 0.125
+    },
+    "uniform_correspondences": 28,
+    "uniform_coverage": {
+        "valid_grid_cells": 43,
+        "occupied_valid_cells": 8,
+        "occupied_total_cells": 8,
+        "valid_region_coverage": 0.18604651162790697,
+        "full_grid_coverage": 0.125
+    },
+    "affine_transform": [
+        [
+            0.9710638324923686,
+            0.0031020168986297895,
+            26.05377542336854
+        ],
+        [
+            0.03138631464025598,
+            1.0080588130812476,
+            -28.22765539393389
+        ]
+    ],
+    "affine_diagnostics": {
+        "translation_x_px": 26.05377542336854,
+        "translation_y_px": -28.22765539393389,
+        "translation_magnitude_px": 38.41353593266321,
+        "rotation_deg": 1.851245485248254,
+        "scale_x": 0.9715709276843684,
+        "scale_y": 1.008063585861335,
+        "determinant": 0.9787920935299848
+    },
+    "geometric_sanity": {
+        "accepted": false,
+        "translation_ok": false,
+        "rotation_ok": true,
+        "scale_x_ok": true,
+        "scale_y_ok": true,
+        "determinant_ok": true
+    },
+    "matcher_runtime_sec": 1.3276982999996108
+}

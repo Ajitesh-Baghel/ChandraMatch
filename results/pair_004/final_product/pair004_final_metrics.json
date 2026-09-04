@@ -1,0 +1,122 @@
+{
+  "pair_id": "pair_004",
+  "pair_type": "cross_mission_cross_sensor",
+  "source": {
+    "mission": "LRO",
+    "instrument": "LROC NAC LEFT",
+    "product": "M185196277LE",
+    "observation_date": "2012-02-29"
+  },
+  "reference": {
+    "mission": "Chandrayaan-2",
+    "instrument": "TMC-2",
+    "product": "ch2_tmc_ndn_20231025T1956513800_d_oth_d18",
+    "observation_date": "2023-10-25"
+  },
+  "canonical": {
+    "width": 5037,
+    "height": 1817,
+    "pixel_resolution_m": 5.0,
+    "science_valid_pixels": 2340471,
+    "matcher_valid_pixels": 1905824
+  },
+  "final_method": {
+    "representation": "gradient_magnitude",
+    "feature_extractor": "SuperPoint",
+    "matcher": "LightGlue",
+    "strategy": "native_resolution_overlapping_tiles",
+    "geometric_estimator": "affine_RANSAC"
+  },
+  "real_pair_result": {
+    "distinct_candidates": 5228,
+    "ransac_inliers": 3011,
+    "ransac_inlier_ratio": 0.5759372609028309,
+    "ransac_reprojection_rmse_px": 1.4498031016698967,
+    "ransac_reprojection_rmse_nominal_m": 7.249015508349483,
+    "median_residual_px": 1.0932352857163568,
+    "mean_residual_px": 1.2343310861660015,
+    "coverage_cells": 24,
+    "valid_coverage_cells": 30,
+    "coverage_ratio": 0.8,
+    "affine": [
+      [
+        0.9989274237445811,
+        0.003092838119100726,
+        0.36118083754869756
+      ],
+      [
+        0.000325914325476651,
+        0.9991202885802453,
+        -0.2168874481837662
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.9989274769116793,
+      "scale_y": 0.9991250756038023,
+      "rotation_deg": 0.018693564943964774,
+      "translation_x_px": 0.36118083754869756,
+      "translation_y_px": -0.2168874481837662,
+      "translation_magnitude_px": 0.4212977125407216,
+      "determinant": 0.9980476478821574,
+      "axis_dot": 0.003421809011701774
+    },
+    "transform_sane": true
+  },
+  "uniform_match_product": {
+    "all_ransac_inliers": 3011,
+    "uniform_matches": 120,
+    "max_matches_per_grid_cell": 5,
+    "occupied_grid_cells": 24,
+    "valid_grid_cells": 30,
+    "coverage_ratio": 0.8,
+    "uniform_residual_rmse_px": 0.5560807596703657
+  },
+  "registered_product": {
+    "filename": "registered_lro_nac_to_tmc2.tif",
+    "valid_pixels": 2336586,
+    "nodata_value": -9999.0,
+    "target_grid": "TMC-2 canonical 5 m lunar polar stereographic grid"
+  },
+  "controlled_cross_sensor_perturbation_validation": {
+    "controls": [
+      {
+        "control_id": "SHIFT_1",
+        "ransac_inliers": 1190,
+        "ransac_inlier_ratio": 0.31291085984748884,
+        "ransac_self_rmse_px": 1.9937480591739751,
+        "perturbation_response_rmse_px": 1.9956706992479263,
+        "compensated_baseline_rmse_px": 1.9846475076355097,
+        "recovered_vs_identity_rmse_px": 79.45827445590524
+      },
+      {
+        "control_id": "SHIFT_ROT_2",
+        "ransac_inliers": 1463,
+        "ransac_inlier_ratio": 0.33578150103282073,
+        "ransac_self_rmse_px": 2.0466344374653835,
+        "perturbation_response_rmse_px": 1.272187149423449,
+        "compensated_baseline_rmse_px": 1.276935389595581,
+        "recovered_vs_identity_rmse_px": 143.89231218565348
+      },
+      {
+        "control_id": "SHIFT_ROT_SCALE_3",
+        "ransac_inliers": 1266,
+        "ransac_inlier_ratio": 0.30200381679389315,
+        "ransac_self_rmse_px": 2.0409616369216717,
+        "perturbation_response_rmse_px": 1.6581963434923066,
+        "compensated_baseline_rmse_px": 1.6571145446174387,
+        "recovered_vs_identity_rmse_px": 102.37841974015402
+      }
+    ],
+    "mean_perturbation_response_rmse_px": 1.6420180640545607,
+    "worst_perturbation_response_rmse_px": 1.9956706992479263,
+    "mean_compensated_baseline_rmse_px": 1.6395658139495097,
+    "note": "These controlled values measure whether the real NAC-to-TMC matcher follows known injected source motion. They do not provide independent absolute ground truth for the unperturbed real pair."
+  },
+  "interpretation_notes": [
+    "The real-pair RANSAC reprojection RMSE is an internal/self-consistency residual.",
+    "The nominal metre conversion is pixel residual multiplied by the 5 m canonical grid spacing; it is not independent absolute registration accuracy.",
+    "Controlled perturbation-response RMSE measures whether the real cross-sensor matcher follows explicitly injected source motion.",
+    "The controlled perturbation experiment does not provide independent absolute ground truth for the unperturbed LRO NAC to TMC-2 pair.",
+    "Zero-DN TMC shadow pixels are retained as science-valid data but excluded from feature extraction."
+  ]
+}

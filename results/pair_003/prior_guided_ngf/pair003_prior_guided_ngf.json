@@ -1,0 +1,252 @@
+{
+  "pair_id": "pair_003",
+  "method": "global_lightglue_prior_plus_local_ngf_search",
+  "global_prior": {
+    "matrix": [
+      [
+        0.988431006842933,
+        0.016114103025112056,
+        -2.6694353411286915
+      ],
+      [
+        0.005349501750205013,
+        0.9887161107392464,
+        0.33187620903179366
+      ]
+    ],
+    "inliers": 20,
+    "coverage": 0.3170731707317073
+  },
+  "settings": {
+    "grid_rows": 6,
+    "grid_cols": 12,
+    "anchors_per_cell": 3,
+    "template_radius": 18,
+    "search_radius": 8,
+    "minimum_orientation_score": 0.58,
+    "minimum_peak_margin": 0.008,
+    "reverse_search_radius": 2,
+    "maximum_reverse_error_px": 1.5,
+    "ransac_threshold_px": 2.5
+  },
+  "anchors": {
+    "selected": 96,
+    "forward_accepted": 19,
+    "mutual_accepted": 18,
+    "cell_summary": [
+      {
+        "row": 0,
+        "col": 0,
+        "anchors": 3
+      },
+      {
+        "row": 0,
+        "col": 1,
+        "anchors": 3
+      },
+      {
+        "row": 1,
+        "col": 0,
+        "anchors": 3
+      },
+      {
+        "row": 1,
+        "col": 1,
+        "anchors": 3
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "anchors": 3
+      },
+      {
+        "row": 1,
+        "col": 3,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 0,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 4,
+        "anchors": 2
+      },
+      {
+        "row": 2,
+        "col": 5,
+        "anchors": 1
+      },
+      {
+        "row": 2,
+        "col": 6,
+        "anchors": 1
+      },
+      {
+        "row": 2,
+        "col": 7,
+        "anchors": 3
+      },
+      {
+        "row": 2,
+        "col": 8,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 2,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 4,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 5,
+        "anchors": 2
+      },
+      {
+        "row": 3,
+        "col": 6,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 7,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 8,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 9,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 10,
+        "anchors": 3
+      },
+      {
+        "row": 3,
+        "col": 11,
+        "anchors": 3
+      },
+      {
+        "row": 4,
+        "col": 5,
+        "anchors": 1
+      },
+      {
+        "row": 4,
+        "col": 6,
+        "anchors": 3
+      },
+      {
+        "row": 4,
+        "col": 7,
+        "anchors": 3
+      },
+      {
+        "row": 4,
+        "col": 8,
+        "anchors": 3
+      },
+      {
+        "row": 4,
+        "col": 9,
+        "anchors": 3
+      },
+      {
+        "row": 4,
+        "col": 10,
+        "anchors": 3
+      },
+      {
+        "row": 4,
+        "col": 11,
+        "anchors": 3
+      },
+      {
+        "row": 5,
+        "col": 9,
+        "anchors": 2
+      },
+      {
+        "row": 5,
+        "col": 10,
+        "anchors": 3
+      },
+      {
+        "row": 5,
+        "col": 11,
+        "anchors": 3
+      }
+    ]
+  },
+  "result": {
+    "candidate_matches": 18,
+    "inliers": 6,
+    "inlier_ratio": 0.3333333333333333,
+    "ransac_reprojection_rmse_px": 0.9870465993881226,
+    "ransac_reprojection_median_px": 0.7861146926879883,
+    "ransac_reprojection_mean_px": 0.8652700781822205,
+    "affine_matrix": [
+      [
+        1.002146759124955,
+        -0.04023773820241228,
+        1.6086458421300254
+      ],
+      [
+        0.014702142653579824,
+        0.9510614410104262,
+        -1.3157343791803093
+      ]
+    ],
+    "transform": {
+      "tx_px": 1.6086458421300254,
+      "ty_px": -1.3157343791803093,
+      "translation_px": 2.078195948884323,
+      "rotation_deg": 0.8405059339690379,
+      "scale_x": 1.0022545983048703,
+      "scale_y": 0.9519122544397012,
+      "determinant": 0.9536947218044176,
+      "normalized_axis_dot": -0.027609920956507092
+    },
+    "transform_sanity": true,
+    "spatial": {
+      "valid_cells": 41,
+      "occupied_valid_cells": 6,
+      "coverage": 0.14634146341463414
+    },
+    "uniform_inliers": 6
+  },
+  "metric_note": "RANSAC reprojection RMSE is correspondence self-consistency. It is not independent ground-truth registration accuracy."
+}

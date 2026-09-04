@@ -1,0 +1,73 @@
+==============================================================================
+PAIR 004 — PRIOR-GUIDED TILED LIGHTGLUE GRADIENT
+==============================================================================
+
+Canonical shape: 1152 x 2642
+Science-valid pixels   : 815,047
+Nonzero matcher pixels : 815,047
+Eroded matcher pixels  : 781,714
+
+Global LightGlue-gradient affine:
+[[-7.55484186e-02  4.12469258e-01  2.17260307e+03]
+ [-1.30772919e-01  7.15628585e-01  4.67941552e+02]]
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+
+Candidate tiles: 10
+Tile 01/10 src=(0,0) valid=175,407 raw=22 kept=13
+Tile 02/10 src=(512,0) valid=233,459 raw=9 kept=4
+Tile 03/10 src=(1024,0) valid=210,099 raw=10 kept=5
+Tile 04/10 src=(1536,0) valid=143,152 raw=27 kept=13
+Tile 05/10 src=(1874,0) valid=84,236 raw=94 kept=16
+Tile 06/10 src=(0,384) valid=135,342 raw=22 kept=3
+Tile 07/10 src=(512,384) valid=226,711 raw=9 kept=6
+Tile 08/10 src=(1024,384) valid=262,779 raw=42 kept=9
+Tile 09/10 src=(1536,384) valid=294,414 raw=38 kept=7
+Tile 10/10 src=(1874,384) valid=234,541 raw=100 kept=14
+
+
+==============================================================================
+TILED MATCH COLLECTION
+==============================================================================
+Tiles actually run        : 10
+Raw LightGlue matches     : 373
+After matcher-mask filter : 354
+After generous prior gate : 90
+Before deduplication      : 90
+Distinct correspondences  : 89
+
+
+==============================================================================
+FINAL TILED LIGHTGLUE RESULT
+==============================================================================
+Distinct candidates       : 89
+RANSAC inliers            : 12
+Inlier ratio              : 0.134831
+RANSAC self RMSE px       : 1.419986
+Median residual px        : 1.106727
+Mean residual px          : 1.186404
+Spatial coverage          : 2/30 (0.0667)
+Runtime s                 : 1.156
+Transform sane            : False
+
+Affine:
+[[ 9.59012900e-01  7.10910682e-01 -3.88802005e+02]
+ [-3.09961981e-03  1.11509472e+00 -6.99864485e+01]]
+
+Translation px: 395.050759
+Rotation deg: -0.185185
+Scale X: 0.95901791
+Scale Y: 1.32243345
+Determinant: 1.07159378
+Axis dot: 0.53484952
+
+
+==============================================================================
+OUTPUTS
+==============================================================================
+E:\SIH26166\results\pair_007\auto_hypothesis_selection\candidates\sift_gradient\pair007_tiled_lightglue_metrics.json
+E:\SIH26166\results\pair_007\auto_hypothesis_selection\candidates\sift_gradient\pair007_tiled_lightglue_inliers.csv
+E:\SIH26166\results\pair_007\auto_hypothesis_selection\candidates\sift_gradient\pair007_tiled_lightglue_matches.png
+
+PAIR 004 TILED LIGHTGLUE COMPLETE.

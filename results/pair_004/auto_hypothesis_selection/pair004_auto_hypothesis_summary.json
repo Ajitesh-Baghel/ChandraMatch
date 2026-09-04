@@ -1,0 +1,557 @@
+{
+  "pair_id": "pair_004",
+  "method": "automatic_multi_hypothesis_coarse_prior_selection",
+  "hypothesis_source": "E:\\SIH26166\\results\\pair_004\\global_benchmark\\pair004_global_benchmark.json",
+  "verification_matcher": "E:\\SIH26166\\scripts\\pair004_tiled_lightglue.py",
+  "number_of_hypotheses": 6,
+  "number_successful": 5,
+  "selection_rule": "shape-sane candidates ranked by (RANSAC inliers \u00d7 inlier ratio \u00d7 spatial coverage) / self-consistency RMSE; absolute translation magnitude is not penalized",
+  "selected_candidate_id": "lightglue_intensity",
+  "selected_source_method": "lightglue",
+  "selected_source_representation": "intensity",
+  "selected_recovered_affine": [
+    [
+      1.000026104026983,
+      -0.0002356790958666889,
+      0.42778642758481505
+    ],
+    [
+      0.00022587658697662027,
+      0.9991412871909542,
+      0.2461818658939362
+    ]
+  ],
+  "selected_verification_score": 1248.2347990060682,
+  "ranking": [
+    {
+      "candidate_id": "lightglue_intensity",
+      "method": "lightglue",
+      "representation": "intensity",
+      "status": "success",
+      "initial_affine": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -6.008994953432392e-19,
+          1.0,
+          1.0987515391725285e-14
+        ]
+      ],
+      "initial_translation_x_px": 0.0,
+      "initial_translation_y_px": 1.0987515391725285e-14,
+      "initial_translation_magnitude_px": 1.0987515391725285e-14,
+      "distinct_candidates": 5360,
+      "ransac_inliers": 3415,
+      "ransac_inlier_ratio": 0.6371268656716418,
+      "coverage_cells": 25,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8333333333333334,
+      "ransac_self_rmse_px": 1.452576769478234,
+      "recovered_affine": [
+        [
+          1.000026104026983,
+          -0.0002356790958666889,
+          0.42778642758481505
+        ],
+        [
+          0.00022587658697662027,
+          0.9991412871909542,
+          0.2461818658939362
+        ]
+      ],
+      "recovered_translation_x_px": 0.42778642758481505,
+      "recovered_translation_y_px": 0.2461818658939362,
+      "recovered_translation_magnitude_px": 0.49356533379158446,
+      "recovered_rotation_deg": 0.012941437080871277,
+      "recovered_scale_x": 1.0000261295364332,
+      "recovered_scale_y": 0.9991413149871409,
+      "recovered_determinant": 0.9991674220364647,
+      "recovered_axis_dot": -1.0002624182046846e-05,
+      "shape_sane": true,
+      "verification_score": 1248.2347990060682,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_intensity",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_intensity\\console.log"
+    },
+    {
+      "candidate_id": "loftr_gradient",
+      "method": "loftr",
+      "representation": "gradient",
+      "status": "success",
+      "initial_affine": [
+        [
+          0.9999221922410748,
+          0.0003292311202951927,
+          -0.03780910810448399
+        ],
+        [
+          1.435372277624825e-05,
+          0.999916927409908,
+          0.028635136104301465
+        ]
+      ],
+      "initial_translation_x_px": -0.03780910810448399,
+      "initial_translation_y_px": 0.028635136104301465,
+      "initial_translation_magnitude_px": 0.04742889072462508,
+      "distinct_candidates": 5136,
+      "ransac_inliers": 3393,
+      "ransac_inlier_ratio": 0.6606308411214953,
+      "coverage_cells": 24,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8,
+      "ransac_self_rmse_px": 1.4710342350682377,
+      "recovered_affine": [
+        [
+          1.0000122394063615,
+          -0.0001430886475577387,
+          0.03799431405672161
+        ],
+        [
+          0.00021684981331085548,
+          0.999346206241242,
+          0.06289705435680626
+        ]
+      ],
+      "recovered_translation_x_px": 0.03799431405672161,
+      "recovered_translation_y_px": 0.06289705435680626,
+      "recovered_translation_magnitude_px": 0.07348202057240828,
+      "recovered_rotation_deg": 0.012424426828557369,
+      "recovered_scale_x": 1.0000122629179942,
+      "recovered_scale_y": 0.9993462164851199,
+      "recovered_determinant": 0.9993584686743026,
+      "recovered_axis_dot": 7.361763937848315e-05,
+      "shape_sane": true,
+      "verification_score": 1219.0174180800109,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_gradient",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_gradient\\console.log"
+    },
+    {
+      "candidate_id": "loftr_intensity",
+      "method": "loftr",
+      "representation": "intensity",
+      "status": "success",
+      "initial_affine": [
+        [
+          0.9999903066917433,
+          0.0001414774736497998,
+          -0.061361276569678935
+        ],
+        [
+          0.00011413732013487192,
+          0.9995630935144126,
+          0.10626922404099953
+        ]
+      ],
+      "initial_translation_x_px": -0.061361276569678935,
+      "initial_translation_y_px": 0.10626922404099953,
+      "initial_translation_magnitude_px": 0.12271248608245529,
+      "distinct_candidates": 5176,
+      "ransac_inliers": 3083,
+      "ransac_inlier_ratio": 0.5956336939721792,
+      "coverage_cells": 24,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8,
+      "ransac_self_rmse_px": 1.414141539800204,
+      "recovered_affine": [
+        [
+          0.9997381252825108,
+          0.0009416130966209105,
+          -0.12229945767981483
+        ],
+        [
+          0.0006189333953312748,
+          0.9982022222202607,
+          -0.15182481983252155
+        ]
+      ],
+      "recovered_translation_x_px": -0.12229945767981483,
+      "recovered_translation_y_px": -0.15182481983252155,
+      "recovered_translation_magnitude_px": 0.19495623423208208,
+      "recovered_rotation_deg": 0.03547155592522091,
+      "recovered_scale_x": 0.9997383168719388,
+      "recovered_scale_y": 0.9982026663361957,
+      "recovered_determinant": 0.9979402354995287,
+      "recovered_axis_dot": 0.0015591872025832584,
+      "shape_sane": true,
+      "verification_score": 1038.842931536075,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_intensity",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_intensity\\console.log"
+    },
+    {
+      "candidate_id": "lightglue_gradient",
+      "method": "lightglue",
+      "representation": "gradient",
+      "status": "success",
+      "initial_affine": [
+        [
+          0.9999999999999999,
+          4.2369954258656353e-16,
+          -1.2689765951111378e-13
+        ],
+        [
+          -5.423596412296215e-19,
+          1.0,
+          3.1741827905430495e-14
+        ]
+      ],
+      "initial_translation_x_px": -1.2689765951111378e-13,
+      "initial_translation_y_px": 3.1741827905430495e-14,
+      "initial_translation_magnitude_px": 1.3080733782237345e-13,
+      "distinct_candidates": 5228,
+      "ransac_inliers": 3011,
+      "ransac_inlier_ratio": 0.5759372609028309,
+      "coverage_cells": 24,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8,
+      "ransac_self_rmse_px": 1.4498031016698967,
+      "recovered_affine": [
+        [
+          0.9989274237445811,
+          0.003092838119100726,
+          0.36118083754869756
+        ],
+        [
+          0.000325914325476651,
+          0.9991202885802453,
+          -0.2168874481837662
+        ]
+      ],
+      "recovered_translation_x_px": 0.36118083754869756,
+      "recovered_translation_y_px": -0.2168874481837662,
+      "recovered_translation_magnitude_px": 0.4212977125407216,
+      "recovered_rotation_deg": 0.018693564943964774,
+      "recovered_scale_x": 0.9989274769116793,
+      "recovered_scale_y": 0.9991250756038023,
+      "recovered_determinant": 0.9980476478821574,
+      "recovered_axis_dot": 0.0034151484292949917,
+      "shape_sane": true,
+      "verification_score": 956.9007491188382,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_gradient",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_gradient\\console.log"
+    },
+    {
+      "candidate_id": "sift_gradient",
+      "method": "sift",
+      "representation": "gradient",
+      "status": "success",
+      "initial_affine": [
+        [
+          1.004556533587864,
+          -0.01056612281127552,
+          817.7832076135851
+        ],
+        [
+          -0.0008592034046690109,
+          1.0038477774845886,
+          -2.0441670561135554
+        ]
+      ],
+      "initial_translation_x_px": 817.7832076135851,
+      "initial_translation_y_px": -2.0441670561135554,
+      "initial_translation_magnitude_px": 817.7857624547626,
+      "distinct_candidates": 548,
+      "ransac_inliers": 283,
+      "ransac_inlier_ratio": 0.5164233576642335,
+      "coverage_cells": 5,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.16666666666666666,
+      "ransac_self_rmse_px": 1.7789319495197833,
+      "recovered_affine": [
+        [
+          1.0020269413880185,
+          -0.0030352734941346926,
+          816.0151194526196
+        ],
+        [
+          0.0001249806446295992,
+          1.0038669150649258,
+          -3.1956714951258265
+        ]
+      ],
+      "recovered_translation_x_px": 816.0151194526196,
+      "recovered_translation_y_px": -3.1956714951258265,
+      "recovered_translation_magnitude_px": 816.021376859441,
+      "recovered_rotation_deg": 0.007146378131357608,
+      "recovered_scale_x": 1.0020269491823006,
+      "recovered_scale_y": 1.0038715037529231,
+      "recovered_determinant": 1.0059020738135713,
+      "recovered_axis_dot": -0.0029159618814367685,
+      "shape_sane": true,
+      "verification_score": 13.692467762133921,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\sift_gradient",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\sift_gradient\\console.log"
+    }
+  ],
+  "all_results": [
+    {
+      "candidate_id": "sift_intensity",
+      "method": "sift",
+      "representation": "intensity",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"E:\\SIH26166\\scripts\\__pair004_auto_sift_intensity.py\", line 2130, in <module>\n    main()\n  File \"E:\\SIH26166\\scripts\\__pair004_auto_sift_intensity.py\", line 1627, in main\n    raise RuntimeError(\nRuntimeError: No tiled LightGlue correspondences survived.\n"
+    },
+    {
+      "candidate_id": "lightglue_intensity",
+      "method": "lightglue",
+      "representation": "intensity",
+      "status": "success",
+      "initial_affine": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -6.008994953432392e-19,
+          1.0,
+          1.0987515391725285e-14
+        ]
+      ],
+      "initial_translation_x_px": 0.0,
+      "initial_translation_y_px": 1.0987515391725285e-14,
+      "initial_translation_magnitude_px": 1.0987515391725285e-14,
+      "distinct_candidates": 5360,
+      "ransac_inliers": 3415,
+      "ransac_inlier_ratio": 0.6371268656716418,
+      "coverage_cells": 25,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8333333333333334,
+      "ransac_self_rmse_px": 1.452576769478234,
+      "recovered_affine": [
+        [
+          1.000026104026983,
+          -0.0002356790958666889,
+          0.42778642758481505
+        ],
+        [
+          0.00022587658697662027,
+          0.9991412871909542,
+          0.2461818658939362
+        ]
+      ],
+      "recovered_translation_x_px": 0.42778642758481505,
+      "recovered_translation_y_px": 0.2461818658939362,
+      "recovered_translation_magnitude_px": 0.49356533379158446,
+      "recovered_rotation_deg": 0.012941437080871277,
+      "recovered_scale_x": 1.0000261295364332,
+      "recovered_scale_y": 0.9991413149871409,
+      "recovered_determinant": 0.9991674220364647,
+      "recovered_axis_dot": -1.0002624182046846e-05,
+      "shape_sane": true,
+      "verification_score": 1248.2347990060682,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_intensity",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_intensity\\console.log"
+    },
+    {
+      "candidate_id": "loftr_intensity",
+      "method": "loftr",
+      "representation": "intensity",
+      "status": "success",
+      "initial_affine": [
+        [
+          0.9999903066917433,
+          0.0001414774736497998,
+          -0.061361276569678935
+        ],
+        [
+          0.00011413732013487192,
+          0.9995630935144126,
+          0.10626922404099953
+        ]
+      ],
+      "initial_translation_x_px": -0.061361276569678935,
+      "initial_translation_y_px": 0.10626922404099953,
+      "initial_translation_magnitude_px": 0.12271248608245529,
+      "distinct_candidates": 5176,
+      "ransac_inliers": 3083,
+      "ransac_inlier_ratio": 0.5956336939721792,
+      "coverage_cells": 24,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8,
+      "ransac_self_rmse_px": 1.414141539800204,
+      "recovered_affine": [
+        [
+          0.9997381252825108,
+          0.0009416130966209105,
+          -0.12229945767981483
+        ],
+        [
+          0.0006189333953312748,
+          0.9982022222202607,
+          -0.15182481983252155
+        ]
+      ],
+      "recovered_translation_x_px": -0.12229945767981483,
+      "recovered_translation_y_px": -0.15182481983252155,
+      "recovered_translation_magnitude_px": 0.19495623423208208,
+      "recovered_rotation_deg": 0.03547155592522091,
+      "recovered_scale_x": 0.9997383168719388,
+      "recovered_scale_y": 0.9982026663361957,
+      "recovered_determinant": 0.9979402354995287,
+      "recovered_axis_dot": 0.0015591872025832584,
+      "shape_sane": true,
+      "verification_score": 1038.842931536075,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_intensity",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_intensity\\console.log"
+    },
+    {
+      "candidate_id": "sift_gradient",
+      "method": "sift",
+      "representation": "gradient",
+      "status": "success",
+      "initial_affine": [
+        [
+          1.004556533587864,
+          -0.01056612281127552,
+          817.7832076135851
+        ],
+        [
+          -0.0008592034046690109,
+          1.0038477774845886,
+          -2.0441670561135554
+        ]
+      ],
+      "initial_translation_x_px": 817.7832076135851,
+      "initial_translation_y_px": -2.0441670561135554,
+      "initial_translation_magnitude_px": 817.7857624547626,
+      "distinct_candidates": 548,
+      "ransac_inliers": 283,
+      "ransac_inlier_ratio": 0.5164233576642335,
+      "coverage_cells": 5,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.16666666666666666,
+      "ransac_self_rmse_px": 1.7789319495197833,
+      "recovered_affine": [
+        [
+          1.0020269413880185,
+          -0.0030352734941346926,
+          816.0151194526196
+        ],
+        [
+          0.0001249806446295992,
+          1.0038669150649258,
+          -3.1956714951258265
+        ]
+      ],
+      "recovered_translation_x_px": 816.0151194526196,
+      "recovered_translation_y_px": -3.1956714951258265,
+      "recovered_translation_magnitude_px": 816.021376859441,
+      "recovered_rotation_deg": 0.007146378131357608,
+      "recovered_scale_x": 1.0020269491823006,
+      "recovered_scale_y": 1.0038715037529231,
+      "recovered_determinant": 1.0059020738135713,
+      "recovered_axis_dot": -0.0029159618814367685,
+      "shape_sane": true,
+      "verification_score": 13.692467762133921,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\sift_gradient",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\sift_gradient\\console.log"
+    },
+    {
+      "candidate_id": "lightglue_gradient",
+      "method": "lightglue",
+      "representation": "gradient",
+      "status": "success",
+      "initial_affine": [
+        [
+          0.9999999999999999,
+          4.2369954258656353e-16,
+          -1.2689765951111378e-13
+        ],
+        [
+          -5.423596412296215e-19,
+          1.0,
+          3.1741827905430495e-14
+        ]
+      ],
+      "initial_translation_x_px": -1.2689765951111378e-13,
+      "initial_translation_y_px": 3.1741827905430495e-14,
+      "initial_translation_magnitude_px": 1.3080733782237345e-13,
+      "distinct_candidates": 5228,
+      "ransac_inliers": 3011,
+      "ransac_inlier_ratio": 0.5759372609028309,
+      "coverage_cells": 24,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8,
+      "ransac_self_rmse_px": 1.4498031016698967,
+      "recovered_affine": [
+        [
+          0.9989274237445811,
+          0.003092838119100726,
+          0.36118083754869756
+        ],
+        [
+          0.000325914325476651,
+          0.9991202885802453,
+          -0.2168874481837662
+        ]
+      ],
+      "recovered_translation_x_px": 0.36118083754869756,
+      "recovered_translation_y_px": -0.2168874481837662,
+      "recovered_translation_magnitude_px": 0.4212977125407216,
+      "recovered_rotation_deg": 0.018693564943964774,
+      "recovered_scale_x": 0.9989274769116793,
+      "recovered_scale_y": 0.9991250756038023,
+      "recovered_determinant": 0.9980476478821574,
+      "recovered_axis_dot": 0.0034151484292949917,
+      "shape_sane": true,
+      "verification_score": 956.9007491188382,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_gradient",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\lightglue_gradient\\console.log"
+    },
+    {
+      "candidate_id": "loftr_gradient",
+      "method": "loftr",
+      "representation": "gradient",
+      "status": "success",
+      "initial_affine": [
+        [
+          0.9999221922410748,
+          0.0003292311202951927,
+          -0.03780910810448399
+        ],
+        [
+          1.435372277624825e-05,
+          0.999916927409908,
+          0.028635136104301465
+        ]
+      ],
+      "initial_translation_x_px": -0.03780910810448399,
+      "initial_translation_y_px": 0.028635136104301465,
+      "initial_translation_magnitude_px": 0.04742889072462508,
+      "distinct_candidates": 5136,
+      "ransac_inliers": 3393,
+      "ransac_inlier_ratio": 0.6606308411214953,
+      "coverage_cells": 24,
+      "valid_coverage_cells": 30,
+      "coverage_ratio": 0.8,
+      "ransac_self_rmse_px": 1.4710342350682377,
+      "recovered_affine": [
+        [
+          1.0000122394063615,
+          -0.0001430886475577387,
+          0.03799431405672161
+        ],
+        [
+          0.00021684981331085548,
+          0.999346206241242,
+          0.06289705435680626
+        ]
+      ],
+      "recovered_translation_x_px": 0.03799431405672161,
+      "recovered_translation_y_px": 0.06289705435680626,
+      "recovered_translation_magnitude_px": 0.07348202057240828,
+      "recovered_rotation_deg": 0.012424426828557369,
+      "recovered_scale_x": 1.0000122629179942,
+      "recovered_scale_y": 0.9993462164851199,
+      "recovered_determinant": 0.9993584686743026,
+      "recovered_axis_dot": 7.361763937848315e-05,
+      "shape_sane": true,
+      "verification_score": 1219.0174180800109,
+      "candidate_directory": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_gradient",
+      "console_log": "E:\\SIH26166\\results\\pair_004\\auto_hypothesis_selection\\candidates\\loftr_gradient\\console.log"
+    }
+  ],
+  "note": "RANSAC reprojection RMSE is internal self-consistency only. This selection does not establish independent absolute registration ground truth."
+}

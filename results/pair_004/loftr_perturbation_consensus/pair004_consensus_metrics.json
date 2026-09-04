@@ -1,0 +1,79 @@
+{
+  "pair_id": "pair_004",
+  "method": "loftr_gradient_perturbation_consensus",
+  "number_of_runs": 6,
+  "minimum_run_support": 3,
+  "source_consensus_tolerance_px": 8.0,
+  "reference_consensus_tolerance_px": 8.0,
+  "perturbation_runs": [
+    {
+      "id": "IDENTITY",
+      "raw_matches": 1413,
+      "canonical_matches": 798
+    },
+    {
+      "id": "SHIFT_A",
+      "raw_matches": 1219,
+      "canonical_matches": 746
+    },
+    {
+      "id": "SHIFT_B",
+      "raw_matches": 1285,
+      "canonical_matches": 799
+    },
+    {
+      "id": "SHIFT_ROT_A",
+      "raw_matches": 1108,
+      "canonical_matches": 657
+    },
+    {
+      "id": "SHIFT_ROT_SCALE",
+      "raw_matches": 1111,
+      "canonical_matches": 625
+    },
+    {
+      "id": "MILD_ROT",
+      "raw_matches": 1138,
+      "canonical_matches": 685
+    }
+  ],
+  "consensus_before_dedup": 31,
+  "consensus_after_dedup": 31,
+  "support_distribution": {
+    "3": 31
+  },
+  "ransac_inliers": 20,
+  "ransac_inlier_ratio": 0.6451612903225806,
+  "ransac_reprojection_rmse_px": 0.8187643011407978,
+  "median_residual_px": 0.6644569994406102,
+  "mean_residual_px": 0.7037061962281375,
+  "coverage_cells": 4,
+  "valid_coverage_cells": 30,
+  "coverage_ratio": 0.13333333333333333,
+  "median_source_run_spread_px": 1.5320554021347146,
+  "median_reference_run_spread_px": 0.0855801386270675,
+  "affine": [
+    [
+      1.0031052644410154,
+      -0.010184941108882236,
+      4.719517296686104
+    ],
+    [
+      0.0049602987317215,
+      1.0016159324013054,
+      -23.354670012733695
+    ]
+  ],
+  "affine_parameters": {
+    "scale_x": 1.0031175285642193,
+    "scale_y": 1.0016677138979413,
+    "rotation_deg": 0.2833220760200967,
+    "translation_x_px": 4.719517296686104,
+    "translation_y_px": -23.354670012733695,
+    "translation_magnitude_px": 23.82675921978064,
+    "determinant": 1.0047767350902108,
+    "axis_dot": -0.0052232322162429606
+  },
+  "transform_sane": true,
+  "note": "Correspondences survive only if they recur after independent known perturbations of the LRO NAC source. RANSAC reprojection RMSE remains an internal/self-consistency residual, not independent real-pair ground truth."
+}

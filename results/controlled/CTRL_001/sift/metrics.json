@@ -1,0 +1,43 @@
+{
+    "matcher": "SIFT",
+    "raw_candidate_matches": 5721,
+    "candidate_matches": 5721,
+    "inlier_matches": 5704,
+    "inlier_ratio": 0.9970284915224611,
+    "ground_truth_correspondence_rmse_px": 0.12599393725395203,
+    "ground_truth_correspondence_mean_px": 0.07366989552974701,
+    "ground_truth_correspondence_median_px": 0.05362563580274582,
+    "ground_truth_correspondence_max_px": 2.500542402267456,
+    "ground_truth_registration_rmse_px": 0.03307761251926422,
+    "ground_truth_registration_mean_px": 0.032898105680942535,
+    "ground_truth_registration_median_px": 0.03287560120224953,
+    "ground_truth_registration_max_px": 0.039459701627492905,
+    "ground_truth_evaluated_points": 976,
+    "spatial_coverage": 1.0,
+    "occupied_grid_cells": 64,
+    "runtime_seconds": 0.9022712000005413,
+    "estimated_transformation": [
+        [
+            0.9961956686867474,
+            -0.08716170417086214,
+            40.74378869243025
+        ],
+        [
+            0.08715542983098494,
+            0.9961977998738786,
+            -59.8522568251174
+        ]
+    ],
+    "ground_truth_transformation": [
+        [
+            0.9961946980917455,
+            -0.08715574274765817,
+            40.71970254063753
+        ],
+        [
+            0.08715574274765817,
+            0.9961946980917455,
+            -59.82279761417992
+        ]
+    ]
+}

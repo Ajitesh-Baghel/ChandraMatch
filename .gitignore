@@ -1,0 +1,43 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Raw / processed remote-sensing data
+data/raw/
+data/processed/
+
+# Large geospatial / planetary files
+*.IMG
+*.img
+*.cub
+*.QUB
+*.qub
+*.zip
+*.tar
+*.tar.gz
+
+# Large raster products
+*.tif
+*.tiff
+
+# Model weights / caches
+*.pth
+*.pt
+*.ckpt
+*.onnx
+.cache/
+
+# Temporary experiment files
+temp/
+tmp/
+*.tmp
+
+# OS
+Thumbs.db
+.DS_Store

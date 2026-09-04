@@ -1,0 +1,36 @@
+{
+    "ch2_tmc_ndn_20191212T0423276513_d_oth_d18": [
+        {
+            "tag": "sun_azimuth",
+            "normalized_tag": "sunazimuth",
+            "value": "233.270861"
+        },
+        {
+            "tag": "sun_elevation",
+            "normalized_tag": "sunelevation",
+            "value": "67.441269"
+        },
+        {
+            "tag": "solar_incidence",
+            "normalized_tag": "solarincidence",
+            "value": "22.558731"
+        }
+    ],
+    "ch2_tmc_ndn_20200108T1153531115_d_oth_d18": [
+        {
+            "tag": "sun_azimuth",
+            "normalized_tag": "sunazimuth",
+            "value": "57.237516"
+        },
+        {
+            "tag": "sun_elevation",
+            "normalized_tag": "sunelevation",
+            "value": "72.758283"
+        },
+        {
+            "tag": "solar_incidence",
+            "normalized_tag": "solarincidence",
+            "value": "17.241717"
+        }
+    ]
+}

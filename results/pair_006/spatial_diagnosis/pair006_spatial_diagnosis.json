@@ -1,0 +1,152 @@
+{
+  "pair_id": "pair_006",
+  "canonical_width": 6735,
+  "canonical_height": 1886,
+  "matcher_support_pixels": 1375025,
+  "ransac_inliers": 604,
+  "matcher_bbox": {
+    "min_x": 224,
+    "max_x": 4229,
+    "min_y": 206,
+    "max_y": 870,
+    "width": 4006,
+    "height": 665
+  },
+  "source_inlier_extent": {
+    "min_x": 247.375,
+    "max_x": 889.125,
+    "min_y": 285.625,
+    "max_y": 860.625
+  },
+  "along_track_support_span_fraction": 0.16023720349563045,
+  "grid": {
+    "rows": 8,
+    "cols": 8,
+    "valid_cells": 17,
+    "occupied_cells": 5,
+    "coverage_ratio": 0.29411764705882354
+  },
+  "along_track_bins": [
+    {
+      "bin": 1,
+      "x_start": 224,
+      "x_end": 557,
+      "support_pixels": 46383,
+      "source_inliers": 261,
+      "reference_inliers": 261,
+      "source_inliers_per_100k_support_px": 562.7061638962551,
+      "median_ransac_residual_px": 0.8653940520346334
+    },
+    {
+      "bin": 2,
+      "x_start": 557,
+      "x_end": 891,
+      "support_pixels": 127009,
+      "source_inliers": 345,
+      "reference_inliers": 343,
+      "source_inliers_per_100k_support_px": 271.6342936327347,
+      "median_ransac_residual_px": 1.0212118129151333
+    },
+    {
+      "bin": 3,
+      "x_start": 891,
+      "x_end": 1225,
+      "support_pixels": 203908,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 4,
+      "x_start": 1225,
+      "x_end": 1559,
+      "support_pixels": 203842,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 5,
+      "x_start": 1559,
+      "x_end": 1893,
+      "support_pixels": 188465,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 6,
+      "x_start": 1893,
+      "x_end": 2226,
+      "support_pixels": 159598,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 7,
+      "x_start": 2227,
+      "x_end": 2560,
+      "support_pixels": 135404,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 8,
+      "x_start": 2560,
+      "x_end": 2894,
+      "support_pixels": 113090,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 9,
+      "x_start": 2894,
+      "x_end": 3228,
+      "support_pixels": 87933,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 10,
+      "x_start": 3228,
+      "x_end": 3562,
+      "support_pixels": 62830,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 11,
+      "x_start": 3562,
+      "x_end": 3896,
+      "support_pixels": 37721,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    },
+    {
+      "bin": 12,
+      "x_start": 3896,
+      "x_end": 4229,
+      "support_pixels": 12561,
+      "source_inliers": 0,
+      "reference_inliers": 0,
+      "source_inliers_per_100k_support_px": 0.0,
+      "median_ransac_residual_px": null
+    }
+  ],
+  "interpretation_note": "This script diagnoses spatial distribution of the already-frozen Pair006 result. It does not rerun or modify the matcher."
+}

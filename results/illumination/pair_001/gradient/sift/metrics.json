@@ -1,0 +1,30 @@
+{
+    "candidate_matches": 1089,
+    "inlier_matches": 1076,
+    "inlier_ratio": 0.9880624426078971,
+    "pre_registration_rmse_px": 18.253019332885742,
+    "pre_registration_mean_error_px": 18.230255126953125,
+    "pre_registration_median_error_px": 18.20246124267578,
+    "ransac_reprojection_rmse_px": 0.3528883755207062,
+    "ransac_reprojection_mean_error_px": 0.2936719059944153,
+    "ransac_reprojection_median_error_px": 0.25284677743911743,
+    "ransac_reprojection_max_error_px": 1.2890833616256714,
+    "spatial_coverage": 0.984375,
+    "runtime_seconds": 0.5597398999998404,
+    "matcher": "SIFT",
+    "preprocessing": "gradient",
+    "sun_azimuth_difference_deg": 176.033345,
+    "sun_elevation_difference_deg": 5.317014,
+    "transformation": [
+        [
+            1.0003030214995106,
+            0.0002524518689546583,
+            11.402184013627405
+        ],
+        [
+            0.0021825633635165066,
+            0.9996779260792726,
+            -15.752634357385679
+        ]
+    ]
+}

@@ -1,0 +1,132 @@
+{
+  "product": "ch2_iir_ndi_20240115T2100076733",
+  "reflectance_cube": {
+    "shape": [
+      256,
+      14695,
+      250
+    ],
+    "dtype": "float32",
+    "bytes": 3761920000,
+    "memory_mapped": true
+  },
+  "location_cube": {
+    "shape": [
+      4,
+      14695,
+      250
+    ],
+    "band_names": [
+      "Longitude",
+      "Latitude",
+      "Radius",
+      "Height"
+    ]
+  },
+  "observation_cube": {
+    "shape": [
+      9,
+      14695,
+      250
+    ],
+    "band_names": [
+      "To-Sun Azimuth (deg)",
+      "To-Sun Zenith (deg)",
+      "To-IIRS Azimuth (deg)",
+      "To-IIRS Zenith (deg)",
+      "Phase (deg)",
+      "To-Sun Path Length (au-1.017324076508)",
+      "To-IIRS Path Length (m)",
+      "Facet Slope (deg)",
+      "Facet Aspect (deg)"
+    ]
+  },
+  "geolocation": {
+    "valid_pixels": 3673750,
+    "valid_ratio": 1.0,
+    "latitude_min": -71.94612884521484,
+    "latitude_max": -31.521198272705078,
+    "longitude_180_min": 99.27374267578125,
+    "longitude_180_max": 100.97732543945312
+  },
+  "optical_representation": {
+    "wavelength_min_nm": 700.0,
+    "wavelength_max_nm": 850.0,
+    "bands_1_based": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "wavelengths_nm": [
+      712.3,
+      729.2,
+      746.0,
+      762.9,
+      779.7,
+      796.6,
+      813.4,
+      830.3,
+      847.2
+    ],
+    "valid_pixels": 3673750,
+    "valid_ratio": 1.0,
+    "stretch_p01": 0.024013463407754898,
+    "stretch_p99": 0.16877417623996727,
+    "statistics": {
+      "minimum": 0.0,
+      "p01": 0.024013463407754898,
+      "median": 0.08553712069988251,
+      "p99": 0.16877417623996727,
+      "maximum": 10.424678802490234,
+      "mean": 0.0871695801615715
+    }
+  },
+  "observation_geometry": {
+    "To-Sun Azimuth (deg)": {
+      "minimum": 23.274120330810547,
+      "p01": 23.69032470703125,
+      "median": 29.05631923675537,
+      "p99": 40.30303192138672,
+      "maximum": 40.99256896972656,
+      "mean": 30.130977630615234
+    },
+    "To-Sun Zenith (deg)": {
+      "minimum": 36.931495666503906,
+      "p01": 37.35598739624024,
+      "median": 53.840871810913086,
+      "p99": 71.5978012084961,
+      "maximum": 72.01530456542969,
+      "mean": 54.05182647705078
+    },
+    "To-IIRS Azimuth (deg)": {
+      "minimum": 10.787296295166016,
+      "p01": 21.57921640396118,
+      "median": 176.47803497314453,
+      "p99": 334.8735662841797,
+      "maximum": 339.3010559082031,
+      "mean": 178.44595336914062
+    },
+    "To-IIRS Zenith (deg)": {
+      "minimum": 2.904876470565796,
+      "p01": 2.9664242172241213,
+      "median": 4.533270359039307,
+      "p99": 6.787535667419434,
+      "maximum": 6.974634647369385,
+      "mean": 4.703711032867432
+    },
+    "Phase (deg)": {
+      "minimum": 107.33789825439453,
+      "p01": 107.75704566955567,
+      "median": 125.60830307006836,
+      "p99": 142.2290802001953,
+      "maximum": 142.65773010253906,
+      "mean": 125.40472412109375
+    }
+  }
+}

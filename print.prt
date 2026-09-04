@@ -1,0 +1,439 @@
+Object = lronac2isis
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2017-04-27
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:27:48
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Import an LROC NAC image as an Isis cube"
+
+  Group = UserParameters
+    FROM = data/raw/lro_nac/2012_02_29/M185196277LE.IMG
+    TO   = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:02.8
+    CpuTime     = 00:00:02.9
+  End_Group
+End_Object
+
+
+Object = catlab
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2010-07-26
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:28:08
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Outputs the label from a cube"
+
+  Group = UserParameters
+    FROM   = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+    APPEND = TRUE
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:00.0
+    CpuTime     = 00:00:00.4
+  End_Group
+End_Object
+
+
+Object = spiceinit
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2021-08-10
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:29:15
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Update SPICE data (kernels, pointing, and position) for
+                       a camera cube"
+
+  Group = UserParameters
+    FROM         = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+    WEB          = yes
+    ATTACH       = TRUE
+    CKSMITHED    = FALSE
+    CKRECON      = TRUE
+    CKPREDICTED  = FALSE
+    CKNADIR      = FALSE
+    SPKSMITHED   = FALSE
+    SPKRECON     = TRUE
+    SPKPREDICTED = FALSE
+    SHAPE        = SYSTEM
+    STARTPAD     = 0.0
+    ENDPAD       = 0.0
+    URL          = https://astrogeology.usgs.gov/apis/ale/v0.9.1/spiceserver/
+    PORT         = 443
+  End_Group
+
+  Group = Kernels
+    NaifFrameCode             = -85600
+    LeapSecond                = $base/kernels/lsk/naif0012.tls
+    TargetAttitudeShape       = ($base/kernels/pck/pck00009.tpc,
+                                 $lro/kernels/pck/moon_080317.tf,
+                                 $lro/kernels/pck/moon_assoc_me.tf)
+    TargetPosition            = (Table,
+                                 $lro/kernels/tspk/moon_pa_de421_1900-2050.bpc,
+                                 $lro/kernels/tspk/de421.bsp)
+    InstrumentPointing        = (Table,
+                                 $lro/kernels/ck/lrolc_2012060_2012092_v06.bc,
+                                 $lro/kernels/ck/moc42r_2012060_2012092_v09.bc,
+                                 $lro/kernels/fk/lro_frames_2014049_v01.tf)
+    Instrument                = $lro/kernels/ik/lro_lroc_v20.ti
+    SpacecraftClock           = $lro/kernels/sclk/lro_clkcor_2026238_v00.tsc
+    InstrumentPosition        = (Table,
+                                 $lro/kernels/spk/fdf29r_2012032_2012061_v01.b-
+                                 sp)
+    InstrumentAddendum        = $lro/kernels/iak/lro_instrumentAddendum_v05.ti
+    ShapeModel                = $base/dems/ldem_128ppd_Mar2011_clon180_radius-
+                                _pad.cub
+    InstrumentPositionQuality = Reconstructed
+    InstrumentPointingQuality = Reconstructed
+    CameraVersion             = 2
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:22.5
+    CpuTime     = 00:00:23.9
+  End_Group
+End_Object
+
+
+Object = camrange
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2012-10-11
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:30:49
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Compute the lat/lon range of a camera image"
+
+  Group = UserParameters
+    FROM = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+    TO   = results/pair_004/inspection/M185196277LE_camrange.txt
+  End_Group
+
+  Group = Target
+    From       = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+    TargetName = MOON
+    RadiusA    = 1737400.0 <meters>
+    RadiusB    = 1737400.0 <meters>
+    RadiusC    = 1737400.0 <meters>
+  End_Group
+
+  Group = PixelResolution
+    Lowest  = 0.67763510027605 <meters>
+    Highest = 0.66403744849247 <meters>
+  End_Group
+
+  Group = UniversalGroundRange
+    LatitudeType       = Planetocentric
+    LongitudeDirection = PositiveEast
+    LongitudeDomain    = 360
+    MinimumLatitude    = -71.126312477731
+    MaximumLatitude    = -70.304978521429
+    MinimumLongitude   = 100.0836087151
+    MaximumLongitude   = 100.53875970171
+  End_Group
+
+  Group = LatitudeRange
+    LatitudeType    = Planetographic
+    MinimumLatitude = -71.126312477731
+    MaximumLatitude = -70.304978521429
+  End_Group
+
+  Group = PositiveWest360
+    LongitudeDirection = PositiveWest
+    LongitudeDomain    = 360
+    MinimumLongitude   = 259.46124029829
+    MaximumLongitude   = 259.9163912849
+  End_Group
+
+  Group = PositiveEast180
+    LongitudeDirection = PositiveEast
+    LongitudeDomain    = 180
+    MinimumLongitude   = 100.0836087151
+    MaximumLongitude   = 100.53875970171
+  End_Group
+
+  Group = PositiveWest180
+    LongitudeDirection = PositiveWest
+    LongitudeDomain    = 180
+    MinimumLongitude   = -100.53875970171
+    MaximumLongitude   = -100.0836087151
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:02.2
+    CpuTime     = 00:00:03.2
+  End_Group
+End_Object
+
+
+Object = campt
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2021-02-10
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:31:18
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Computes geometric and photometric information at a
+                       given pixel location"
+
+  Group = UserParameters
+    FROM         = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+    USECOORDLIST = FALSE
+    TO           = results/pair_004/inspection/M185196277LE_center.pvl
+    FORMAT       = PVL
+    APPEND       = TRUE
+    ALLOWOUTSIDE = TRUE
+    ALLOWERROR   = FALSE
+    TYPE         = IMAGE
+    SAMPLE       = 1266
+    LINE         = 12800
+  End_Group
+
+  Group = GroundPoint
+    Filename                   = data/processed/pair_004/lro_nac_isis/M185196-
+                                 277LE_raw.cub
+    Sample                     = 1266.0
+    Line                       = 12800.0
+    PixelValue                 = 85.5
+    RightAscension             = 231.52994183865 <DEGREE>
+    Declination                = 60.695428150492 <DEGREE>
+    PlanetocentricLatitude     = -70.715607231393 <DEGREE>
+    PlanetographicLatitude     = -70.715607231393 <DEGREE>
+    PositiveEast360Longitude   = 100.31359705123 <DEGREE>
+    PositiveEast180Longitude   = 100.31359705123 <DEGREE>
+    PositiveWest360Longitude   = 259.68640294877 <DEGREE>
+    PositiveWest180Longitude   = -100.31359705123 <DEGREE>
+    BodyFixedCoordinate        = (-102.66602127366, 564.1735338869,
+                                  -1638.9152702624) <km>
+    LocalRadius                = 1736339.6417067 <meters>
+    SampleResolution           = 0.90089138842406 <meters/pixel>
+    LineResolution             = 0.45044569421203 <meters/pixel>
+    ObliqueDetectorResolution  = 0.45286630877444 <meters>
+    ObliquePixelResolution     = 0.67929946316166 <meters/pix>
+    ObliqueLineResolution      = 0.45286630877444 <meters>
+    ObliqueSampleResolution    = 0.90573261754888 <meters>
+
+    # Spacecraft Information
+    SpacecraftPosition         = (-106.61116382017, 578.43982537541,
+                                  -1681.4325571123) <km>
+    SpacecraftAzimuth          = 0.14909796610546 <DEGREE>
+    SlantDistance              = 45.020116654946 <km>
+    TargetCenterDistance       = 1781.3405109492 <km>
+    SubSpacecraftLatitude      = -70.719637106144 <DEGREE>
+    SubSpacecraftLongitude     = 100.44288412195 <DEGREE>
+    SpacecraftAltitude         = 45.097307284604 <km>
+    OffNadirAngle              = 1.6541627829071 <DEGREE>
+    SubSpacecraftGroundAzimuth = 95.453208669515 <DEGREE>
+
+    # Sun Information
+    SunPosition                = (8846187.7108313, 147905045.55044,
+                                  4023527.3574672) <km>
+    SubSolarAzimuth            = 111.19301928866 <DEGREE>
+    SolarDistance              = 0.99081263952406 <AU>
+    SubSolarLatitude           = 1.5554802057665 <DEGREE>
+    SubSolarLongitude          = 86.577221951553 <DEGREE>
+    SubSolarGroundAzimuth      = 345.61545363165 <DEGREE>
+
+    # Illumination and Other
+    Phase                      = 73.421499749402 <DEGREE>
+    Incidence                  = 72.838822327551 <DEGREE>
+    Emission                   = 1.6970462497705 <DEGREE>
+    NorthAzimuth               = 95.799117008195 <DEGREE>
+
+    # Time
+    EphemerisTime              = 383829083.48883 <seconds>
+    UTC                        = 2012-02-29T23:10:17.3034462
+    LocalSolarTime             = 12.915758339979 <hour>
+    SolarLongitude             = 84.08151663352 <DEGREE>
+
+    # Look Direction Unit Vectors in Body Fixed, J2000, and Camera Coordinate Systems.
+    LookDirectionBodyFixed     = (0.087630660238998, -0.31688703958407,
+                                  0.94440641226631)
+    LookDirectionJ2000         = (-0.30449083947331, -0.38320832996956,
+                                  0.87203021995731)
+    LookDirectionCamera        = (1.11022302462516e-16, -1.65089577966071e-04,
+                                  0.99999998637272)
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:00.2
+    CpuTime     = 00:00:01.8
+  End_Group
+End_Object
+
+
+Object = footprintinit
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2017-06-01
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:31:29
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Creates a lat/lon polygon and writes it to the image"
+
+  Group = UserParameters
+    FROM              = data/processed/pair_004/lro_nac_isis/M185196277LE_raw-
+                        .cub
+    INCREASEPRECISION = FALSE
+    INCTYPE           = LINCSINC
+    LINC              = 100
+    SINC              = 100
+    LIMBTEST          = ELLIPSOID
+    TESTXY            = FALSE
+    MAP               = $ISISROOT/appdata/templates/maps/sinusoidal.map
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:02.5
+    CpuTime     = 00:00:03.9
+  End_Group
+End_Object
+
+
+Object = lronaccal
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2020-10-04
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:33:25
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Radiometrically calibrates a LROC NAC image"
+
+  Group = UserParameters
+    FROM             = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.-
+                       cub
+    TO               = data/processed/pair_004/lro_nac_isis/M185196277LE_cal.-
+                       cub
+    Masked           = True
+    MaskedFile       = Default
+    Dark             = True
+    DarkFileType     = Pair
+    Nonlinearity     = True
+    OffsetFile       = Default
+    NonlinearityFile = Default
+    Flatfield        = True
+    FlatfieldFile    = Default
+    Radiometric      = True
+    RadiometricType  = IOF
+    RadiometricFile  = Default
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:05.7
+    CpuTime     = 00:00:03.8
+  End_Group
+End_Object
+
+
+Object = lronacecho
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2013-04-05
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:33:35
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Removes echo effects from a LRO NAC image"
+
+  Group = UserParameters
+    FROM          = data/processed/pair_004/lro_nac_isis/M185196277LE_cal.cub
+    TO            = data/processed/pair_004/lro_nac_isis/M185196277LE_cal_ech-
+                    o.cub
+    DELTA         = 0.326
+    SMOOTHINGROWS = 20
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:02.1
+    CpuTime     = 00:00:02.5
+  End_Group
+End_Object
+
+
+Object = cam2map
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2020-03-02
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:34:08
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Convert camera image to a map projection"
+
+  Group = UserParameters
+    FROM          = data/processed/pair_004/lro_nac_isis/M185196277LE_cal_ech-
+                    o.cub
+    MAP           = data/processed/pair_004/lro_nac_isis/tmc_south_polar.map
+    TO            = data/processed/pair_004/lro_nac_isis/M185196277LE_map_5m.-
+                    cub
+    MATCHMAP      = false
+    USEPROJ       = false
+    PIXRES        = map
+    DEFAULTRANGE  = MINIMIZE
+    LONSEAM       = AUTO
+    INTERP        = CUBICCONVOLUTION
+    WARPALGORITHM = AUTOMATIC
+  End_Group
+
+  Group = Mapping
+    TargetName         = Moon
+    ProjectionName     = PolarStereographic
+    EquatorialRadius   = 1737400.0 <meters>
+    PolarRadius        = 1737400.0 <meters>
+    LatitudeType       = Planetocentric
+    LongitudeDirection = PositiveEast
+    LongitudeDomain    = 180
+    PixelResolution    = 5.0 <meters/pixel>
+    Scale              = 6064.6700848299 <pixels/degree>
+    UpperLeftCornerX   = 568220.0 <meters>
+    UpperLeftCornerY   = -101160.0 <meters>
+    MinimumLatitude    = -71.126312477731
+    MaximumLatitude    = -70.304978521429
+    MinimumLongitude   = 100.0836087151
+    MaximumLongitude   = 100.53875970171
+    CenterLatitude     = -90
+    CenterLongitude    = 0
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:04:50.1
+    CpuTime     = 00:01:30.8
+  End_Group
+End_Object
+
+
+Object = catlab
+  IsisVersion       = "10.0.0  | 2026-08-26"
+  AleVersion        = "1.2.0 | py313h7037e92_1"
+  ProgramVersion    = 2010-07-26
+  ProgramPath       = /home/ajitesh/miniforge3/envs/isis10.0.0/bin
+  ExecutionDateTime = 2026-09-01T22:39:40
+  HostName          = Unknown
+  UserName          = ajitesh
+  Description       = "Outputs the label from a cube"
+
+  Group = UserParameters
+    FROM   = data/processed/pair_004/lro_nac_isis/M185196277LE_map_5m.cub
+    APPEND = TRUE
+  End_Group
+
+  Group = Accounting
+    ConnectTime = 00:00:00.0
+    CpuTime     = 00:00:01.0
+  End_Group
+End_Object
+
+

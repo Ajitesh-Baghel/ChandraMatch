@@ -1,0 +1,41 @@
+==============================================================================
+PAIR 004 — PRIOR-GUIDED TILED LIGHTGLUE GRADIENT
+==============================================================================
+
+Canonical shape: 1817 x 5037
+Science-valid pixels   : 2,340,471
+Nonzero matcher pixels : 2,171,848
+Eroded matcher pixels  : 1,905,824
+
+Global LightGlue-gradient affine:
+[[ 1.96881388e+00 -3.09397715e+01  1.64510940e+04]
+ [ 1.57390913e-01 -7.05339312e+00  4.33883919e+03]]
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU
+
+Candidate tiles: 40
+Tile 01/40 src=(0,0) valid=82,606 raw=11 kept=0
+Tile 02/40 src=(512,0) valid=208,624 raw=5 kept=0
+Tile 03/40 src=(1024,0) valid=295,084 raw=19 kept=0
+Tile 04/40 src=(1536,0) valid=192,391 raw=20 kept=0
+Tile 05/40 src=(2048,0) valid=87,301 raw=11 kept=0
+Tile 06/40 src=(2560,0) valid=12,578 raw=4 kept=0
+Tile 11/40 src=(0,512) valid=22,477 raw=1 kept=0
+Tile 12/40 src=(512,512) valid=121,584 raw=14 kept=0
+Tile 13/40 src=(1024,512) valid=238,019 raw=5 kept=0
+Tile 14/40 src=(1536,512) valid=326,312 raw=7 kept=0
+Tile 15/40 src=(2048,512) valid=350,981 raw=4 kept=0
+Tile 16/40 src=(2560,512) valid=340,317 raw=1 kept=0
+Tile 17/40 src=(3072,512) valid=248,609 raw=3 kept=0
+Tile 18/40 src=(3584,512) valid=142,218 raw=13 kept=0
+Tile 19/40 src=(4096,512) valid=45,262 raw=14 kept=0
+
+
+STDERR
+Traceback (most recent call last):
+  File "E:\SIH26166\scripts\__pair004_auto_sift_intensity.py", line 2130, in <module>
+    main()
+  File "E:\SIH26166\scripts\__pair004_auto_sift_intensity.py", line 1627, in main
+    raise RuntimeError(
+RuntimeError: No tiled LightGlue correspondences survived.

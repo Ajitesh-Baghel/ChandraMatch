@@ -1,0 +1,324 @@
+{
+  "pair_id": "pair_007",
+  "source": "LRO NAC M185210693RE",
+  "reference": "Chandrayaan-2 TMC-2",
+  "canonical_resolution_m": 5.0,
+  "matcher": "LoFTR",
+  "representation": "intensity",
+  "pretrained": "outdoor",
+  "max_matching_dimension": 1600,
+  "purpose": "Held-out test of whether the Pair007 LoFTR large-displacement branch follows known injected source motion.",
+  "result": {
+    "matcher": "LoFTR",
+    "representation": "intensity",
+    "baseline": {
+      "matcher": "LoFTR",
+      "representation": "intensity",
+      "raw_matches": 700,
+      "candidates": 612,
+      "inliers": 357,
+      "inlier_ratio": 0.5833333333333334,
+      "self_rmse_px": 0.9541538264077283,
+      "coverage": {
+        "occupied_cells": 8,
+        "valid_cells": 29,
+        "coverage": 0.27586206896551724
+      },
+      "affine": [
+        [
+          0.9996518396641949,
+          0.0006853539708647758,
+          903.6339730022277
+        ],
+        [
+          -2.618929416455325e-05,
+          1.0003986152868813,
+          -0.27185779752304606
+        ]
+      ],
+      "transform": {
+        "tx_px": 903.6339730022277,
+        "ty_px": -0.27185779752304606,
+        "translation_px": 903.6340138963633,
+        "rotation_deg": -0.0015010586327898507,
+        "scale_x": 0.9996518400072539,
+        "scale_y": 1.000398850048307,
+        "determinant": 1.000050334117981
+      },
+      "runtime_seconds": 1.4284865000081481
+    },
+    "tests": [
+      {
+        "matcher": "LoFTR",
+        "representation": "intensity",
+        "raw_matches": 655,
+        "candidates": 515,
+        "inliers": 326,
+        "inlier_ratio": 0.6330097087378641,
+        "self_rmse_px": 0.8778034125762623,
+        "coverage": {
+          "occupied_cells": 9,
+          "valid_cells": 26,
+          "coverage": 0.34615384615384615
+        },
+        "affine": [
+          [
+            1.0001663049663796,
+            -0.0010016594340692918,
+            838.6645304663588
+          ],
+          [
+            -2.1556542876818113e-05,
+            0.9994423900792343,
+            39.65087212939602
+          ]
+        ],
+        "transform": {
+          "tx_px": 838.6645304663588,
+          "ty_px": 39.65087212939602,
+          "translation_px": 839.6013258225476,
+          "rotation_deg": -0.0012348935586114819,
+          "scale_x": 1.000166305198683,
+          "scale_y": 0.9994428920198063,
+          "determinant": 0.9996085807200003
+        },
+        "runtime_seconds": 0.9425919000059366,
+        "test": "SHIFT1",
+        "known_perturbation": [
+          [
+            1.0,
+            0.0,
+            64.0
+          ],
+          [
+            0.0,
+            1.0,
+            -48.0
+          ]
+        ],
+        "expected_affine": [
+          [
+            0.9996518396641949,
+            0.0006853539708647758,
+            839.6891522543207
+          ],
+          [
+            -2.618929416455325e-05,
+            1.0003986152868813,
+            47.74895185107379
+          ]
+        ],
+        "recovered_affine": [
+          [
+            1.0001663049663796,
+            -0.0010016594340692918,
+            838.6645304663588
+          ],
+          [
+            -2.1556542876818113e-05,
+            0.9994423900792343,
+            39.65087212939602
+          ]
+        ],
+        "compensated_affine": [
+          [
+            1.0001663049663796,
+            -0.0010016594340692918,
+            902.7232536370424
+          ],
+          [
+            -2.1556542876818113e-05,
+            0.9994423900792343,
+            -8.323742213151341
+          ]
+        ],
+        "perturbation_response_rmse_px": 8.808385839951399,
+        "compensated_baseline_rmse_px": 8.776225457911426,
+        "distance_from_identity_px": 839.1855437942664,
+        "pass": false
+      },
+      {
+        "matcher": "LoFTR",
+        "representation": "intensity",
+        "raw_matches": 313,
+        "candidates": 108,
+        "inliers": 8,
+        "inlier_ratio": 0.07407407407407407,
+        "self_rmse_px": 0.8144810106286327,
+        "coverage": {
+          "occupied_cells": 2,
+          "valid_cells": 23,
+          "coverage": 0.08695652173913043
+        },
+        "affine": [
+          [
+            0.9908378096927737,
+            -0.023452758727541375,
+            857.5117980742698
+          ],
+          [
+            0.032430995818578494,
+            0.8682419615018818,
+            74.21796161671068
+          ]
+        ],
+        "transform": {
+          "tx_px": 857.5117980742698,
+          "ty_px": 74.21796161671068,
+          "translation_px": 860.717601576212,
+          "rotation_deg": 1.8746721598521177,
+          "scale_x": 0.9913684151749832,
+          "scale_y": 0.8685586540957193,
+          "determinant": 0.8610475597381092
+        },
+        "runtime_seconds": 0.9411551000084728,
+        "test": "SHIFT_ROT2",
+        "known_perturbation": [
+          [
+            0.9999756307053947,
+            0.0069812602979615525,
+            -99.98901409345231
+          ],
+          [
+            -0.0069812602979615525,
+            0.9999756307053947,
+            81.23628156729984
+          ]
+        ],
+        "expected_affine": [
+          [
+            0.9996322634884786,
+            -0.006293492430759921,
+            1004.0974774075937
+          ],
+          [
+            0.006957854479088091,
+            1.0003744191125825,
+            -80.84284677170706
+          ]
+        ],
+        "recovered_affine": [
+          [
+            0.9908378096927737,
+            -0.023452758727541375,
+            857.5117980742698
+          ],
+          [
+            0.032430995818578494,
+            0.8682419615018818,
+            74.21796161671068
+          ]
+        ],
+        "compensated_affine": [
+          [
+            0.9909773934876656,
+            -0.016534890537827293,
+            756.5336874450531
+          ],
+          [
+            0.026368782363229697,
+            0.868447212281265,
+            141.50796677185372
+          ]
+        ],
+        "perturbation_response_rmse_px": 197.1813467873478,
+        "compensated_baseline_rmse_px": 194.2280416924463,
+        "distance_from_identity_px": 828.9538819279348,
+        "pass": false
+      },
+      {
+        "matcher": "LoFTR",
+        "representation": "intensity",
+        "raw_matches": 784,
+        "candidates": 636,
+        "inliers": 301,
+        "inlier_ratio": 0.47327044025157233,
+        "self_rmse_px": 1.6718966339826902,
+        "coverage": {
+          "occupied_cells": 10,
+          "valid_cells": 25,
+          "coverage": 0.4
+        },
+        "affine": [
+          [
+            1.0003186414433947,
+            -0.001443308074989576,
+            825.5587566848019
+          ],
+          [
+            -0.013257239474458796,
+            0.9835425196665384,
+            82.05389405486221
+          ]
+        ],
+        "transform": {
+          "tx_px": 825.5587566848019,
+          "ty_px": 82.05389405486221,
+          "translation_px": 829.6264835867539,
+          "rotation_deg": -0.7592974592053082,
+          "scale_x": 1.0004064867930644,
+          "scale_y": 0.983543578663499,
+          "determinant": 0.9838367827938593
+        },
+        "runtime_seconds": 0.943322499995702,
+        "test": "SHIFT_ROT_SCALE3",
+        "known_perturbation": [
+          [
+            1.0039537426769252,
+            -0.009637560116249742,
+            80.32834055074171
+          ],
+          [
+            0.009637560116249742,
+            1.0039537426769252,
+            -75.00857269547481
+          ]
+        ],
+        "expected_affine": [
+          [
+            0.9956167369016433,
+            0.010240183076649093,
+            824.4258342190941
+          ],
+          [
+            -0.009590814664583584,
+            0.9963668052741037,
+            75.23460837377328
+          ]
+        ],
+        "recovered_affine": [
+          [
+            1.0003186414433947,
+            -0.001443308074989576,
+            825.5587566848019
+          ],
+          [
+            -0.013257239474458796,
+            0.9835425196665384,
+            82.05389405486221
+          ]
+        ],
+        "compensated_affine": [
+          [
+            1.0042597339782542,
+            -0.0110896455860376,
+            906.020953652587
+          ],
+          [
+            -0.0038307050277731724,
+            0.9875589611435251,
+            7.2148414220971375
+          ]
+        ],
+        "perturbation_response_rmse_px": 8.143590824997899,
+        "compensated_baseline_rmse_px": 8.014311186774844,
+        "distance_from_identity_px": 826.827279796089,
+        "pass": false
+      }
+    ],
+    "all_tests_pass": false,
+    "mean_response_rmse_px": 71.37777448409902,
+    "worst_response_rmse_px": 197.1813467873478
+  },
+  "interpretation_note": "Perturbation response measures motion-following robustness. It is not independent absolute ground-truth accuracy for the unperturbed NAC/TMC registration."
+}

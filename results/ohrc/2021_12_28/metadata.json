@@ -1,0 +1,21 @@
+{
+    "file_name": "ch2_ohr_ncp_20211228T2209123959_d_img_d18.img",
+    "lines": 79796,
+    "samples": 12000,
+    "data_type": "UnsignedByte",
+    "numpy_dtype": "uint8",
+    "offset_bytes": 0,
+    "pixel_resolution_m": 0.28,
+    "spacecraft_altitude_km": 111.97,
+    "sun_azimuth_deg": 152.400416,
+    "sun_elevation_deg": -0.043949,
+    "solar_incidence_deg": 90.043949,
+    "upper_left_latitude": -89.923132,
+    "upper_left_longitude": 55.564452,
+    "upper_right_latitude": -89.850542,
+    "upper_right_longitude": 110.41603,
+    "lower_left_latitude": -89.257559,
+    "lower_left_longitude": 233.745958,
+    "lower_right_latitude": -89.252796,
+    "lower_right_longitude": 224.351932
+}

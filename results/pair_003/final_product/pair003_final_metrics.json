@@ -1,0 +1,56 @@
+{
+  "pair_id": "pair_003",
+  "source_sensor": "IIRS",
+  "reference_sensor": "TMC-2",
+  "source_product": "ch2_iir_ndi_20240115T2100076733_d_rfl_d18_srd",
+  "matching_representation": "mean IIRS surface reflectance bands 1-9 (712.3-847.2 nm), gradient representation",
+  "matcher": "SuperPoint + LightGlue",
+  "geometry_model": "2D affine RANSAC",
+  "candidate_matches": 111,
+  "inliers": 20,
+  "inlier_ratio": 0.18018018018018017,
+  "ransac_reprojection_rmse_px": 1.5963319540023804,
+  "ransac_reprojection_median_px": 1.276850700378418,
+  "ransac_reprojection_mean_px": 1.4072816371917725,
+  "common_grid_resolution_m_per_px": 63.37,
+  "rmse_equivalent_grid_distance_m": 101.15955592513085,
+  "spatial_coverage": {
+    "grid_rows": 6,
+    "grid_cols": 12,
+    "valid_cells": 41,
+    "occupied_valid_cells": 13,
+    "coverage": 0.3170731707317073
+  },
+  "uniform_correspondences": 20,
+  "affine_matrix": [
+    [
+      0.988431006842933,
+      0.016114103025112056,
+      -2.6694353411286915
+    ],
+    [
+      0.005349501750205013,
+      0.9887161107392464,
+      0.33187620903179366
+    ]
+  ],
+  "transform": {
+    "tx_px": -2.6694353411286915,
+    "ty_px": 0.33187620903179366,
+    "translation_px": 2.6899864049076845,
+    "rotation_deg": 0.3100882895370198,
+    "scale_x": 0.9884454827948326,
+    "scale_y": 0.9888474159098792,
+    "determinant": 0.9771914583974862,
+    "normalized_axis_dot": 0.02170692169909181
+  },
+  "transform_sanity": true,
+  "registered_common_valid_pixels": 381228,
+  "registered_common_valid_ratio": 0.405967669797457,
+  "subpixel_refinement": {
+    "attempted": true,
+    "accepted": false,
+    "reason": "0 of 20 global LightGlue-gradient inliers passed conservative local NCC refinement gates."
+  },
+  "important_metric_note": "RANSAC reprojection RMSE and its equivalent grid distance measure internal correspondence self-consistency. They are NOT independent ground-truth registration accuracy."
+}

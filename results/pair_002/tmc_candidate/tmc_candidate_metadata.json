@@ -1,0 +1,37 @@
+{
+    "tmc_candidate": {
+        "product_root": "E:\\SIH26166\\data\\raw\\tmc2\\2023_10_25",
+        "tif_path": "E:\\SIH26166\\data\\raw\\tmc2\\2023_10_25\\data\\derived\\20231025\\ch2_tmc_ndn_20231025T1956513800_d_oth_d18.tif",
+        "product_id": "ch2_tmc_ndn_20231025T1956513800_d_oth_d18",
+        "acquisition_date": "2023-10-25",
+        "sun_azimuth_deg": 286.401572,
+        "sun_elevation_deg": 7.050806,
+        "pixel_resolution": [
+            5.0,
+            5.0
+        ],
+        "preview_valid_ratio": 0.08300940438871474,
+        "projection_name": "stere",
+        "latitude_of_origin": -90,
+        "central_meridian": 0
+    },
+    "ohrc_seed_c": {
+        "longitude_360": 227.63395217227017,
+        "longitude_180": -132.36604782772986,
+        "latitude": -89.42078231045038
+    },
+    "projection_test": {
+        "projected_x": -12977.223725836564,
+        "projected_y": -11835.739352022007,
+        "inside_tmc_bbox": true,
+        "tmc_pixel_row": 4542,
+        "tmc_pixel_col": 2576,
+        "exact_seed_pixel_value": 0.0,
+        "exact_seed_pixel_valid": false,
+        "local_search_radius_pixels": 400,
+        "local_valid_pixels": 0,
+        "local_total_pixels": 641601,
+        "local_valid_ratio": 0.0
+    },
+    "candidate_accepted": false
+}

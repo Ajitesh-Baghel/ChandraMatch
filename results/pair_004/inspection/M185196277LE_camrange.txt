@@ -1,0 +1,50 @@
+Group = Target
+  From       = data/processed/pair_004/lro_nac_isis/M185196277LE_raw.cub
+  TargetName = MOON
+  RadiusA    = 1737400.0 <meters>
+  RadiusB    = 1737400.0 <meters>
+  RadiusC    = 1737400.0 <meters>
+End_Group
+
+Group = PixelResolution
+  Lowest  = 0.67763510027605 <meters>
+  Highest = 0.66403744849247 <meters>
+End_Group
+
+Group = UniversalGroundRange
+  LatitudeType       = Planetocentric
+  LongitudeDirection = PositiveEast
+  LongitudeDomain    = 360
+  MinimumLatitude    = -71.126312477731
+  MaximumLatitude    = -70.304978521429
+  MinimumLongitude   = 100.0836087151
+  MaximumLongitude   = 100.53875970171
+End_Group
+
+Group = LatitudeRange
+  LatitudeType    = Planetographic
+  MinimumLatitude = -71.126312477731
+  MaximumLatitude = -70.304978521429
+End_Group
+
+Group = PositiveWest360
+  LongitudeDirection = PositiveWest
+  LongitudeDomain    = 360
+  MinimumLongitude   = 259.46124029829
+  MaximumLongitude   = 259.9163912849
+End_Group
+
+Group = PositiveEast180
+  LongitudeDirection = PositiveEast
+  LongitudeDomain    = 180
+  MinimumLongitude   = 100.0836087151
+  MaximumLongitude   = 100.53875970171
+End_Group
+
+Group = PositiveWest180
+  LongitudeDirection = PositiveWest
+  LongitudeDomain    = 180
+  MinimumLongitude   = -100.53875970171
+  MaximumLongitude   = -100.0836087151
+End_Group
+End
