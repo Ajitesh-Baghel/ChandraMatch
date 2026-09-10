@@ -1,0 +1,537 @@
+{
+  "hypotheses": [],
+  "ambiguity_ratio": null,
+  "best": {
+    "dy": 0,
+    "dx": 0,
+    "translation_magnitude_px": 8.125253334470178e-14,
+    "score": null
+  },
+  "verification": {
+    "overlap_fraction": 1.0,
+    "bbox_fill_ratio": 0.3901052168148649,
+    "ncc_before": 0.01448565120026028,
+    "ncc_after": 0.01448565120026028,
+    "ncc_improvement": 0.0,
+    "local_cell_agreement": 0.0,
+    "local_cells": [
+      {
+        "row": 0,
+        "col": 0,
+        "valid_fraction": 1.0,
+        "residual_dy": -171,
+        "residual_dx": 87,
+        "residual_magnitude_px": 191.8593234638338,
+        "score": 1.505212664604187,
+        "agrees": false
+      },
+      {
+        "row": 1,
+        "col": 2,
+        "valid_fraction": 0.92767333984375,
+        "residual_dy": 203,
+        "residual_dx": 81,
+        "residual_magnitude_px": 218.56349191939628,
+        "score": 1.1831159591674805,
+        "agrees": false
+      },
+      {
+        "row": 2,
+        "col": 1,
+        "valid_fraction": 0.992950439453125,
+        "residual_dy": -206,
+        "residual_dx": 59,
+        "residual_magnitude_px": 214.28252378577213,
+        "score": 1.3134937286376953,
+        "agrees": false
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "valid_fraction": 1.0,
+        "residual_dy": 153,
+        "residual_dx": -155,
+        "residual_magnitude_px": 217.79348015953096,
+        "score": 1.3177721500396729,
+        "agrees": false
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "valid_fraction": 1.0,
+        "residual_dy": -81,
+        "residual_dx": -197,
+        "residual_magnitude_px": 213.00234740490538,
+        "score": 1.5551669597625732,
+        "agrees": false
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "valid_fraction": 0.994384765625,
+        "residual_dy": -206,
+        "residual_dx": -49,
+        "residual_magnitude_px": 211.74749113035554,
+        "score": 1.3056261539459229,
+        "agrees": false
+      }
+    ]
+  },
+  "verdict": "PASS",
+  "verdict_reasons": [
+    "anchor found via keypoint fallback, not dense correlation -- verification above is recomputed at this anchor but the ambiguity_ratio/hypotheses fields still reflect the dense search's (rejected) result, see dense_search_result"
+  ],
+  "anchor_source": "keypoint_fallback_lightglue_gradient",
+  "dense_search_result": {
+    "verdict": "FAIL",
+    "verdict_reasons": [
+      "canonical canvas (6845x22041 = 150,870,645 px) exceeds max_dense_search_pixels=30,000,000 -- the 'full'-mode masked FFT correlation needs memory proportional to canvas area and would exceed available RAM; skipping straight to keypoint fallback rather than crashing"
+    ]
+  },
+  "keypoint_fallback_result": {
+    "method": "lightglue_gradient",
+    "matrix": [
+      [
+        1.0,
+        -1.7638735594341964e-17,
+        8.124399227199854e-14
+      ],
+      [
+        -3.2739700065671088e-18,
+        1.0,
+        1.1780894020900123e-15
+      ]
+    ],
+    "params": {
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_deg": -1.8758466362871375e-16,
+      "translation_x_px": 8.124399227199854e-14,
+      "translation_y_px": 1.1780894020900123e-15,
+      "translation_magnitude_px": 8.125253334470178e-14,
+      "determinant": 1.0,
+      "axis_dot": -2.0912705600909073e-17
+    },
+    "sane": true,
+    "candidates": 128,
+    "inliers": 16,
+    "inlier_ratio": 0.125,
+    "inlier_source_points": [
+      [
+        7926.365234375,
+        1834.9561767578125
+      ],
+      [
+        10703.0146484375,
+        1899.5294189453125
+      ],
+      [
+        3513.8603515625,
+        1942.5782470703125
+      ],
+      [
+        8270.755859375,
+        2028.6759033203125
+      ],
+      [
+        11865.3330078125,
+        2093.249267578125
+      ],
+      [
+        5343.435546875,
+        2459.164306640625
+      ],
+      [
+        177.576416015625,
+        2502.213134765625
+      ],
+      [
+        13694.908203125,
+        2588.310791015625
+      ],
+      [
+        9260.87890625,
+        3018.799072265625
+      ],
+      [
+        2911.177001953125,
+        3621.482421875
+      ],
+      [
+        4826.849609375,
+        3944.3486328125
+      ],
+      [
+        11391.7958984375,
+        4374.8369140625
+      ],
+      [
+        12059.052734375,
+        5192.7646484375
+      ],
+      [
+        12209.7236328125,
+        5214.2890625
+      ],
+      [
+        12317.345703125,
+        5235.8134765625
+      ],
+      [
+        15137.0439453125,
+        5730.875
+      ]
+    ],
+    "inlier_reference_points": [
+      [
+        7926.365234375,
+        1834.9561767578125
+      ],
+      [
+        10703.0146484375,
+        1899.5294189453125
+      ],
+      [
+        3513.8603515625,
+        1942.5782470703125
+      ],
+      [
+        8270.755859375,
+        2028.6759033203125
+      ],
+      [
+        11865.3330078125,
+        2093.249267578125
+      ],
+      [
+        5343.435546875,
+        2459.164306640625
+      ],
+      [
+        177.576416015625,
+        2502.213134765625
+      ],
+      [
+        13694.908203125,
+        2588.310791015625
+      ],
+      [
+        9260.87890625,
+        3018.799072265625
+      ],
+      [
+        2911.177001953125,
+        3621.482421875
+      ],
+      [
+        4826.849609375,
+        3944.3486328125
+      ],
+      [
+        11391.7958984375,
+        4374.8369140625
+      ],
+      [
+        12059.052734375,
+        5192.7646484375
+      ],
+      [
+        12209.7236328125,
+        5214.2890625
+      ],
+      [
+        12317.345703125,
+        5235.8134765625
+      ],
+      [
+        15137.0439453125,
+        5730.875
+      ]
+    ],
+    "verdict": "PASS",
+    "reasons": [],
+    "attempts": [
+      {
+        "method": "sift_intensity",
+        "matrix": [
+          [
+            -1.6701139330154244,
+            4.888406803303325,
+            12958.37489532431
+          ],
+          [
+            -6.407245657953389,
+            20.627195106096387,
+            7865.32819619017
+          ]
+        ],
+        "params": {
+          "scale_x": 6.621335021777315,
+          "scale_y": 21.19853058632954,
+          "rotation_deg": -104.60964198792327,
+          "translation_x_px": 12958.37489532431,
+          "translation_y_px": 7865.32819619017,
+          "translation_magnitude_px": 15158.590553265678,
+          "determinant": -3.128542680944115,
+          "axis_dot": -0.9997515691754365
+        },
+        "sane": false,
+        "candidates": 154,
+        "inliers": 6,
+        "inlier_ratio": 0.03896103896103896,
+        "inlier_source_points": [
+          [
+            15095.6357421875,
+            4398.60986328125
+          ],
+          [
+            15095.6357421875,
+            4398.60986328125
+          ],
+          [
+            10316.0859375,
+            2907.76611328125
+          ],
+          [
+            10316.0859375,
+            2907.76611328125
+          ],
+          [
+            12870.6767578125,
+            3757.57861328125
+          ],
+          [
+            12870.6767578125,
+            3757.57861328125
+          ]
+        ],
+        "inlier_reference_points": [
+          [
+            9249.1376953125,
+            1874.865478515625
+          ],
+          [
+            9249.1376953125,
+            1874.865478515625
+          ],
+          [
+            9943.6796875,
+            1746.6903076171875
+          ],
+          [
+            9943.6796875,
+            1746.6903076171875
+          ],
+          [
+            9831.451171875,
+            2908.047607421875
+          ],
+          [
+            9831.451171875,
+            2908.047607421875
+          ]
+        ],
+        "verdict": "FAIL",
+        "reasons": [
+          "affine failed shape-sanity check",
+          "only 6 inliers, below min_fallback_inliers=15",
+          "inlier_ratio=0.039 below min_fallback_inlier_ratio=0.08"
+        ]
+      },
+      {
+        "method": "lightglue_gradient",
+        "matrix": [
+          [
+            1.0,
+            -1.7638735594341964e-17,
+            8.124399227199854e-14
+          ],
+          [
+            -3.2739700065671088e-18,
+            1.0,
+            1.1780894020900123e-15
+          ]
+        ],
+        "params": {
+          "scale_x": 1.0,
+          "scale_y": 1.0,
+          "rotation_deg": -1.8758466362871375e-16,
+          "translation_x_px": 8.124399227199854e-14,
+          "translation_y_px": 1.1780894020900123e-15,
+          "translation_magnitude_px": 8.125253334470178e-14,
+          "determinant": 1.0,
+          "axis_dot": -2.0912705600909073e-17
+        },
+        "sane": true,
+        "candidates": 128,
+        "inliers": 16,
+        "inlier_ratio": 0.125,
+        "inlier_source_points": [
+          [
+            7926.365234375,
+            1834.9561767578125
+          ],
+          [
+            10703.0146484375,
+            1899.5294189453125
+          ],
+          [
+            3513.8603515625,
+            1942.5782470703125
+          ],
+          [
+            8270.755859375,
+            2028.6759033203125
+          ],
+          [
+            11865.3330078125,
+            2093.249267578125
+          ],
+          [
+            5343.435546875,
+            2459.164306640625
+          ],
+          [
+            177.576416015625,
+            2502.213134765625
+          ],
+          [
+            13694.908203125,
+            2588.310791015625
+          ],
+          [
+            9260.87890625,
+            3018.799072265625
+          ],
+          [
+            2911.177001953125,
+            3621.482421875
+          ],
+          [
+            4826.849609375,
+            3944.3486328125
+          ],
+          [
+            11391.7958984375,
+            4374.8369140625
+          ],
+          [
+            12059.052734375,
+            5192.7646484375
+          ],
+          [
+            12209.7236328125,
+            5214.2890625
+          ],
+          [
+            12317.345703125,
+            5235.8134765625
+          ],
+          [
+            15137.0439453125,
+            5730.875
+          ]
+        ],
+        "inlier_reference_points": [
+          [
+            7926.365234375,
+            1834.9561767578125
+          ],
+          [
+            10703.0146484375,
+            1899.5294189453125
+          ],
+          [
+            3513.8603515625,
+            1942.5782470703125
+          ],
+          [
+            8270.755859375,
+            2028.6759033203125
+          ],
+          [
+            11865.3330078125,
+            2093.249267578125
+          ],
+          [
+            5343.435546875,
+            2459.164306640625
+          ],
+          [
+            177.576416015625,
+            2502.213134765625
+          ],
+          [
+            13694.908203125,
+            2588.310791015625
+          ],
+          [
+            9260.87890625,
+            3018.799072265625
+          ],
+          [
+            2911.177001953125,
+            3621.482421875
+          ],
+          [
+            4826.849609375,
+            3944.3486328125
+          ],
+          [
+            11391.7958984375,
+            4374.8369140625
+          ],
+          [
+            12059.052734375,
+            5192.7646484375
+          ],
+          [
+            12209.7236328125,
+            5214.2890625
+          ],
+          [
+            12317.345703125,
+            5235.8134765625
+          ],
+          [
+            15137.0439453125,
+            5730.875
+          ]
+        ],
+        "verdict": "PASS",
+        "reasons": []
+      }
+    ]
+  },
+  "config": {
+    "num_orientations": 8,
+    "gaussian_sigma": 1.0,
+    "mask_erosion_px": 5,
+    "top_k_peaks": 5,
+    "nms_radius_px": 15,
+    "overlap_ratio_fft": 0.15,
+    "enable_fourier_mellin": false,
+    "min_bbox_fill_ratio": 0.3,
+    "max_dense_search_pixels": 30000000,
+    "local_grid_rows": 4,
+    "local_grid_cols": 4,
+    "local_window_px": 256,
+    "local_min_valid_fraction": 0.3,
+    "local_agreement_tolerance_px": 8.0,
+    "ambiguity_ratio_min": 1.15,
+    "min_overlap_fraction": 0.15,
+    "min_ncc_after": 0.25,
+    "min_ncc_improvement": 0.05,
+    "min_local_cell_agreement": 0.6,
+    "enable_keypoint_fallback": true,
+    "sift_ratio_threshold": 0.75,
+    "sift_max_features": 10000,
+    "ransac_reprojection_threshold_px": 3.0,
+    "min_fallback_inliers": 15,
+    "min_fallback_inlier_ratio": 0.08,
+    "scale_min": 0.85,
+    "scale_max": 1.15,
+    "max_rotation_deg": 5.0,
+    "max_axis_dot": 0.15
+  }
+}

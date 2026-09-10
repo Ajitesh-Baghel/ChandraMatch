@@ -1,0 +1,22 @@
+{
+  "grid_spacing_px": 100,
+  "window_px": 220,
+
+  "overlap_ratio_fft": 0.15,
+
+  "min_valid_fraction": 0.4,
+  "min_peak_score": 1.0,
+  "min_ambiguity_ratio": 1.15,
+  "max_residual_px": 15.0,
+
+  "notes": [
+    "One shared config for every pair -- do not fork per-pair copies.",
+    "Stage 1 reuses Stage 0's oriented-gradient descriptor (same num_orientations,",
+    "gaussian_sigma, mask_erosion_px from stage0_coarse_search.json) rather than",
+    "duplicating those parameters here -- it is the same descriptor at a finer,",
+    "per-point grid, not a different representation.",
+    "min_peak_score/min_ambiguity_ratio/max_residual_px are provisional placeholders",
+    "pending calibration against real Pair006/007 local-refinement runs, same",
+    "discipline as Stage 0's thresholds."
+  ]
+}

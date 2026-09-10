@@ -38,6 +38,15 @@ temp/
 tmp/
 *.tmp
 
+# App runtime job artifacts (uploads + pipeline outputs)
+app/jobs/
+
+# Generated pipeline visualization outputs (overlay/checkerboard/preview PNGs
+# under results/) -- large, fully regenerable from register()/the CLI
+# scripts, not meant to be tracked. Curated illustrations under docs/images/
+# are intentionally NOT covered by this rule.
+results/**/*.png
+
 # OS
 Thumbs.db
 .DS_Store

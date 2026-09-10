@@ -59,6 +59,25 @@ Common valid ratio:
 - 100% spatial coverage
 - ~1.11 s runtime
 
+## Anchor-confidence ML component (§5b)
+
+A calibrated logistic-regression gate over interpretable Stage 0/1 evidence
+(bbox fill ratio, NCC improvement, local-cell agreement, etc.), designed to
+replace the existing hand-set threshold cascade for anchor acceptance. It
+deliberately does **not** use `verification_tier` or any other
+downstream/outcome-dependent signal as a live inference feature, since that
+information only exists after the anchor has already been used to run a
+perturbation test — it is used only to weight training-row confidence when a
+model is eventually fit. Current status: `insufficient_training_data` on
+both the dense (2 rows) and fallback (7 rows) feature spaces, below the
+20-row floor this project set for fitting safely — no model is fit, by
+design, rather than overfitting to a handful of points. The existing
+hand-set cascade remains the sole live decision path for all 5 validated
+pairs' verdicts. The fallback feature space could reasonably activate once
+more keypoint-fallback pairs are processed; the dense feature space needs
+many more dense-correlation-anchored pairs. Full detail:
+`docs/UNIFIED_PIPELINE_CHECKPOINT_LOG.md`.
+
 ## Next Technical Milestones
 
 1. controlled geometric benchmark

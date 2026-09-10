@@ -1,0 +1,33 @@
+{
+  "ransac_reprojection_threshold_px": 3.0,
+  "max_fit_residual_px": 5.0,
+
+  "scale_min": 0.85,
+  "scale_max": 1.15,
+  "max_rotation_deg": 5.0,
+  "max_axis_dot": 0.15,
+
+  "perturbations": [
+    {"id": "SHIFT_1", "tx": 64.0, "ty": -48.0, "rotation_deg": 0.0, "scale": 1.0},
+    {"id": "SHIFT_ROT_2", "tx": -120.0, "ty": 80.0, "rotation_deg": 0.35, "scale": 1.0},
+    {"id": "SHIFT_ROT_SCALE_3", "tx": 80.0, "ty": 60.0, "rotation_deg": -0.5, "scale": 1.002}
+  ],
+  "interior_roi_buffer_px": 20.0,
+  "interior_roi_grid_spacing_px": 40,
+  "interior_roi_window_px": 80,
+  "min_perturbation_accepted_points": 5,
+  "reduced_scale_min_roi_pixels": 5000,
+
+  "max_mean_perturbation_response_px": 5.0,
+  "max_worst_perturbation_response_px": 10.0,
+
+  "notes": [
+    "One shared config for every pair.",
+    "affine_sanity deliberately has NO translation-magnitude cap -- v1 learned the hard",
+    "way (Pair006/007) that a large translation is not automatically an insane transform.",
+    "The perturbation set is the literal one v1 standardized on across",
+    "scripts/validate_pair00{4,6,7}_*_perturbation.py -- kept identical for comparability.",
+    "Thresholds are provisional pending calibration against real Pair006/007 runs, same",
+    "discipline as Stage 0/1."
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "sensor_source": "Chandrayaan-2 IIRS",
+  "sensor_reference": "Chandrayaan-2 TMC-2",
+  "canonical_metadata": {
+    "pair_id": "canonical",
+    "source_sensor": "Chandrayaan-2 IIRS",
+    "source_product": "unknown",
+    "reference_sensor": "Chandrayaan-2 TMC-2",
+    "reference_product": "unknown",
+    "canonical_resolution_m": 5.0,
+    "width": 22041,
+    "height": 6845,
+    "reference_positive_pixels": 78685580,
+    "reference_positive_ratio": 0.5215433393288668,
+    "reference_footprint_pixels": 82658864,
+    "reference_footprint_ratio": 0.5478790390271083,
+    "source_valid_pixels": 63954935,
+    "source_valid_ratio": 0.4239057571471243,
+    "science_valid_pixels": 63946915,
+    "science_valid_ratio": 0.42385259902613925,
+    "matcher_base_pixels": 63478301,
+    "matcher_base_ratio": 0.42074653422473274,
+    "matcher_pixels": 60214913,
+    "matcher_ratio": 0.3991161633861909,
+    "matcher_bbox": {
+      "min_x": 31,
+      "max_x": 22009,
+      "min_y": 37,
+      "max_y": 6813,
+      "width": 21979,
+      "height": 6777
+    },
+    "transform": [
+      5.0,
+      0.0,
+      542064.0234375,
+      0.0,
+      -5.0,
+      -89475.349609375
+    ],
+    "crs": "PROJCS[\"Polar StereoGraphic\",GEOGCS[\"Polar StereoGraphic\",DATUM[\"Moon Spheroid\",SPHEROID[\"Moon Spheroid\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+    "notes": [
+      "SOURCE was reprojected onto a grid derived from REFERENCE (native resolution unless target_resolution_m was given).",
+      "REFERENCE positive support (`value > 0`) is a matcher-support seed, not the science-validity definition -- a real nodata value on the reference dataset is used directly when present; otherwise the footprint is recovered via morphological closing + convex hull so internal zero-valued pixels (e.g. real shadow) remain scientifically valid.",
+      "Matcher mask uses common source/reference positive support followed by 5px erosion.",
+      "No image-registration transform has been applied at this stage."
+    ]
+  },
+  "anchor_source": "keypoint_fallback_lightglue_gradient",
+  "anchor_confidence": null,
+  "stage1_points_total": 16,
+  "stage1_points_accepted": 16,
+  "fit": {
+    "affine": [
+      [
+        1.0,
+        -1.4482841487510066e-17,
+        -2.364796221289995e-13
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 1.0,
+      "scale_y": 1.0,
+      "rotation_deg": 0.0,
+      "translation_x_px": -2.364796221289995e-13,
+      "translation_y_px": 0.0,
+      "translation_magnitude_px": 2.364796221289995e-13,
+      "determinant": 1.0,
+      "axis_dot": -1.4482841487510066e-17
+    },
+    "sane": true,
+    "ransac_inliers": 16,
+    "ransac_candidates": 16,
+    "ransac_inlier_ratio": 1.0
+  },
+  "rmse_px": 0.0,
+  "inlier_count": 16,
+  "inlier_ratio": 1.0,
+  "translation_px": [
+    -2.364796221289995e-13,
+    0.0
+  ],
+  "rotation_deg": 0.0,
+  "scale": [
+    1.0,
+    1.0
+  ],
+  "sub_pixel_achieved": false,
+  "sub_pixel_reason": "anchor_downsample_exceeds_native_resolution",
+  "effective_anchor_resolution_px": 10.76220703125,
+  "verdict": "PASS",
+  "verdict_reasons": [],
+  "perturbation_validation_informational_only": true,
+  "perturbation_summary": {
+    "attempted": true,
+    "all_pass": false,
+    "mean_response_rmse_px": 111.71624501546223,
+    "worst_response_rmse_px": 162.6020965576172,
+    "controls": [
+      {
+        "perturbation_id": "SHIFT_1",
+        "injected": {
+          "id": "SHIFT_1",
+          "tx": 64.0,
+          "ty": -48.0,
+          "rotation_deg": 0.0,
+          "scale": 1.0
+        },
+        "expected_affine": [
+          [
+            1.0,
+            -1.4482841487510066e-17,
+            -64.00000000000024
+          ],
+          [
+            0.0,
+            1.0,
+            48.0
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 32,
+        "recovered_affine": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            6.620992373684511e-18,
+            1.0,
+            -3.543432260677939e-13
+          ]
+        ],
+        "response_rmse_px": 80.0,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=80.00 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=80.00 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 80.0
+      },
+      {
+        "perturbation_id": "SHIFT_ROT_2",
+        "injected": {
+          "id": "SHIFT_ROT_2",
+          "tx": -120.0,
+          "ty": 80.0,
+          "rotation_deg": 0.35,
+          "scale": 1.0
+        },
+        "expected_affine": [
+          [
+            0.9999813422410571,
+            -0.006108614390678376,
+            141.59880080470924
+          ],
+          [
+            0.006108614390678361,
+            0.9999813422410571,
+            -146.52160236489152
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 35,
+        "recovered_affine": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "response_rmse_px": 162.6020965576172,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=162.60 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=194.68 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 194.67796325683594
+      },
+      {
+        "perturbation_id": "SHIFT_ROT_SCALE_3",
+        "injected": {
+          "id": "SHIFT_ROT_SCALE_3",
+          "tx": 80.0,
+          "ty": 60.0,
+          "rotation_deg": -0.5,
+          "scale": 1.002
+        },
+        "expected_affine": [
+          [
+            0.9979659910820075,
+            0.00870911726384623,
+            -87.75098487716748
+          ],
+          [
+            -0.008709117263846244,
+            0.9979659910820075,
+            43.758992244234605
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 32,
+        "recovered_affine": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.769789474295592e-18,
+            1.0,
+            1.1912927271189332e-15
+          ]
+        ],
+        "response_rmse_px": 92.54663848876953,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=92.55 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=143.36 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 143.36387634277344
+      }
+    ],
+    "reduced_scale": null,
+    "note": "Measured only inside an interior ROI that stays fully valid under every configured perturbation, fixing v1's boundary-support-loss confound. This is motion-following robustness evidence, not independent absolute ground truth for the unperturbed pair."
+  },
+  "registered_product": {
+    "filename": "registered_product.tif",
+    "valid_pixels": 60214913,
+    "nodata_value": -3.4028234663852886e+38
+  },
+  "interpretation_notes": [
+    "RANSAC reprojection statistics (rmse_px, inlier_count, inlier_ratio) are internal self-consistency, not independent ground-truth accuracy.",
+    "Interior-ROI perturbation response measures motion-following robustness inside a region guaranteed to stay valid under every tested perturbation; it is not independent absolute accuracy for the unperturbed pair.",
+    "sub_pixel_achieved is True only for a dense_correlation anchor whose Stage 2 residuals (an independent native-resolution local-refinement measurement) are below one pixel -- a keypoint-fallback anchor's Stage 1 reuses the same points that already defined the coarse anchor, so it can never support a sub-pixel claim regardless of how tight the resulting residual looks; see sub_pixel_reason."
+  ],
+  "perturbation_verified": false,
+  "perturbation_reason": "reverification_method_shares_anchor_method_class_known_blind_spot",
+  "verification_tier": "ransac_and_prior_ground_truth_only",
+  "provenance": "manually_patched_due_to_reverification_oom",
+  "_patch_note": "verification_tier/perturbation_verified/perturbation_reason computed directly from anchor_source rather than from a fresh perturbation-validation run: the actual interior-ROI keypoint re-verification crashed with an OpenCV out-of-memory error (SIFT descriptor allocation on this pair's ~150M-pixel canonical canvas) during backfill. This does not change the field values for a keypoint-fallback anchor (the tier/reason depend only on anchor_source, not on whether the perturbation test itself completes -- see src/pipeline/verification_tier.py), but the OOM crash itself is a newly discovered, unresolved robustness gap on oversized canvases, reported separately."
+}

@@ -1,0 +1,261 @@
+{
+  "sensor_source": "Chandrayaan-2 OHRC",
+  "sensor_reference": "Chandrayaan-2 TMC-2",
+  "canonical_metadata": {
+    "pair_id": "canonical",
+    "source_sensor": "Chandrayaan-2 OHRC",
+    "source_product": "unknown",
+    "reference_sensor": "Chandrayaan-2 TMC-2",
+    "reference_product": "unknown",
+    "canonical_resolution_m": 5.0,
+    "width": 990,
+    "height": 832,
+    "reference_positive_pixels": 584946,
+    "reference_positive_ratio": 0.7101617132867133,
+    "reference_footprint_pixels": 736316,
+    "reference_footprint_ratio": 0.8939345376845377,
+    "source_valid_pixels": 823680,
+    "source_valid_ratio": 1.0,
+    "science_valid_pixels": 736316,
+    "science_valid_ratio": 0.8939345376845377,
+    "matcher_base_pixels": 584946,
+    "matcher_base_ratio": 0.7101617132867133,
+    "matcher_pixels": 431767,
+    "matcher_ratio": 0.5241926476301476,
+    "matcher_bbox": {
+      "min_x": 5,
+      "max_x": 965,
+      "min_y": 5,
+      "max_y": 801,
+      "width": 961,
+      "height": 797
+    },
+    "transform": [
+      5.0,
+      0.0,
+      -9720.9765625,
+      0.0,
+      -5.0,
+      -3785.349609375
+    ],
+    "crs": "PROJCS[\"Polar StereoGraphic\",GEOGCS[\"Polar StereoGraphic\",DATUM[\"Moon Spheroid\",SPHEROID[\"Moon Spheroid\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+    "notes": [
+      "SOURCE was reprojected onto a grid derived from REFERENCE (native resolution unless target_resolution_m was given).",
+      "REFERENCE positive support (`value > 0`) is a matcher-support seed, not the science-validity definition -- a real nodata value on the reference dataset is used directly when present; otherwise the footprint is recovered via morphological closing + convex hull so internal zero-valued pixels (e.g. real shadow) remain scientifically valid.",
+      "Matcher mask uses common source/reference positive support followed by 5px erosion.",
+      "No image-registration transform has been applied at this stage."
+    ]
+  },
+  "anchor_source": "keypoint_fallback_lightglue_gradient",
+  "anchor_confidence": null,
+  "stage1_points_total": 355,
+  "stage1_points_accepted": 355,
+  "fit": {
+    "affine": [
+      [
+        0.9998421252076541,
+        -0.001712309771348491,
+        0.7712443353227824
+      ],
+      [
+        -0.0004900023432718219,
+        0.9992717600663122,
+        0.703320037520008
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 0.9998422452777511,
+      "scale_y": 0.9992732271359913,
+      "rotation_deg": -0.02807949701808494,
+      "translation_x_px": 0.7712443353227824,
+      "translation_y_px": 0.703320037520008,
+      "translation_magnitude_px": 1.0437801013358254,
+      "determinant": 0.9991131612088944,
+      "axis_dot": -0.0022036338670915093
+    },
+    "sane": true,
+    "ransac_inliers": 333,
+    "ransac_candidates": 355,
+    "ransac_inlier_ratio": 0.9380281690140845
+  },
+  "rmse_px": 1.4590811775879124,
+  "inlier_count": 333,
+  "inlier_ratio": 0.9380281690140845,
+  "translation_px": [
+    0.7712443353227824,
+    0.703320037520008
+  ],
+  "rotation_deg": -0.02807949701808494,
+  "scale": [
+    0.9998422452777511,
+    0.9992732271359913
+  ],
+  "sub_pixel_achieved": false,
+  "sub_pixel_reason": "stage2_is_coarse_anchor_reuse",
+  "effective_anchor_resolution_px": 1.0,
+  "verdict": "PASS",
+  "verdict_reasons": [],
+  "perturbation_validation_informational_only": true,
+  "perturbation_verified": false,
+  "perturbation_reason": "reverification_method_shares_anchor_method_class_known_blind_spot",
+  "verification_tier": "ransac_and_prior_ground_truth_only",
+  "perturbation_summary": {
+    "attempted": true,
+    "all_pass": false,
+    "mean_response_rmse_px": 108.1455078125,
+    "worst_response_rmse_px": 143.2756805419922,
+    "controls": [
+      {
+        "perturbation_id": "SHIFT_1",
+        "injected": {
+          "id": "SHIFT_1",
+          "tx": 64.0,
+          "ty": -48.0,
+          "rotation_deg": 0.0,
+          "scale": 1.0
+        },
+        "expected_affine": [
+          [
+            0.9998421252076541,
+            -0.001712309771348491,
+            -63.30084254699181
+          ],
+          [
+            -0.0004900023432718219,
+            0.9992717600663122,
+            48.699724670672396
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 268,
+        "recovered_affine": [
+          [
+            1.000081541646447,
+            -0.0006701714600790791,
+            0.0053640801001611955
+          ],
+          [
+            -0.00022944746680050081,
+            1.0001642457494089,
+            0.12406156844369735
+          ]
+        ],
+        "response_rmse_px": 79.93244171142578,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=79.93 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=80.04 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 80.04047393798828
+      },
+      {
+        "perturbation_id": "SHIFT_ROT_2",
+        "injected": {
+          "id": "SHIFT_ROT_2",
+          "tx": -120.0,
+          "ty": 80.0,
+          "rotation_deg": 0.35,
+          "scale": 1.0
+        },
+        "expected_affine": [
+          [
+            0.9998130105541904,
+            -0.007819927817935453,
+            123.9295806881052
+          ],
+          [
+            0.00561417265281335,
+            0.99925610913006,
+            -81.5785238081284
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 270,
+        "recovered_affine": [
+          [
+            0.9991797492341037,
+            -0.001481807143846877,
+            1.4987747349458034
+          ],
+          [
+            -0.0003458942072660905,
+            1.0000753199517411,
+            0.15107109636544938
+          ]
+        ],
+        "response_rmse_px": 143.2756805419922,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=143.28 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=144.55 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 144.55380249023438
+      },
+      {
+        "perturbation_id": "SHIFT_ROT_SCALE_3",
+        "injected": {
+          "id": "SHIFT_ROT_SCALE_3",
+          "tx": 80.0,
+          "ty": 60.0,
+          "rotation_deg": -0.5,
+          "scale": 1.002
+        },
+        "expected_affine": [
+          [
+            0.9978233501149879,
+            0.006998915395763497,
+            -82.09913459627077
+          ],
+          [
+            -0.009191780611003312,
+            0.9972349649069722,
+            -53.24074837920545
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 247,
+        "recovered_affine": [
+          [
+            0.9994209684985756,
+            -0.001155635716087416,
+            0.9696205423282102
+          ],
+          [
+            0.0001594303859718687,
+            0.9996099417123453,
+            0.040668049418099296
+          ]
+        ],
+        "response_rmse_px": 101.22840118408203,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=101.23 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=104.24 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 104.24433135986328
+      }
+    ],
+    "reduced_scale": null,
+    "note": "Measured only inside an interior ROI that stays fully valid under every configured perturbation, fixing v1's boundary-support-loss confound. This is motion-following robustness evidence, not independent absolute ground truth for the unperturbed pair."
+  },
+  "registered_product": {
+    "filename": "registered_product.tif",
+    "valid_pixels": 430687,
+    "nodata_value": -3.4028234663852886e+38
+  },
+  "interpretation_notes": [
+    "RANSAC reprojection statistics (rmse_px, inlier_count, inlier_ratio) are internal self-consistency, not independent ground-truth accuracy.",
+    "Interior-ROI perturbation response measures motion-following robustness inside a region guaranteed to stay valid under every tested perturbation; it is not independent absolute accuracy for the unperturbed pair.",
+    "sub_pixel_achieved is True only for a dense_correlation anchor whose Stage 2 residuals (an independent native-resolution local-refinement measurement) are below one pixel -- a keypoint-fallback anchor's Stage 1 reuses the same points that already defined the coarse anchor, so it can never support a sub-pixel claim regardless of how tight the resulting residual looks; see sub_pixel_reason.",
+    "verification_tier distinguishes HOW a PASS/AMBIGUOUS verdict is supported: 'perturbation_confirmed' is the only tier backed by an independent stress test; 'perturbation_partial' has some but incomplete independent support; 'ransac_and_prior_ground_truth_only' means the anchor came from a keypoint matcher and the perturbation test cannot arbitrate this anchor class at all (a keypoint matcher re-verifying its own anchor under large injected motion is a documented, repeatedly-reproduced blind spot -- see perturbation_reason) -- its PASS rests on RANSAC coarse-fit quality and, where available, separately-established prior ground truth, not on this pipeline's own perturbation test."
+  ]
+}

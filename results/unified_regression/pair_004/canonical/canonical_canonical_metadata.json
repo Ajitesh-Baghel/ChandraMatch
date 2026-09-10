@@ -1,0 +1,45 @@
+{
+  "pair_id": "canonical",
+  "source_sensor": "LRO NAC",
+  "source_product": "unknown",
+  "reference_sensor": "Chandrayaan-2 TMC-2",
+  "reference_product": "unknown",
+  "canonical_resolution_m": 5.0,
+  "width": 5040,
+  "height": 1825,
+  "reference_positive_pixels": 7908178,
+  "reference_positive_ratio": 0.8597714720591433,
+  "reference_footprint_pixels": 9182000,
+  "reference_footprint_ratio": 0.9982604914111763,
+  "source_valid_pixels": 2340471,
+  "source_valid_ratio": 0.25445433789954336,
+  "science_valid_pixels": 2340471,
+  "science_valid_ratio": 0.25445433789954336,
+  "matcher_base_pixels": 2171848,
+  "matcher_base_ratio": 0.23612176560121764,
+  "matcher_pixels": 1905824,
+  "matcher_ratio": 0.2071998260491411,
+  "matcher_bbox": {
+    "min_x": 9,
+    "max_x": 5029,
+    "min_y": 36,
+    "max_y": 1811,
+    "width": 5021,
+    "height": 1776
+  },
+  "transform": [
+    5.0,
+    0.0,
+    568219.0234375,
+    0.0,
+    -5.0,
+    -101155.349609375
+  ],
+  "crs": "PROJCS[\"Polar StereoGraphic\",GEOGCS[\"Polar StereoGraphic\",DATUM[\"Moon Spheroid\",SPHEROID[\"Moon Spheroid\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+  "notes": [
+    "SOURCE was reprojected onto a grid derived from REFERENCE (native resolution unless target_resolution_m was given).",
+    "REFERENCE positive support (`value > 0`) is a matcher-support seed, not the science-validity definition -- a real nodata value on the reference dataset is used directly when present; otherwise the footprint is recovered via morphological closing + convex hull so internal zero-valued pixels (e.g. real shadow) remain scientifically valid.",
+    "Matcher mask uses common source/reference positive support followed by 5px erosion.",
+    "No image-registration transform has been applied at this stage."
+  ]
+}

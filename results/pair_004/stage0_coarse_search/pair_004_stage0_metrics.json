@@ -1,0 +1,319 @@
+{
+  "hypotheses": [
+    {
+      "dy": 0,
+      "dx": 818,
+      "translation_magnitude_px": 818.0,
+      "score": 3.7532176971435547
+    },
+    {
+      "dy": 4,
+      "dx": 834,
+      "translation_magnitude_px": 834.0095922709762,
+      "score": 0.5530758500099182
+    },
+    {
+      "dy": 25,
+      "dx": 855,
+      "translation_magnitude_px": 855.3654189876979,
+      "score": 0.5277483463287354
+    },
+    {
+      "dy": -4,
+      "dx": 802,
+      "translation_magnitude_px": 802.0099750003113,
+      "score": 0.4934687912464142
+    },
+    {
+      "dy": -960,
+      "dx": -2909,
+      "translation_magnitude_px": 3063.312096408069,
+      "score": 0.4902242124080658
+    }
+  ],
+  "ambiguity_ratio": 6.786081325149613,
+  "best": {
+    "dy": 0,
+    "dx": 818,
+    "translation_magnitude_px": 818.0,
+    "score": 3.7532176971435547
+  },
+  "verification": {
+    "overlap_fraction": 0.41032015548130363,
+    "ncc_before": 0.01881300742647458,
+    "ncc_after": 0.5499580593766149,
+    "ncc_improvement": 0.5311450519501403,
+    "local_cell_agreement": 0.6666666666666666,
+    "local_cells": [
+      {
+        "row": 1,
+        "col": 1,
+        "valid_fraction": 0.987457275390625,
+        "residual_dy": -1,
+        "residual_dx": -2,
+        "residual_magnitude_px": 2.23606797749979,
+        "score": 4.714148044586182,
+        "agrees": true
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "valid_fraction": 0.992095947265625,
+        "residual_dy": 0,
+        "residual_dx": 0,
+        "residual_magnitude_px": 0.0,
+        "score": 4.149029731750488,
+        "agrees": true
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "valid_fraction": 0.6559906005859375,
+        "residual_dy": 203,
+        "residual_dx": 34,
+        "residual_magnitude_px": 205.8275977608445,
+        "score": 5.47037935256958,
+        "agrees": false
+      }
+    ]
+  },
+  "verdict": "FAIL",
+  "verdict_reasons": [
+    "bbox_fill_ratio=0.21372218663594883 below min_bbox_fill_ratio=0.3 -- footprint is too elongated/sparse within its own bounding box for whole-frame translation search to be well-conditioned (known aperture-problem blind spot, see Pair004)",
+    "keypoint fallback also did not pass: ['only 4 inliers, below min_fallback_inliers=15']"
+  ],
+  "anchor_source": "dense_correlation",
+  "config": {
+    "num_orientations": 8,
+    "gaussian_sigma": 1.0,
+    "mask_erosion_px": 5,
+    "top_k_peaks": 5,
+    "nms_radius_px": 15,
+    "overlap_ratio_fft": 0.15,
+    "enable_fourier_mellin": false,
+    "min_bbox_fill_ratio": 0.3,
+    "local_grid_rows": 4,
+    "local_grid_cols": 4,
+    "local_window_px": 256,
+    "local_min_valid_fraction": 0.3,
+    "local_agreement_tolerance_px": 8.0,
+    "ambiguity_ratio_min": 1.15,
+    "min_overlap_fraction": 0.15,
+    "min_ncc_after": 0.25,
+    "min_ncc_improvement": 0.05,
+    "min_local_cell_agreement": 0.6,
+    "enable_keypoint_fallback": true,
+    "sift_ratio_threshold": 0.75,
+    "sift_max_features": 10000,
+    "ransac_reprojection_threshold_px": 3.0,
+    "min_fallback_inliers": 15,
+    "min_fallback_inlier_ratio": 0.08,
+    "scale_min": 0.85,
+    "scale_max": 1.15,
+    "max_rotation_deg": 5.0,
+    "max_axis_dot": 0.15
+  },
+  "dense_search_result": null,
+  "keypoint_fallback_result": {
+    "method": "lightglue_gradient",
+    "matrix": [
+      [
+        1.009706306784279,
+        0.014267109365812668,
+        -8.014238837824207
+      ],
+      [
+        -7.593772474566501e-05,
+        1.0936383315931348,
+        -42.07449250191032
+      ]
+    ],
+    "params": {
+      "scale_x": 1.0097063096398313,
+      "scale_y": 1.0937313887511282,
+      "rotation_deg": -0.004309085816653322,
+      "translation_x_px": -8.014238837824207,
+      "translation_y_px": -42.07449250191032,
+      "translation_magnitude_px": 42.83095776938683,
+      "determinant": 1.1042546041624488,
+      "axis_dot": 0.012969234868201812
+    },
+    "sane": true,
+    "candidates": 10,
+    "inliers": 4,
+    "inlier_ratio": 0.4,
+    "inlier_source_points": [
+      [
+        350.474853515625,
+        291.8440856933594
+      ],
+      [
+        65.176025390625,
+        449.463623046875
+      ],
+      [
+        330.799072265625,
+        449.463623046875
+      ],
+      [
+        1629.400634765625,
+        818.8843994140625
+      ]
+    ],
+    "inlier_reference_points": [
+      [
+        350.474853515625,
+        277.0672607421875
+      ],
+      [
+        65.176025390625,
+        449.463623046875
+      ],
+      [
+        330.799072265625,
+        449.463623046875
+      ],
+      [
+        1649.076416015625,
+        853.3636474609375
+      ]
+    ],
+    "verdict": "FAIL",
+    "reasons": [
+      "only 4 inliers, below min_fallback_inliers=15"
+    ],
+    "attempts": [
+      {
+        "method": "sift_intensity",
+        "matrix": [
+          [
+            1.46442089995141,
+            1.0844203214044796,
+            -1106.2962522597393
+          ],
+          [
+            0.1885847002370615,
+            0.957462128801215,
+            -73.09193416931545
+          ]
+        ],
+        "params": {
+          "scale_x": 1.4765137186555362,
+          "scale_y": 1.446617144086005,
+          "rotation_deg": 7.338030528982785,
+          "translation_x_px": -1106.2962522597393,
+          "translation_y_px": -73.09193416931545,
+          "translation_magnitude_px": 1108.7081800927403,
+          "determinant": 1.1976224710854262,
+          "axis_dot": 0.828020526129751
+        },
+        "sane": false,
+        "candidates": 19,
+        "inliers": 3,
+        "inlier_ratio": 0.15789473684210525,
+        "inlier_source_points": [
+          [
+            1320.97998046875,
+            359.7098388671875
+          ],
+          [
+            2017.4930419921875,
+            988.6464233398438
+          ],
+          [
+            2816.618896484375,
+            858.9373168945312
+          ]
+        ],
+        "inlier_reference_points": [
+          [
+            1218.2510986328125,
+            520.4332275390625
+          ],
+          [
+            2920.27099609375,
+            1253.9678955078125
+          ],
+          [
+            3949.868408203125,
+            1280.479248046875
+          ]
+        ],
+        "verdict": "FAIL",
+        "reasons": [
+          "affine failed shape-sanity check",
+          "only 3 inliers, below min_fallback_inliers=15"
+        ]
+      },
+      {
+        "method": "lightglue_gradient",
+        "matrix": [
+          [
+            1.009706306784279,
+            0.014267109365812668,
+            -8.014238837824207
+          ],
+          [
+            -7.593772474566501e-05,
+            1.0936383315931348,
+            -42.07449250191032
+          ]
+        ],
+        "params": {
+          "scale_x": 1.0097063096398313,
+          "scale_y": 1.0937313887511282,
+          "rotation_deg": -0.004309085816653322,
+          "translation_x_px": -8.014238837824207,
+          "translation_y_px": -42.07449250191032,
+          "translation_magnitude_px": 42.83095776938683,
+          "determinant": 1.1042546041624488,
+          "axis_dot": 0.012969234868201812
+        },
+        "sane": true,
+        "candidates": 10,
+        "inliers": 4,
+        "inlier_ratio": 0.4,
+        "inlier_source_points": [
+          [
+            350.474853515625,
+            291.8440856933594
+          ],
+          [
+            65.176025390625,
+            449.463623046875
+          ],
+          [
+            330.799072265625,
+            449.463623046875
+          ],
+          [
+            1629.400634765625,
+            818.8843994140625
+          ]
+        ],
+        "inlier_reference_points": [
+          [
+            350.474853515625,
+            277.0672607421875
+          ],
+          [
+            65.176025390625,
+            449.463623046875
+          ],
+          [
+            330.799072265625,
+            449.463623046875
+          ],
+          [
+            1649.076416015625,
+            853.3636474609375
+          ]
+        ],
+        "verdict": "FAIL",
+        "reasons": [
+          "only 4 inliers, below min_fallback_inliers=15"
+        ]
+      }
+    ]
+  }
+}

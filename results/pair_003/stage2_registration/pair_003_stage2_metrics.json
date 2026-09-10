@@ -1,0 +1,204 @@
+{
+  "pair_id": "pair_003",
+  "stage1_points_total": 40,
+  "stage1_points_accepted": 40,
+  "fit": {
+    "affine": [
+      [
+        1.0196251153030969,
+        -0.007179666169284966,
+        -9.081016252340003
+      ],
+      [
+        0.001152002627769463,
+        0.9947492678589267,
+        0.590714546332222
+      ]
+    ],
+    "affine_parameters": {
+      "scale_x": 1.0196257660862185,
+      "scale_y": 0.9947751773703307,
+      "rotation_deg": 0.06473443963192616,
+      "translation_x_px": -9.081016252340003,
+      "translation_y_px": 0.590714546332222,
+      "translation_magnitude_px": 9.100208780600132,
+      "determinant": 1.0142796079326228,
+      "axis_dot": -0.0060875716269381454
+    },
+    "sane": true,
+    "ransac_inliers": 33,
+    "ransac_candidates": 40,
+    "ransac_inlier_ratio": 0.825
+  },
+  "residual_consistency": {
+    "max_fit_residual_px": 5.0,
+    "outlier_count": 0,
+    "outlier_rate": 0.0,
+    "final_accepted_points": 40
+  },
+  "spatial_coverage": {
+    "occupied_cells": 18,
+    "valid_cells": 40,
+    "coverage_ratio": 0.45
+  },
+  "anchor_source": "keypoint_fallback_lightglue_gradient",
+  "interior_roi_perturbation_validation": {
+    "controls": [
+      {
+        "perturbation_id": "SHIFT_1",
+        "injected": {
+          "id": "SHIFT_1",
+          "tx": 64.0,
+          "ty": -48.0,
+          "rotation_deg": 0.0,
+          "scale": 1.0
+        },
+        "expected_affine": [
+          [
+            1.0196251153030969,
+            -0.007179666169284966,
+            -74.68164760786388
+          ],
+          [
+            0.001152002627769463,
+            0.9947492678589267,
+            48.26495123538346
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 306,
+        "recovered_affine": [
+          [
+            0.9992644356241437,
+            0.0005595695206038881,
+            0.3131693806729471
+          ],
+          [
+            0.00033975245027175756,
+            1.0049056176481477,
+            -1.3431206262471782
+          ]
+        ],
+        "response_rmse_px": 78.4593505859375,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=78.46 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=88.64 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 88.64424133300781
+      },
+      {
+        "perturbation_id": "SHIFT_ROT_2",
+        "injected": {
+          "id": "SHIFT_ROT_2",
+          "tx": -120.0,
+          "ty": 80.0,
+          "rotation_deg": 0.35,
+          "scale": 1.0
+        },
+        "expected_affine": [
+          [
+            1.0195622335714014,
+            -0.013408028865241868,
+            116.07542767906514
+          ],
+          [
+            0.007228520826741936,
+            0.9947236709270483,
+            -83.39637803102197
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 253,
+        "recovered_affine": [
+          [
+            1.0011551012386197,
+            0.00018442150067776513,
+            -1.1158863272435273
+          ],
+          [
+            -0.0006125584775550041,
+            1.0008395401148653,
+            0.17410967834095054
+          ]
+        ],
+        "response_rmse_px": 149.968017578125,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=149.97 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=158.73 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 158.725830078125
+      },
+      {
+        "perturbation_id": "SHIFT_ROT_SCALE_3",
+        "injected": {
+          "id": "SHIFT_ROT_SCALE_3",
+          "tx": 80.0,
+          "ty": 60.0,
+          "rotation_deg": -0.5,
+          "scale": 1.002
+        },
+        "expected_affine": [
+          [
+            1.017613717280145,
+            0.001714972030068987,
+            -91.24565368942434
+          ],
+          [
+            -0.007513728577757561,
+            0.9927359719029086,
+            -50.29390229029102
+          ]
+        ],
+        "interior_roi_margin_px": null,
+        "interior_roi_pixels": null,
+        "accepted_points": 373,
+        "recovered_affine": [
+          [
+            0.9994989942870958,
+            0.0018496950932807915,
+            -0.0460390099832271
+          ],
+          [
+            0.0003295204518273727,
+            0.9974305954146061,
+            0.600904410995892
+          ]
+        ],
+        "response_rmse_px": 96.47911834716797,
+        "pass": false,
+        "reasons": [
+          "response_rmse_px=96.48 exceeds max_mean_perturbation_response_px=5.0",
+          "response_worst_px=103.83 exceeds max_worst_perturbation_response_px=10.0"
+        ],
+        "method": "lightglue_gradient",
+        "recovered_sane": true,
+        "response_worst_px": 103.82898712158203
+      }
+    ],
+    "all_pass": false,
+    "mean_response_rmse_px": 108.30216217041016,
+    "worst_response_rmse_px": 149.968017578125,
+    "note": "Measured only inside an interior ROI that stays fully valid under every configured perturbation, fixing v1's boundary-support-loss confound. This is motion-following robustness evidence, not independent absolute ground truth for the unperturbed pair."
+  },
+  "reduced_scale_perturbation_validation": null,
+  "perturbation_validation_informational_only": true,
+  "registered_product": {
+    "filename": "pair_003_registered.tif",
+    "valid_pixels": 391587,
+    "nodata_value": 0.0
+  },
+  "verdict": "PASS",
+  "verdict_reasons": [],
+  "interpretation_notes": [
+    "RANSAC reprojection statistics are internal self-consistency, not independent ground-truth accuracy.",
+    "Interior-ROI perturbation response measures motion-following robustness inside a region guaranteed to stay valid under every tested perturbation; it is not independent absolute accuracy for the unperturbed pair."
+  ]
+}

@@ -122,3 +122,19 @@ source/reference overlay
 difference image
 correspondences.csv
 metrics.json
+
+## Data Provenance & License
+
+This repository's **code** is licensed under the MIT License (see `LICENSE`).
+
+The **imagery** it processes is not owned by this project and is not
+redistributed in bulk here:
+
+- Chandrayaan-2 (TMC-2, OHRC, IIRS) data is from ISRO's public
+  [Indian Space Science Data Centre (ISSDC)](https://www.issdc.gov.in/) archive.
+- LRO NAC data is public-domain NASA archive data from the
+  [Planetary Data System (PDS)](https://pds.nasa.gov/), operated by NASA/USGS.
+- SELENE/Kaguya Terrain Camera data is from JAXA's public lunar data archive.
+
+Nothing in this repository claims ownership of, or exclusive rights to, any
+of the above source imagery — only the registration pipeline code itself.

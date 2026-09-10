@@ -1,0 +1,146 @@
+{
+  "min_rows_to_fit": 20,
+  "spaces": {
+    "dense": {
+      "status": "insufficient_training_data",
+      "row_count": 2,
+      "rows": [
+        {
+          "pair_id": "pair_006",
+          "method": "dense_correlation",
+          "verification_tier": "perturbation_confirmed",
+          "training_weight": 1.0,
+          "label": 1,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_006\\stage0_raw.json",
+          "features": {
+            "bbox_fill_ratio": 0.5059640313552801,
+            "ambiguity_ratio": 3.903979593660946,
+            "overlap_fraction": 0.673190549374999,
+            "ncc_before": -0.01283881726296896,
+            "ncc_after": 0.5856222018567175,
+            "ncc_improvement": 0.5984610191196865,
+            "local_cell_agreement": 1.0
+          }
+        },
+        {
+          "pair_id": "pair_007",
+          "method": "dense_correlation",
+          "verification_tier": "perturbation_partial",
+          "training_weight": 0.7,
+          "label": 1,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_007\\stage0_raw.json",
+          "features": {
+            "bbox_fill_ratio": 0.39494168437060295,
+            "ambiguity_ratio": 7.121435863780426,
+            "overlap_fraction": 0.2552672716620145,
+            "ncc_before": 0.045861719581664226,
+            "ncc_after": 0.7252528438730981,
+            "ncc_improvement": 0.6793911242914339,
+            "local_cell_agreement": 0.75
+          }
+        }
+      ],
+      "model": null,
+      "fallback": "existing hand-set thresholds in src/coarse/coarse_structural_search.py (_decide_verdict) / src/coarse/keypoint_fallback.py (_fit_and_verdict) -- only 2 real, non-circular labeled rows exist for this decision, below the 20-row floor this project set for fitting a classifier meaningfully; re-run src/pipeline/anchor_confidence.py once more validated pairs exist"
+    },
+    "fallback": {
+      "status": "insufficient_training_data",
+      "row_count": 7,
+      "rows": [
+        {
+          "pair_id": "pair_002",
+          "method": "sift_intensity",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 0,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_002\\stage0_raw.json",
+          "features": {
+            "candidates": 15,
+            "inliers": 4,
+            "inlier_ratio": 0.26666666666666666
+          }
+        },
+        {
+          "pair_id": "pair_002",
+          "method": "lightglue_gradient",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 1,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_002\\stage0_raw.json",
+          "features": {
+            "candidates": 563,
+            "inliers": 355,
+            "inlier_ratio": 0.6305506216696269
+          }
+        },
+        {
+          "pair_id": "pair_003",
+          "method": "sift_intensity",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 0,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_003\\stage0_raw.json",
+          "features": {
+            "candidates": 154,
+            "inliers": 6,
+            "inlier_ratio": 0.03896103896103896
+          }
+        },
+        {
+          "pair_id": "pair_003",
+          "method": "lightglue_gradient",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 1,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_003\\stage0_raw.json",
+          "features": {
+            "candidates": 128,
+            "inliers": 16,
+            "inlier_ratio": 0.125
+          }
+        },
+        {
+          "pair_id": "pair_004",
+          "method": "sift_intensity",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 0,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_004\\stage0_raw.json",
+          "features": {
+            "candidates": 40,
+            "inliers": 6,
+            "inlier_ratio": 0.15
+          }
+        },
+        {
+          "pair_id": "pair_005",
+          "method": "sift_intensity",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 1,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_005\\stage0_raw.json",
+          "features": {
+            "candidates": 715,
+            "inliers": 564,
+            "inlier_ratio": 0.7888111888111888
+          }
+        },
+        {
+          "pair_id": "pair_004",
+          "method": "lightglue_gradient",
+          "verification_tier": "ransac_and_prior_ground_truth_only",
+          "training_weight": 0.4,
+          "label": 1,
+          "source": "E:\\SIH26166\\results\\unified_regression\\pair_004\\metrics.json",
+          "features": {
+            "candidates": 23,
+            "inliers": 23,
+            "inlier_ratio": 1.0
+          }
+        }
+      ],
+      "model": null,
+      "fallback": "existing hand-set thresholds in src/coarse/coarse_structural_search.py (_decide_verdict) / src/coarse/keypoint_fallback.py (_fit_and_verdict) -- only 7 real, non-circular labeled rows exist for this decision, below the 20-row floor this project set for fitting a classifier meaningfully; re-run src/pipeline/anchor_confidence.py once more validated pairs exist"
+    }
+  }
+}

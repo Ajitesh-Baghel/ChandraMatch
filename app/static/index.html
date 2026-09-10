@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>ChandraMatch</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1115;
+    --panel: #171a21;
+    --border: #2a2e37;
+    --text: #e6e8eb;
+    --muted: #9aa1ab;
+    --accent: #5b8cff;
+    --pass: #3ecf6a;
+    --ambiguous: #e2a83a;
+    --fail: #e2543a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 1.4rem; margin: 0 0 4px; }
+  p.subtitle { color: var(--muted); margin: 0 0 28px; font-size: 0.9rem; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 4px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  input[type="file"], select {
+    width: 100%;
+    background: #0d0f13;
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+  button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .status-line { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-size: 0.9rem; }
+  .spinner {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid var(--border); border-top-color: var(--accent);
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .verdict-badge {
+    display: inline-block; padding: 4px 12px; border-radius: 999px;
+    font-weight: 600; font-size: 0.85rem; letter-spacing: 0.02em;
+  }
+  .verdict-PASS { background: rgba(62,207,106,0.15); color: var(--pass); }
+  .verdict-AMBIGUOUS { background: rgba(226,168,58,0.15); color: var(--ambiguous); }
+  .verdict-FAIL { background: rgba(226,84,58,0.15); color: var(--fail); }
+  ul.reasons { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: 0.85rem; }
+  .caveat {
+    margin-top: 12px; padding: 10px 12px; border-radius: 6px;
+    background: rgba(226,168,58,0.1); border: 1px solid rgba(226,168,58,0.35);
+    font-size: 0.82rem; color: var(--ambiguous);
+  }
+  .images { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  .images figure { margin: 0; }
+  .images img { width: 100%; border-radius: 6px; border: 1px solid var(--border); display: block; }
+  .images figcaption { font-size: 0.75rem; color: var(--muted); margin-top: 4px; text-align: center; }
+  .downloads { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+  .downloads a {
+    color: var(--accent); text-decoration: none; font-size: 0.85rem;
+    border: 1px solid var(--border); border-radius: 6px; padding: 6px 12px;
+  }
+  .downloads a:hover { border-color: var(--accent); }
+  .sensor-hint { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+  #results { display: none; }
+  .metric-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 4px 0; border-bottom: 1px solid var(--border); }
+  .metric-row span:first-child { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ChandraMatch</h1>
+  <p class="subtitle">Upload a source (moving) and reference (fixed) lunar image. Sensor is auto-detected; override if wrong.</p>
+
+  <div class="panel">
+    <form id="upload-form">
+      <div class="row">
+        <div>
+          <label for="source">Source (moving image)</label>
+          <input type="file" id="source" name="source" accept=".tif,.tiff,.img,.IMG" required />
+          <div class="sensor-hint" id="source-sensor-hint"></div>
+        </div>
+        <div>
+          <label for="reference">Reference (fixed image)</label>
+          <input type="file" id="reference" name="reference" accept=".tif,.tiff,.img,.IMG" required />
+          <div class="sensor-hint" id="reference-sensor-hint"></div>
+        </div>
+      </div>
+      <button type="submit" id="submit-btn">Run registration</button>
+      <div class="status-line" id="status-line" style="display:none;">
+        <div class="spinner"></div>
+        <span id="status-text">Uploading...</span>
+      </div>
+    </form>
+  </div>
+
+  <div class="panel" id="results">
+    <div>
+      <span class="verdict-badge" id="verdict-badge"></span>
+    </div>
+    <ul class="reasons" id="verdict-reasons"></ul>
+    <div class="caveat" id="perturbation-caveat" style="display:none;">
+      Perturbation-robustness was NOT independently validated for this anchor type
+      (keypoint-vs-keypoint re-verification exhibits identity bias under large injected
+      motion). This verdict is based on coarse-fit quality only.
+    </div>
+
+    <div id="metrics-summary"></div>
+
+    <div class="images" id="images" style="display:none;">
+      <figure>
+        <img id="overlay-img" alt="overlay" />
+        <figcaption>Overlay (registered source + reference)</figcaption>
+      </figure>
+      <figure>
+        <img id="checkerboard-img" alt="checkerboard" />
+        <figcaption>Checkerboard</figcaption>
+      </figure>
+    </div>
+
+    <div class="downloads" id="downloads"></div>
+  </div>
+</div>
+
+<script>
+const form = document.getElementById("upload-form");
+const submitBtn = document.getElementById("submit-btn");
+const statusLine = document.getElementById("status-line");
+const statusText = document.getElementById("status-text");
+const results = document.getElementById("results");
+
+let pollTimer = null;
+
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  submitBtn.disabled = true;
+  statusLine.style.display = "flex";
+  statusText.textContent = "Uploading...";
+  results.style.display = "none";
+
+  const formData = new FormData(form);
+
+  let response;
+  try {
+    response = await fetch("/api/jobs", { method: "POST", body: formData });
+  } catch (err) {
+    statusText.textContent = "Upload failed: " + err;
+    submitBtn.disabled = false;
+    return;
+  }
+
+  if (!response.ok) {
+    statusText.textContent = "Upload failed (" + response.status + ")";
+    submitBtn.disabled = false;
+    return;
+  }
+
+  const data = await response.json();
+
+  document.getElementById("source-sensor-hint").textContent =
+    "Detected: " + data.detected_source_sensor.label +
+    " (" + data.detected_source_sensor.confidence + ")";
+  document.getElementById("reference-sensor-hint").textContent =
+    "Detected: " + data.detected_reference_sensor.label +
+    " (" + data.detected_reference_sensor.confidence + ")";
+
+  pollJob(data.job_id);
+});
+
+function pollJob(jobId) {
+  if (pollTimer) clearInterval(pollTimer);
+
+  pollTimer = setInterval(async () => {
+    const response = await fetch("/api/jobs/" + jobId);
+
+    if (!response.ok) return;
+
+    const job = await response.json();
+
+    statusText.textContent = "Status: " + job.status + (job.stage ? " (" + job.stage + ")" : "");
+
+    if (job.status === "done" || job.status === "failed") {
+      clearInterval(pollTimer);
+      submitBtn.disabled = false;
+      statusLine.style.display = "none";
+      renderResults(jobId, job);
+    }
+  }, 2000);
+}
+
+function renderResults(jobId, job) {
+  results.style.display = "block";
+
+  const badge = document.getElementById("verdict-badge");
+  const reasonsList = document.getElementById("verdict-reasons");
+  reasonsList.innerHTML = "";
+
+  if (job.status === "failed") {
+    badge.textContent = "ERROR";
+    badge.className = "verdict-badge verdict-FAIL";
+    const li = document.createElement("li");
+    li.textContent = job.error || "Unknown error";
+    reasonsList.appendChild(li);
+    return;
+  }
+
+  badge.textContent = job.verdict;
+  badge.className = "verdict-badge verdict-" + job.verdict;
+
+  (job.verdict_reasons || []).forEach((reason) => {
+    const li = document.createElement("li");
+    li.textContent = reason;
+    reasonsList.appendChild(li);
+  });
+
+  const metrics = job.metrics;
+  const caveat = document.getElementById("perturbation-caveat");
+  caveat.style.display =
+    metrics && metrics.perturbation_validation_informational_only ? "block" : "none";
+
+  const summary = document.getElementById("metrics-summary");
+  summary.innerHTML = "";
+
+  if (metrics) {
+    const rows = [["Anchor source", metrics.anchor_source || "n/a"]];
+
+    if (metrics.fit) {
+      rows.push(
+        ["RANSAC inliers", metrics.fit.ransac_inliers + " / " + metrics.fit.ransac_candidates],
+        ["Translation (px)", metrics.fit.affine_parameters.translation_magnitude_px.toFixed(2)],
+        ["Rotation (deg)", metrics.fit.affine_parameters.rotation_deg.toFixed(4)],
+        ["RMSE (px)", metrics.rmse_px != null ? metrics.rmse_px.toFixed(3) : "n/a"],
+        [
+          "Sub-pixel achieved",
+          metrics.sub_pixel_achieved
+            ? "yes"
+            : "no" + (metrics.sub_pixel_reason ? " (" + metrics.sub_pixel_reason + ")" : ""),
+        ],
+        ["Verification tier", metrics.verification_tier || "n/a"],
+      );
+    }
+
+    rows.forEach(([label, value]) => {
+      const row = document.createElement("div");
+      row.className = "metric-row";
+      row.innerHTML = "<span>" + label + "</span><span>" + value + "</span>";
+      summary.appendChild(row);
+    });
+  }
+
+  const imagesDiv = document.getElementById("images");
+  const downloadsDiv = document.getElementById("downloads");
+  downloadsDiv.innerHTML = "";
+
+  if (job.files && job.files["overlay.png"]) {
+    imagesDiv.style.display = "grid";
+    document.getElementById("overlay-img").src = "/api/jobs/" + jobId + "/files/overlay.png";
+    document.getElementById("checkerboard-img").src =
+      "/api/jobs/" + jobId + "/files/checkerboard.png";
+  } else {
+    imagesDiv.style.display = "none";
+  }
+
+  const downloadable = ["registered_product.tif", "match_points.csv", "metrics.json"];
+
+  downloadable.forEach((name) => {
+    if (job.files && job.files[name]) {
+      const a = document.createElement("a");
+      a.href = "/api/jobs/" + jobId + "/files/" + name;
+      a.textContent = "Download " + name;
+      downloadsDiv.appendChild(a);
+    }
+  });
+}
+</script>
+</body>
+</html>

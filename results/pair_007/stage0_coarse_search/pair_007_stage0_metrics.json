@@ -1,0 +1,112 @@
+{
+  "hypotheses": [
+    {
+      "dy": -3,
+      "dx": 906,
+      "translation_magnitude_px": 906.0049668738026,
+      "score": 5.057828903198242
+    },
+    {
+      "dy": -6,
+      "dx": -1091,
+      "translation_magnitude_px": 1091.0164985003664,
+      "score": 0.7102259993553162
+    },
+    {
+      "dy": 270,
+      "dx": -65,
+      "translation_magnitude_px": 277.71388153997634,
+      "score": 0.6894189119338989
+    },
+    {
+      "dy": 277,
+      "dx": -19,
+      "translation_magnitude_px": 277.6508598942204,
+      "score": 0.6828739047050476
+    },
+    {
+      "dy": 245,
+      "dx": -55,
+      "translation_magnitude_px": 251.09759058979438,
+      "score": 0.680197536945343
+    }
+  ],
+  "ambiguity_ratio": 7.121435863780426,
+  "best": {
+    "dy": -3,
+    "dx": 906,
+    "translation_magnitude_px": 906.0049668738026,
+    "score": 5.057828903198242
+  },
+  "verification": {
+    "overlap_fraction": 0.2552672716620145,
+    "ncc_before": 0.045861719581664226,
+    "ncc_after": 0.7252528438730981,
+    "ncc_improvement": 0.6793911242914339,
+    "local_cell_agreement": 0.75,
+    "local_cells": [
+      {
+        "row": 1,
+        "col": 2,
+        "valid_fraction": 0.67724609375,
+        "residual_dy": 1,
+        "residual_dx": 0,
+        "residual_magnitude_px": 1.0,
+        "score": 5.03399133682251,
+        "agrees": true
+      },
+      {
+        "row": 2,
+        "col": 2,
+        "valid_fraction": 0.9151458740234375,
+        "residual_dy": 0,
+        "residual_dx": 1,
+        "residual_magnitude_px": 1.0,
+        "score": 4.115302085876465,
+        "agrees": true
+      },
+      {
+        "row": 2,
+        "col": 3,
+        "valid_fraction": 1.0,
+        "residual_dy": 0,
+        "residual_dx": 1,
+        "residual_magnitude_px": 1.0,
+        "score": 4.38831090927124,
+        "agrees": true
+      },
+      {
+        "row": 3,
+        "col": 3,
+        "valid_fraction": 0.7100982666015625,
+        "residual_dy": 255,
+        "residual_dx": 255,
+        "residual_magnitude_px": 360.62445840513925,
+        "score": 0.0,
+        "agrees": false
+      }
+    ]
+  },
+  "verdict": "PASS",
+  "verdict_reasons": [],
+  "config": {
+    "num_orientations": 8,
+    "gaussian_sigma": 1.0,
+    "mask_erosion_px": 5,
+    "top_k_peaks": 5,
+    "nms_radius_px": 15,
+    "overlap_ratio_fft": 0.15,
+    "enable_fourier_mellin": false,
+    "min_bbox_fill_ratio": 0.3,
+    "local_grid_rows": 4,
+    "local_grid_cols": 4,
+    "local_window_px": 256,
+    "local_min_valid_fraction": 0.3,
+    "local_agreement_tolerance_px": 8.0,
+    "ambiguity_ratio_min": 1.15,
+    "min_overlap_fraction": 0.15,
+    "min_ncc_after": 0.25,
+    "min_ncc_improvement": 0.05,
+    "min_local_cell_agreement": 0.6
+  }
+}
